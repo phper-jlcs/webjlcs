@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>确认订单</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="__PUBLIC__/wapjs/rem.js"></script> 
+    <script src="__PUBLIC__/wapjs/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/base.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/page.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/all.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/loaders.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/loading.css"/>
+<script type="text/javascript">
+	$(window).load(function(){
+		$(".loading").addClass("loader-chanage")
+		$(".loading").fadeOut(300)
+	})
+</script>
+</head>
+<!--loading页开始-->
+<div class="loading">
+	<div class="loader">
+        <div class="loader-inner pacman">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+	</div>
+</div>
+<!--loading页结束-->
+	<body>
+		<header class="mui-bar mui-bar-nav report-header box-s" id="header">
+			<a href="javascript:history.go(-1)"><i class="iconfont icon-fanhui fl"></i></a>
+			<p>确认订单</p>
+	    </header>
+	    <div id="main" class="mui-clearfix">
+	    	<div class="plist confirm clearfloat">
+				<ul>
+					<li class="clearfloat">
+						<if condition="($liji eq 1)">
+							<a href="{:U('Order/choiceaddress',array('id'=>$productid,'num'=>$nums ))}">
+								<i class="iconfont icon-dizhi icon-dizhitwo fl"></i>
+								<p class="fl" style="">
+									填写收货地址<br/>
+									{$address.name}  {$address.phone} <br/>
+									{$address.address}
+								</p>
+								<i class="iconfont icon-qianjin fr"></i>
+							</a>
+							<else />
+							<a href="{:U('Order/choiceaddress',array('id'=>$cartid))}">
+								<i class="iconfont icon-dizhi icon-dizhitwo fl"></i>
+								<p class="fl" style="">
+									填写收货地址<br/>
+									{$address.name}  {$address.phone} <br/>
+									{$address.address}
+								</p>
+								<i class="iconfont icon-qianjin fr"></i>
+							</a>
+							</if>
+
+					</li>
+				</ul>
+			</div>
+			
+			<div class="order-list order-listtwo clearfloat">
+				<volist name="products" id="list">
+						<div class="list clearfloat fl box-s">
+							<a href="{:U('Product/index',array('id'=>$list['id'] ))}">
+								<div class="tu fl clearfloat">
+									<img src="__PUBLIC__/{$list.path}"/>
+								</div>
+								<div class="middle clearfloat fl">
+									<p class="tit">{$list.name}</p>
+									<p class="fu-tit">
+										{$list.description}
+									</p>
+									<p class="price clearfloat">
+										<span class="xprice fl">￥{$list.now_price}</span>
+										<span class="yprice fl">￥{$list.old_price}</span>
+										<span class="sjzhuanx fl">会员专享价</span>
+										<span class="shu">×{$list.num}</span>
+									</p>
+								</div>
+							</a>
+						</div>
+				</volist>
+	    		<div class="confirm-total clearfloat box-s">
+	    			<ul>	    				
+	    				<li>合计：<samp>￥</samp><span>{$total}</span></li>
+	    				<li>共计{$nums}件商品</li>
+	    			</ul>
+	    		</div>
+	    	</div>
+	    	
+	    	<div class="plist clearfloat data confirm-list box-s contaniner">
+				<ul>
+					<li class="clearfloat" onClick="toshare()">
+						<a href="#">
+							<p class="fl">配送方式</p>
+							<i class="fr iconfont icon-right icon-qianjin"></i>
+						</a>
+					</li>
+					<!--这里是配送方式内容-->
+					<div class="am-share">
+					  <h3 class="am-share-title">配送方式</h3>
+					  <div class="am-share-sns box-s">
+					    <div class="am-list">
+					    	<div class="addlist clearfloat">
+					    		<div class="bottom clearfloat box-s">
+					    			<section class="shopcar clearfloat">
+					    				<span class="fl">自提点自提</span>
+										<div class="shopcar-checkbox fr">
+											<label for="shopcar" onselectstart="return false" class="shopcar-checkd checkall" value="1"></label>
+											<input type="checkbox" id="shopcar"/>
+										</div>
+									</section>
+					    		</div>
+					    	</div>
+					    </div>
+					    <div class="am-list">
+					    	<div class="addlist clearfloat">
+					    		<div class="bottom clearfloat box-s">
+					    			<section class="shopcar clearfloat">
+					    				<span class="fl">快递</span>
+										<div class="shopcar-checkbox fr">
+											<label for="shopcar" onselectstart="return false" class="checkall" value="0"></label>
+											<input type="checkbox" id="shopcar"/>
+										</div>
+									</section>
+					    		</div>
+					    	</div>
+					    </div>
+					  </div>
+					  <div class="am-share-footer"><button class="share_btn">关闭</button></div>
+					</div>
+					<!--<li class="clearfloat">
+						<a href="#">
+							<p class="fl">使用会员卡</p>
+							<i class="fr iconfont icon-right icon-qianjin"></i>
+						</a>
+					</li>
+					<li class="clearfloat">
+						<a href="#">
+							<p class="fl">使用店铺优惠券</p>
+							<i class="fr iconfont icon-right icon-qianjin"></i>
+						</a>
+					</li>-->
+					<li class="clearfloat">
+						<a href="#">
+							<p class="fl">订单留言</p>
+							<input type="text" class="fr shuru" name="" id="" value="" placeholder="限50字以内" />
+						</a>
+					</li>
+				</ul>
+			</div>
+	    	
+	    	<div class="clearfloat data confirm-list confirm-listwo box-s">
+				<ul>
+					<li class="clearfloat">
+						<a href="#">
+							<p class="fl">商品件数：</p>
+							<span class="fr">{$nums}</span>
+						</a>
+					</li>
+					<li class="clearfloat">
+						<a href="#">
+							<p class="fl">总商品金额：</p>
+							<span class="fr">￥{$total}</span>
+						</a>
+					</li>
+					<!--<li class="clearfloat">
+						<a href="#">
+							<p class="fl">可获得积分：</p>
+							<span class="fr">78</span>
+						</a>
+					</li>-->
+					<li class="clearfloat">
+						<a href="#">
+							<p class="fl">运费：</p>
+							<span class="fr">￥0.00</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+	    	
+	    </div>
+	    
+	    <footer class="page-footer fixed-footer" id="footer">
+	     	<p class="confirm-price fl box-s">
+	     		合计：<span>￥{$total}</span>
+	     	</p>
+			<if condition="($liji eq 1)">
+				<form action="{:U('create_order')}" method="post" onsubmit="return createorder()">
+					<a href="javascript:void(0);" class="confirm-submit fl">
+						<input type="hidden" name="nums" value="{$list.num}">
+						<input type="hidden" name="product_id" value="{$list.id}">
+						<input type="hidden" name="total" value="{$list.allprice}">
+						<input type="hidden" name="peisong" value="" class="peisong">
+						<input type="hidden" name="addressid" value="{$address.id}">
+						<input type="hidden" name="liuyan" value="" class="liuyan">
+						<input type="submit" value="提交订单" style="background: #D24239;border: 0px;">
+					</a>
+				</form>
+				<else />
+				<form action="{:U('create_cart_order')}" method="post" onsubmit="return createorder()">
+					<a href="javascript:void(0);" class="confirm-submit fl">
+						<input type="hidden" name="cartid" value="{$cartid}">
+						<input type="hidden" name="peisong" value="" class="peisong">
+						<input type="hidden" name="addressid" value="{$address.id}">
+						<input type="hidden" name="liuyan" value="" class="liuyan">
+						<input type="submit" value="提交订单" style="background: #D24239;border: 0px;">
+					</a>
+				</form>
+				</if>
+
+	    </footer>
+	</body>
+	<script type="text/javascript" src="__PUBLIC__/wapjs/jquery-1.8.3.min.js" ></script>
+	<script src="__PUBLIC__/wapjs/fastclick.js"></script>
+	<script src="__PUBLIC__/wapjs/mui.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/wapjs/hmt.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/wapjs/psong.js" ></script>
+	<script type="text/javascript">
+		$(".shopcar-checkbox label").click(function(){
+			$(".checkall").each(function(){
+				if($(this).hasClass('shopcar-checkd')){
+					$(this).removeClass("shopcar-checkd");
+				}else{
+					$(this).addClass("shopcar-checkd");
+				}
+			})
+		})
+
+		function createorder(){
+			var peisong = $(".shopcar-checkd").attr('value');
+			var liuyan = $(".shuru").attr('value');
+			$(".liuyan").val(liuyan);
+			$(".peisong").val(peisong);
+		}
+	</script>
+</html>

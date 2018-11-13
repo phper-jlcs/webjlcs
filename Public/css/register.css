@@ -1,0 +1,64 @@
+/*样式初始化*/
+*{margin:0;padding: 0;}
+a{text-decoration: none;color: #000;}
+img {border: 0; vertical-align:middle;} 
+ul li{list-style: none;}
+body,h1,h2,h3,h4,h5,h6{font: 12px 宋体,Times New Roman;}
+body{
+	background: url(../images/banner1.jpg) no-repeat center;
+	background-size:100% 100%; 
+    background-attachment:fixed;
+	}
+
+/*预定义样式*/
+.w{width: 1000px;margin: 0 auto;}
+.fl{float: left;}
+.fr{float: right;margin-top: 10px;}
+.clear{clear:both;}
+.center{margin:0 auto;}
+.border{border:1px solid red;}
+
+table{width: 360px;height: 240px;border:none;margin: 0 auto;}
+tr,th,td{height: 20px;}
+th{width: 60px;}
+input:focus{border: 2px solid orange;}
+/*用户注册*/
+.top{width: 100%;background: #fff;}
+.top .logo{width: 100%;}
+.login{width: 400px;height: 470px;margin-left: 50%; margin-top: 40px;background: #E5E5E5;color:#000;margin-right: 0px;border-radius: 4px;}
+.login .login_center{width: 360px;margin: 0 auto;}
+.regist{width: 600px;height: 500px;margin:20px auto;background:#E5E5E5;color:#000;border-radius: 6px;}
+/*.regist_center{width: 760px;margin: 10px auto;}*/
+.regist .regist_top .left{height: 40px;line-height: 40px;font-weight: bold;font-size: 20px;}
+.regist .regist_top .right{height: 40px;line-height: 40px;font-size: 13px;}
+.regist .regist_top .right a{color:#ff6700;font-weight: bold;}
+.regist .regist_top .right a:hover{color:orange;}
+.xian{height: 2px;background: #ff6700;margin: 8px auto;}
+
+.regist_main{padding-left:45px;}
+.regist_main .username{font:16px Times New Roman;height: 40px;line-height: 40px;margin:20px 0;}
+.regist_main .username .shurukuang{width: 235px;height: 30px;border:1px solid #ccc;padding:5px 10px; }
+.regist_main .username .yanzhengma{width: 100px;height: 30px;border:1px solid #ccc;padding:5px 10px; }
+.regist_main .username .shurukuang:focus{border: 1px solid blue;background: #F0FFFF;}
+.regist_main .username .yanzhengma:focus{border: 1px solid blue;background: #F0FFFF;}
+.regist_main .username .right{margin-left: 20px;}
+
+.regist_main .username span{display:inline-block;margin-left:20px;font-size: 12px;color: #ccc;font-weight: bold;}
+.regist_main .username span:hover{color: #ff6700;}
+
+.regist .regist_center .regist_submit{margin: 10px auto;}
+.regist .regist_center .submit{border:none;width: 260px;height: 45px;margin-left:120px;background: #ff6700;color: #fff; font-size: 22px;font-weight: bold;letter-spacing: 8px;cursor:pointer;}
+.regist .regist_center .submit:hover{border:1px solid #ccc;}
+
+footer{width: 100%;height: 80px;background:#fff;padding: 30px 0;}
+footer .copyright{height: 30px;line-height: 30px;font-size: 13px;word-spacing: 15px;text-align: center;}
+footer .copyright:first-of-type{margin-top: 10px;}
+.hui{
+    width: 100px;
+    float: left;
+    margin-left: 400px;
+}
+.hui a{
+    color:#C76621;
+    font-size: 20px;
+}

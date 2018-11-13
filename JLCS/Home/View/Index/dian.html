@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>选位系统</title>
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/css/dian.css" />
+    <style>
+        .content{
+            width: 100%;
+            height: 100px;
+            background: black;
+            float: left;
+            margin-top: 150px;
+        }
+        *{margin:0;padding:0;list-style-type:none;}
+        a,img{border:0;}
+        body{font:12px/180% Arial, Helvetica, sans-serif, "宋体";}
+        /* suspend */
+        .suspend{width:40px;height:198px;position:fixed;top:200px;right:0;overflow:hidden;z-index:9999;}
+        .suspend dl{width:120px;height:198px;border-radius:25px 0 0 25px;padding-left:40px;box-shadow:0 0 5px #e4e8ec;}
+        .suspend dl dt{width:40px;height:198px;background:url(__PUBLIC__/images/suspend.png);position:absolute;top:0;left:0;cursor:pointer;}
+        .suspend dl dd.suspendQQ{width:120px;height:85px;background:#ffffff;}
+        .suspend dl dd.suspendQQ a{width:120px;height:85px;display:block;background:url(__PUBLIC__/images/suspend.png) -40px 0;overflow:hidden;}
+        .suspend dl dd.suspendTel{width:120px;height:112px;background:#ffffff;border-top:1px solid #e4e8ec;}
+        .suspend dl dd.suspendTel a{width:120px;height:112px;display:block;background:url(__PUBLIC__/images/suspend.png) -40px -86px;overflow:hidden;}
+        * html .suspend{position:absolute;left:expression(eval(document.documentElement.scrollRight));top:expression(eval(document.documentElement.scrollTop+200))}
+    </style>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-1.4.2.min.js"></script>
+</head>
+<body style="overflow-x: hidden;">
+<div id="glideDiv0">
+    <div id="nav2_ex" class="nav2_index">
+        <!--top -->
+        <div id="headTopBg">
+            <div id="headTop" class="w1024">
+                <div class="headTopRight">
+                    <ul id="nav_all">
+                        <if condition = "$_SESSION['name']">
+                            <li><a href="__MODULE__/User/login" >{$_SESSION['name']}</a></li>
+                            <a href="__MODULE__/Cart/index">我的认捐库</a>
+                            <li><a href="__MODULE__/User/dologot">退出</a></li>
+                            <else />
+                            <li><a href="__MODULE__/User/login" >登录</a></li>
+                            <li><a href="__MODULE__/User/register">注册</a></li>
+                            <li><a href="__MODULE__/User/activation" >激活</a></li>
+                        </if>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--top_end -->
+        <div class="nav2_ex">
+            <div id="topLogo"><a href="{:U('Index/index1')}"><img src="__PUBLIC__/images/logo.jpg"/></a></div>
+            <div id="topMenu" >
+                <a href="__MODULE__/Index/index">首页</a>
+                <a href="{:U('smjs')}">寺庙供奉</a>
+                <a href="{:U('smgh')}">生命关怀</a>
+                <a href="__MODULE__/Index/fjzh">佛教智慧</a>
+                <a href="__MODULE__/User/info">个人中心</a>
+                <a href="__MODULE__/Transfer/index">赠送</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div style="width: 400px;height: 30px;"></div>
+
+<div class="daohang">
+    <p><a href="__MODULE__/Index/index">首页  </a>->
+        <a href="__MODULE__/Index/jlcs_wft">万佛堂  </a>-><a href="">{$name}</a>:</p>
+</div>
+<if condition="($cat_id eq 1)">
+    <div class="grid">
+        <figure class="effect-layla">
+            <img src="__PUBLIC__/images/01.jpg"  "/>
+            <figcaption>
+                <h2 style="color:white;">佛恩殿A区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>1,'img'=>a))}">立即进入</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-sadie">
+            <img src="__PUBLIC__/images/02.jpg" alt="img02"/>
+            <figcaption>
+                <h2 style="color:white;">佛恩殿B区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>1,'img'=>b))}">立即进入</a>
+            </figcaption>
+        </figure>
+    </div>
+    <elseif condition="($cat_id eq 2)" />
+    <div class="grid">
+        <figure class="effect-layla">
+            <img src="__PUBLIC__/images/01.jpg" alt="img01"/>
+            <figcaption>
+                <h2 style="color:white;">佛孝殿A区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>2,'img'=>c))}">立即进入</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-sadie">
+            <img src="__PUBLIC__/images/02.jpg" alt="img02"/>
+            <figcaption>
+                <h2 style="color:white;">佛孝殿B区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>2,'img'=>d))}">立即进入</a>
+            </figcaption>
+        </figure>
+    </div>
+    <elseif condition="($cat_id eq 4)" />
+    <div class="grid">
+        <figure class="effect-layla">
+            <img src="__PUBLIC__/images/01.jpg" alt="img01"/>
+            <figcaption>
+                <h2 style="color:white;">佛裕殿A区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>4,'img'=>e))}">立即进入</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-sadie">
+            <img src="__PUBLIC__/images/02.jpg" alt="img02"/>
+            <figcaption>
+                <h2 style="color:white;">佛裕殿B区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>4,'img'=>f))}">立即进入</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-sadie">
+            <img src="__PUBLIC__/images/03.jpg" alt="img03"/>
+            <figcaption>
+                <h2 style="color:white;">佛裕殿C区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>4,'img'=>g))}">立即进入</a>
+            </figcaption>
+        </figure>
+    </div>
+    <elseif condition="($cat_id eq 10)" />
+    <div class="grid">
+        <figure class="effect-layla">
+            <img src="__PUBLIC__/images/01.jpg" alt="img01"/>
+            <figcaption>
+                <h2 style="color:white;">佛仁殿A区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>10,'img'=>h))}">立即进入</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-sadie">
+            <img src="__PUBLIC__/images/02.jpg" alt="img02"/>
+            <figcaption>
+                <h2 style="color:white;">佛仁殿B区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>10,'img'=>i))}">立即进入</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-sadie">
+            <img src="__PUBLIC__/images/03.jpg" alt="img03"/>
+            <figcaption>
+                <h2 style="color:white;">佛仁殿C区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>10,'img'=>j))}">立即进入</a>
+            </figcaption>
+        </figure>
+    </div>
+    <elseif condition="($cat_id eq 5)" />
+    <div class="grid">
+        <figure class="effect-layla">
+            <img src="__PUBLIC__/images/01.jpg" alt="img01"/>
+            <figcaption>
+                <h2 style="color:white;">佛光殿A区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>5,'img'=>k))}">立即进入</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-sadie">
+            <img src="__PUBLIC__/images/02.jpg" alt="img02"/>
+            <figcaption>
+                <h2 style="color:white;">佛光殿B区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>5,'img'=>l))}">立即进入</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-sadie">
+            <img src="__PUBLIC__/images/03.jpg" alt="img03"/>
+            <figcaption>
+                <h2 style="color:white;">佛光殿C区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>5,'img'=>m))}">立即进入</a>
+            </figcaption>
+        </figure>
+    </div>
+    <elseif condition="($cat_id eq 6)" />
+    <div class="grid">
+        <figure class="effect-layla">
+            <img src="__PUBLIC__/images/01.jpg" alt="img01"/>
+            <figcaption>
+                <h2 style="color:white;">佛仪殿A区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>6,'img'=>n))}">立即进入</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-sadie">
+            <img src="__PUBLIC__/images/02.jpg" alt="img02"/>
+            <figcaption>
+                <h2 style="color:white;">佛仪殿B区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>6,'img'=>o))}">立即进入</a>
+            </figcaption>
+        </figure>
+    </div>
+    <elseif condition="($cat_id eq 7)" />
+    <div class="grid">
+        <figure class="effect-layla">
+            <img src="__PUBLIC__/images/01.jpg" alt="img01"/>
+            <figcaption>
+                <h2 style="color:white;">佛泽殿A区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>7,'img'=>p))}">立即进入</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-sadie">
+            <img src="__PUBLIC__/images/02.jpg" alt="img02"/>
+            <figcaption>
+                <h2 style="color:white;">佛泽殿B区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>7,'img'=>q))}">立即进入</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-sadie">
+            <img src="__PUBLIC__/images/03.jpg" alt="img03"/>
+            <figcaption>
+                <h2 style="color:white;">佛泽殿C区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>7,'img'=>r))}">立即进入</a>
+            </figcaption>
+        </figure>
+    </div>
+    <elseif condition="($cat_id eq 8)" />
+    <div class="grid">
+        <figure class="effect-layla">
+            <img src="__PUBLIC__/images/01.jpg" alt="img01"/>
+            <figcaption>
+                <h2 style="color:white;">佛照殿A区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>8,'img'=>s))}">立即进入</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-sadie">
+            <img src="__PUBLIC__/images/02.jpg" alt="img02"/>
+            <figcaption>
+                <h2 style="color:white;">佛照殿B区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>8,'img'=>t))}">立即进入</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-sadie">
+            <img src="__PUBLIC__/images/03.jpg" alt="img03"/>
+            <figcaption>
+                <h2 style="color:white;">佛照殿C区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>8,'img'=>u))}">立即进入</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-sadie">
+            <img src="__PUBLIC__/images/03.jpg" alt="img03"/>
+            <figcaption>
+                <h2 style="color:white;">佛照殿D区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>8,'img'=>v))}">立即进入</a>
+            </figcaption>
+        </figure>
+    </div>
+    <elseif condition="($cat_id eq 9)" />
+    <div class="grid">
+        <figure class="effect-layla">
+            <img src="__PUBLIC__/images/01.jpg" alt="img01"/>
+            <figcaption>
+                <h2 style="color:white;">佛禄殿A区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>9,'img'=>w))}">立即进入</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-sadie">
+            <img src="__PUBLIC__/images/02.jpg" alt="img02"/>
+            <figcaption>
+                <h2 style="color:white;">佛禄殿B区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>9,'img'=>x))}">立即进入</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-sadie">
+            <img src="__PUBLIC__/images/03.jpg" alt="img03"/>
+            <figcaption>
+                <h2 style="color:white;">佛禄殿C区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>9,'img'=>y))}">立即进入</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-sadie">
+            <img src="__PUBLIC__/images/03.jpg" alt="img03"/>
+            <figcaption>
+                <h2 style="color:white;">佛禄殿D区</h2>
+                <a href= "{:U('Product/index',array('cat_id'=>9,'img'=>z))}">立即进入</a>
+            </figcaption>
+        </figure>
+    </div>
+
+    <else />
+</if>
+   <div style="width:1200px;margin: 5px auto;">
+	<img src="__PUBLIC__/images/xiangqing.png"/>
+   </div>
+
+<include file="Public/footer" />
+<div class="suspend">
+    <dl>
+        <dt class="IE6PNG"></dt>
+        <dd class="suspendQQ"><a href="http://wpa.qq.com/msgrd?v=3&uin=1581893936&site=qq&menu=yes" target="_blank"></a></dd>
+        <dd class="suspendTel"><a href="http://wpa.qq.com/msgrd?v=3&uin=1581893936&site=qq&menu=yes" target="_blank"></a></dd>
+    </dl>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $(".suspend").mouseover(function() {
+            $(this).stop();
+            $(this).animate({width: 160}, 400);
+        })
+
+        $(".suspend").mouseout(function() {
+            $(this).stop();
+            $(this).animate({width: 40}, 400);
+        });
+
+    });
+</script>
+
+</body>
+</html>

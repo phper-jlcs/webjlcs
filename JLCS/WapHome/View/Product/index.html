@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>商品详情</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="__PUBLIC__/wapjs/rem.js"></script> 
+    <script src="__PUBLIC__/wapjs/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/base.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/page.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/all.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/loaders.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/loading.css"/>
+<script type="text/javascript">
+	$(window).load(function(){
+		$(".loading").addClass("loader-chanage")
+		$(".loading").fadeOut(300)
+	})
+</script>
+</head>
+<!--loading页开始-->
+<div class="loading">
+	<div class="loader">
+        <div class="loader-inner pacman">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+	</div>
+</div>
+<!--loading页结束-->
+	<body>
+		<header class="mui-bar mui-bar-nav report-header box-s" id="header">
+			<a href="javascript:history.go(-1)"><i class="iconfont icon-fanhui fl"></i></a>
+			<p>商品详情</p>
+	    </header>
+	    <div id="main" class="mui-clearfix">
+	    	<div class="banner swiper-container">
+	            <div class="swiper-wrapper">
+	                <div class="swiper-slide"><a href="javascript:void(0)"><img class="swiper-lazy" data-src="__PUBLIC__/upload/banner1.jpg" alt=""></a></div>
+	                <div class="swiper-slide"><a href="javascript:void(0)"><img class="swiper-lazy" data-src="__PUBLIC__/upload/banner2.jpg" alt=""></a></div>
+	                <div class="swiper-slide"><a href="javascript:void(0)"><img class="swiper-lazy" data-src="__PUBLIC__/upload/banner3.jpg" alt=""></a></div>
+	                <div class="swiper-slide"><a href="javascript:void(0)"><img class="swiper-lazy" data-src="__PUBLIC__/upload/banner4.jpg" alt=""></a></div>
+	            </div>
+	            <div class="swiper-pagination"></div>
+	        </div>
+	        <div class="inte-top clearfloat box-s">
+	        	<div class="left clearfloat fl">
+					<input type="hidden" value="1">
+	        		<p class="tit" value="{$products.id}">{$products.name}</p>
+	        		<p class="price"><span>{$products.now_price}</span>元<samp>￥{$products.old_price}元</samp></p>
+	        	</div>
+				<if condition="($collect_status eq 1)">
+					<div class="right clearfloat fr del_shoucang" value="{$collects.id}">
+						<i class="iconfont icon-shoucang1 del_shoucangsign"></i>
+						<p class="del_shoucangfont">已收藏</p>
+					</div>
+					<else />
+					<div class="right clearfloat fr shoucang" value="{$products.id}">
+						<i class="iconfont icon-shoucang shoucangsign"></i>
+						<p class="shoucangfont">收藏</p>
+					</div>
+					</if>
+	        </div>
+	        <div class="addj clearfloat">
+	        	<ul>
+	        		<li class="num">商品数量</li>
+	        		<li class="fuhao"><i class="iconfont icon-jian"></i></li>
+	        		<li class="shu">1</li>
+	        		<li class="fuhao"><i class="iconfont icon-jia-copy"></i></li>
+	        		<li class="last">库存<span class="kucun">{$products.store}</span>件</li>
+	        	</ul>
+	        </div>
+	        <article class="detail-article">
+				<nav>
+					<ul class="article">
+						<li id="talkbox1" class="article-active">商品详情</li>
+						<li id="talkbox2">商品评价(4)</li>
+					</ul>
+				</nav>
+
+				<section class="talkbox1">
+					<img src="__PUBLIC__/wapimages/details/details01.png" style="vertical-align:bottom; display:block"/>
+					<img src="__PUBLIC__/wapimages/details/details02.png" style="vertical-align:bottom; display:block"/>
+					<img src="__PUBLIC__/wapimages/details/details03.png" style="vertical-align:bottom; display:block"/>
+					<img src="__PUBLIC__/wapimages/details/details04.png" style="vertical-align:bottom; display:block"/>
+					<img src="__PUBLIC__/wapimages/details/details05.png" style="vertical-align:bottom; display:block"/>
+					<img src="__PUBLIC__/wapimages/details/details06.jpg" style="vertical-align:bottom; display:block"/>
+				</section>
+
+				<section class="talkbox2" style="display: none;">
+					<ul class="talk">
+						<li>
+							<figure><img src="__PUBLIC__/upload/21.png"/></figure>
+							<dl>
+								<dt>
+									<p>瑾晨</p>
+									<time>2015.11.17</time>
+									<div class="star">
+										<span><img src="__PUBLIC__/img/detail-iocn01.png"/></span>
+										<span><img src="__PUBLIC__/img/detail-iocn01.png"/></span>
+										<span><img src="__PUBLIC__/img/detail-iocn01.png"/></span>
+										<span><img src="__PUBLIC__/img/detail-iocn001.png"/></span>
+										<span><img src="__PUBLIC__/img/detail-iocn001.png"/></span>
+									</div>
+								</dt>
+								<dd>哎哟不错哦，很性感哦！</dd>
+								<small>颜色：豹纹凯特</small>
+							</dl>
+						</li>
+						<li>
+							<figure><img src="__PUBLIC__/upload/detail-tou.png"/></figure>
+							<dl>
+								<dt>
+									<p>瑾晨</p>
+									<time>2015.11.17</time>
+									<div class="star">
+										<span><img src="__PUBLIC__/img/detail-iocn01.png"/></span>
+										<span><img src="__PUBLIC__/img/detail-iocn01.png"/></span>
+										<span><img src="__PUBLIC__/img/detail-iocn01.png"/></span>
+										<span><img src="__PUBLIC__/img/detail-iocn001.png"/></span>
+										<span><img src="__PUBLIC__/img/detail-iocn001.png"/></span>
+									</div>
+								</dt>
+								<dd>哎哟不错哦，很性感哦！</dd>
+								<small>颜色：豹纹凯特</small>
+								<div class="picbox">
+									<img src="__PUBLIC__/upload/2.jpg"/>
+									<img src="__PUBLIC__/upload/2.jpg"/>
+									<img src="__PUBLIC__/upload/2.jpg"/>
+									<img src="__PUBLIC__/upload/2.jpg"/>
+								</div>
+							</dl>
+						</li>
+						<li>
+							<figure><img src="__PUBLIC__/upload/detail-tou.png"/></figure>
+							<dl>
+								<dt>
+									<p>瑾晨</p>
+									<time>2015.11.17</time>
+									<div class="star">
+										<span><img src="__PUBLIC__/img/detail-iocn01.png"/></span>
+										<span><img src="__PUBLIC__/img/detail-iocn01.png"/></span>
+										<span><img src="__PUBLIC__/img/detail-iocn01.png"/></span>
+										<span><img src="__PUBLIC__/img/detail-iocn001.png"/></span>
+										<span><img src="__PUBLIC__/img/detail-iocn001.png"/></span>
+									</div>
+								</dt>
+								<dd>哎哟不错哦，很性感哦！</dd>
+								<small>颜色：豹纹凯特</small>
+							</dl>
+						</li>
+						<li>
+							<figure><img src="__PUBLIC__/upload/detail-tou.png"/></figure>
+							<dl>
+								<dt>
+									<p>瑾晨</p>
+									<time>2015.11.17</time>
+									<div class="star">
+										<span><img src="__PUBLIC__/img/detail-iocn01.png"/></span>
+										<span><img src="__PUBLIC__/img/detail-iocn01.png"/></span>
+										<span><img src="__PUBLIC__/img/detail-iocn01.png"/></span>
+										<span><img src="__PUBLIC__/img/detail-iocn001.png"/></span>
+										<span><img src="__PUBLIC__/img/detail-iocn001.png"/></span>
+									</div>
+								</dt>
+								<dd>哎哟不错哦，很性感哦！</dd>
+								<small>颜色：豹纹凯特</small>
+								<div class="picbox">
+									<img src="__PUBLIC__/upload/2.jpg"/>
+									<img src="__PUBLIC__/upload/2.jpg"/>
+								</div>
+							</dl>
+						</li>
+					</ul>
+				</section>
+				
+			</article>
+	    </div>
+	    
+	    <footer class="page-footer fixed-footer" id="footer">
+	     	<a href="javascript:void(0);" class="shopcaradd fl" onclick="cart()">
+	     		加入购物车
+	     	</a>
+			<form action="{:U('Order/index')}" method="post" onsubmit="order()">
+				<input type="hidden" name="id" value="" class="productid">
+				<input type="hidden" name="num" value="" class="productnum">
+	     	<a href="javascript:void(0)" class="ljdhuan fl"">
+				<input type="submit" name="" id="" value="立即购买" style="background: #D24239;border: 0 solid #D24239;">
+	     	</a>
+			</form>
+	    </footer>
+	</body>
+	<script type="text/javascript" src="__PUBLIC__/wapjs/jquery-1.8.3.min.js" ></script>
+	<script src="__PUBLIC__/wapjs/fastclick.js"></script>
+	<script src="__PUBLIC__/wapjs/mui.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/wapjs/hmt.js" ></script>
+	<!--插件-->
+	<link rel="stylesheet" href="__PUBLIC__/wapcss/swiper.min.css">
+	<script src="__PUBLIC__/wapjs/swiper.jquery.min.js"></script>
+	<!--插件-->
+	<script src="__PUBLIC__/wapjs/global.js"></script>
+	<script >
+	    $(function () {
+	        var banner = new Swiper('.banner',{
+	            autoplay: 5000,
+	            pagination : '.swiper-pagination',
+	            paginationClickable: true,
+	            lazyLoading : true,
+	            loop:true
+	        });
+	
+	         mui('.pop-schwrap .sch-input').input();
+	        var deceleration = mui.os.ios?0.003:0.0009;
+	         mui('.pop-schwrap .scroll-wrap').scroll({
+	                bounce: true,
+	                indicators: true,
+	                deceleration:deceleration
+	        });
+	        $('.top-sch-box .fdj,.top-sch-box .sch-txt,.pop-schwrap .btn-back').on('click',function () {
+	            $('html,body').toggleClass('holding');
+	            $('.pop-schwrap').toggleClass('on');
+	            if($('.pop-schwrap').hasClass('on')) {;
+	                $('.pop-schwrap .sch-input').focus();
+	            }
+	        });
+	        
+	        $('.article li').click(function(){
+
+			$(this).addClass('article-active').siblings().removeClass('article-active');
+			if($(this).attr("id")=="talkbox1"){
+				$('.talkbox1').show();
+				$('.talkbox2').hide();
+			}else{
+				$('.talkbox2').show();
+				$('.talkbox1').hide();
+			}
+
+		});
+
+
+			//加减商品数量
+			$(".icon-jian").click(function(){
+				if($(".shu").html() == 1){
+					alert('最少要买一个哦');
+				}else{
+					var num = parseInt($(".shu").html()) - 1;
+					$(".shu").html(num);
+				}
+			})
+			$(".icon-jia-copy").click(function(){
+				if(parseInt($(".shu").html()) >= parseInt($(".kucun").html())){
+					alert('库存就这么多了');
+				}else{
+					var num = parseInt($(".shu").html()) + 1;
+					$(".shu").html(num);
+				}
+			})
+	    });
+		function cart(){
+			//获取 id num
+			var id = $(".tit").attr('value');
+			var num = $(".shu").html();
+			//发送请求
+			$.ajax({
+				type:'POST',
+				url:'__MODULE__/Cart/doadd',
+				data:{id:id,num:num},
+				success:function(data){
+					if(data == 1){
+						window.location.href="__MODULE__/Cart/index";
+					}else if(data == 2){
+						alert('当前商品已经存在您的购物车，请勿重复添加');
+					}
+				}
+			})
+		}
+
+		function order(){
+			var id = $(".tit").attr('value');
+			var num = $(".shu").html();
+			$(".productid").val(id);
+			$(".productnum").val(num);
+		}
+		//收藏
+		$(".shoucang").click(function(){
+			var id= $(this).attr('value');
+			var url = "__MODULE__/Product/ajax_shoucang";
+			if($(".shoucangsign").hasClass("icon-shoucang1")){
+				var url = "__MODULE__/Product/ajax_shoucang_del";
+				$.post(url,{id:id},function(data){
+					if(data == 1){
+						$(".shoucangsign").removeClass('icon-shoucang1').addClass('icon-shoucang');
+						$(".shoucangfont").html('收藏');
+					}
+				})
+			}else{
+				$.post(url,{id:id},function(data){
+					if(data == 1){
+						$(".shoucangsign").removeClass('icon-shoucang').addClass('icon-shoucang1');
+						$(".shoucangfont").html('已收藏');
+					}
+				})
+			}
+		})
+		//取消收藏
+		$(".del_shoucang").click(function(){
+			var id= $(this).attr('value');
+			var url = "__MODULE__/Product/ajax_del_shoucang";
+			if($(".del_shoucangsign").hasClass('icon-shoucang')){
+				var url = "__MODULE__/Product/ajax_shoucang";
+				$.post(url,{id:id},function(data){
+					if(data == 1){
+						$(".del_shoucangsign").removeClass('icon-shoucang').addClass('icon-shoucang1');
+						$(".del_shoucangfont").html('已收藏');
+					}
+				})
+			}
+			$.post(url,{id:id},function(data){
+				if(data == 1){
+					$(".del_shoucangsign").removeClass('icon-shoucang1').addClass('icon-shoucang');
+					$(".del_shoucangfont").html('收藏');
+				}
+			})
+		})
+	</script>
+</html>

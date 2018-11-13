@@ -1,0 +1,1227 @@
+[ 2018-10-08T13:53:09+08:00 ] ::1 /webjlcs/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `users` WHERE `name` = 'admintong' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T13:53:10+08:00 ] ::1 /webjlcs/Admin/Index/main_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `owns` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `order_details` [ RunTime:0.2594s ]
+SQL: SHOW COLUMNS FROM `agents` [ RunTime:0.1024s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `owns` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `orders` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order_details` WHERE `orderid` = 149  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `cats` [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `regions` [ RunTime:0.0176s ]
+SQL: SHOW COLUMNS FROM `temples` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `products` WHERE `id` = 1870 LIMIT 1   [ RunTime:0.0226s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 246 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cats` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `regions` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `temples` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order_details` WHERE `orderid` = 148  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE `id` = 1764 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 234 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cats` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `regions` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `temples` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\IndexController.class.php on line 98 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-10-08T13:53:10+08:00 ] ::1 /webjlcs/Admin/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T13:53:10+08:00 ] ::1 /webjlcs/Admin/Index/bottom.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.018001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.019001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T13:53:10+08:00 ] ::1 /webjlcs/Admin/Index/swich.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T13:53:10+08:00 ] ::1 /webjlcs/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\690cc1efdeb3b11f1e83f975eee8e40c.php 第 20 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\690cc1efdeb3b11f1e83f975eee8e40c.php 第 22 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-10-08T13:53:10+08:00 ] ::1 /webjlcs/Admin/Index/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T13:53:10+08:00 ] ::1 /webjlcs/Admin/Index/include/images/main/bottombg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T13:53:10+08:00 ] ::1 /webjlcs/Admin/Index/css/main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T13:53:10+08:00 ] ::1 /webjlcs/Admin/Index/include/images/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T13:53:17+08:00 ] ::1 /webjlcs/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `article_lists` [ RunTime:0.0266s ]
+SQL: SELECT * FROM `article_lists`  [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\ArticleController.class.php on line 9 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keyword D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\3d28ec372821016f53673fcf93d9db70.php 第 60 行.
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\3d28ec372821016f53673fcf93d9db70.php 第 95 行.
+NOTIC: [8] Undefined variable: count D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\3d28ec372821016f53673fcf93d9db70.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-10-08T13:53:17+08:00 ] ::1 /webjlcs/Admin/Article/css/main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T13:53:17+08:00 ] ::1 /webjlcs/Admin/Article/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T13:53:17+08:00 ] ::1 /webjlcs/Admin/Article/images/main/list_input.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T13:53:17+08:00 ] ::1 /webjlcs/Admin/Article/images/main/list_bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T13:53:21+08:00 ] ::1 /webjlcs/Admin/Article/edit/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `article_lists` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `article_lists` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\ArticleController.class.php on line 53 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-10-08T13:53:21+08:00 ] ::1 /webjlcs/Admin/Article/edit/id/css/main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `article_lists` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `article_lists` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\ArticleController.class.php on line 53 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T13:53:21+08:00 ] ::1 /webjlcs/Admin/Article/edit/id/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `article_lists` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `article_lists` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\ArticleController.class.php on line 53 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2018-10-08T13:54:54+08:00 ] ::1 /webjlcs/Admin/Article/doedit/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `article_lists` [ RunTime:0.0156s ]
+SQL: UPDATE `article_lists` SET `article_name`='寺庙供奉',`content`='<p style=\"margin-top: 0px; margin-bottom: 0px; font-size: medium; white-space: normal; padding: 0px; list-style: none; text-indent: 2em; line-height: 2em; font-family: Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, 微软雅黑, Arial, sans-serif; color: rgb(140, 140, 140);\">寺庙供奉的传统深植于中国传统佛教文化，它始于南北朝时期。瘗窟，是古代用来埋葬僧尼和世俗信徒骨灰及尸骨的洞窟。麦积山石窟的第43窟就是西魏皇后乙弗氏的墓窟，具有佛窟和墓窟双重性质。</p><p><img src=\"/ueditor/php/upload/image/20181008/1538978055102032.png\" title=\"1538978055102032.png\" alt=\"img1.png\"/></p><p><br/></p><p style=\"margin-top: 0px; margin-bottom: 0px; font-size: medium; white-space: normal; padding: 0px; list-style: none; text-indent: 2em; line-height: 2em; font-family: Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, 微软雅黑, Arial, sans-serif; color: rgb(140, 140, 140);\">而佛位供奉，源于古代的牌位供奉。它起源于上古，在中国有数千年的传统。宋代时佛教吸收了这一传统，开始了牌位的供奉。如儒家的文庙，和历朝历代必不可少的太庙，各家族的祠堂等。</p><p><img src=\"/ueditor/php/upload/image/20181008/1538978077125295.png\" title=\"1538978077125295.png\" alt=\"img2.png\"/></p><p><br/></p><p style=\"margin-top: 0px; margin-bottom: 0px; font-size: medium; white-space: normal; padding: 0px; list-style: none; text-indent: 2em; line-height: 2em; font-family: Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, 微软雅黑, Arial, sans-serif; color: rgb(140, 140, 140);\">佛教认为，当诵经声与晨钟暮鼓交汇之际，佛祖可以为死去的亡魂开境指路，升入西方极乐世界。寺院法师每日早晚诵经，为亡灵超度，回向功德。仰凭佛光普照，三宝加被之功德。诸佛菩萨慈悲为怀，予亡灵加持庇佑，令亡者孽障消除，往生善处。但是在古代，只有帝王将相、寺院高僧、居士大德的灵位，才有资格置于佛寺，接受供奉祭拜。普通的佛教信众，没有寺庙供奉的资格。 上世纪50年代开始，台湾及东南亚地区已普遍流行寺庙殡葬，目前国内大量信众已崇尚终老寺庙，皈依佛门。我国的香港、澳门及大陆很多名人、富豪信奉佛教，捐资建庙，并于去世后，将骨灰都安放在寺院，以求与佛相伴，永沐佛光。</p><p style=\"white-space: normal;\"><img src=\"/ueditor/php/upload/image/20181008/1538978091161713.png\" title=\"1538978091161713.png\" alt=\"img4.png\"/></p><p><br/></p>',`author`='小古',`time`='2018-10-08 13:54:54' WHERE `id` = 7 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-10-08T13:54:57+08:00 ] ::1 /webjlcs/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `article_lists` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article_lists`  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\ArticleController.class.php on line 9 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keyword D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\3d28ec372821016f53673fcf93d9db70.php 第 60 行.
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\3d28ec372821016f53673fcf93d9db70.php 第 95 行.
+NOTIC: [8] Undefined variable: count D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\3d28ec372821016f53673fcf93d9db70.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-10-08T13:54:57+08:00 ] ::1 /webjlcs/Admin/Article/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T13:54:57+08:00 ] ::1 /webjlcs/Admin/Article/css/main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T13:54:57+08:00 ] ::1 /webjlcs/Admin/Article/images/main/list_input.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T13:54:57+08:00 ] ::1 /webjlcs/Admin/Article/images/main/list_bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T14:19:19+08:00 ] ::1 /webjlcs/Admin/Agent/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `agents` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `agents` WHERE ( agent_level=1 ) LIMIT 0,7   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE ( agent_level=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A01' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A01%' AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A01%' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A01%' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A02' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A02%' AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A02%' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A02%' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A03' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A03%' AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A03%' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A03%' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A04' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A04%' AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A04%' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A04%' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A05' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A05%' AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A05%' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A05%' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A06' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A06%' AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A06%' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A06%' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A07' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A07%' AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A07%' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A07%' AND `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\AgentController.class.php on line 45 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant select - assumed 'select' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\3d2e2ca8a86b39f0414aa2f58c0839a7.php 第 61 行.
+NOTIC: [8] Undefined variable: keyword D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\3d2e2ca8a86b39f0414aa2f58c0839a7.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.142400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.142400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-10-08T14:19:19+08:00 ] ::1 /webjlcs/Admin/Agent/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T14:19:19+08:00 ] ::1 /webjlcs/Admin/Agent/css/main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T14:19:19+08:00 ] ::1 /webjlcs/Admin/Agent/images/main/list_bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-10-08T14:19:19+08:00 ] ::1 /webjlcs/Admin/Agent/images/main/list_input.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T14:21:33+08:00 ] ::1 /webjlcs/Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `users` LIMIT 0,7   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keyword D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 59 行.
+NOTIC: [8] Use of undefined constant add - assumed 'add' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 63 行.
+NOTIC: [8] Use of undefined constant edit - assumed 'edit' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant del - assumed 'del' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant edit - assumed 'edit' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant del - assumed 'del' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant edit - assumed 'edit' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant del - assumed 'del' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant edit - assumed 'edit' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant del - assumed 'del' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant edit - assumed 'edit' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant del - assumed 'del' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant edit - assumed 'edit' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant del - assumed 'del' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant edit - assumed 'edit' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant del - assumed 'del' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-10-08T14:21:34+08:00 ] ::1 /webjlcs/Admin/User/css/main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T14:21:34+08:00 ] ::1 /webjlcs/Admin/User/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T14:21:34+08:00 ] ::1 /webjlcs/Admin/User/images/main/list_input.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T14:21:34+08:00 ] ::1 /webjlcs/Admin/User/images/main/add.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T14:21:34+08:00 ] ::1 /webjlcs/Admin/User/images/main/list_bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T14:21:36+08:00 ] ::1 /webjlcs/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.028001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028001s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `users` WHERE `name` = 'admintong' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-10-08T14:21:36+08:00 ] ::1 /webjlcs/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.041002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\690cc1efdeb3b11f1e83f975eee8e40c.php 第 20 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\690cc1efdeb3b11f1e83f975eee8e40c.php 第 22 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-10-08T14:21:36+08:00 ] ::1 /webjlcs/Admin/Index/bottom.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-10-08T14:21:36+08:00 ] ::1 /webjlcs/Admin/Index/include/images/main/bottombg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T14:21:36+08:00 ] ::1 /webjlcs/Admin/Index/main_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `owns` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `order_details` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `agents` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `owns` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `orders` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order_details` WHERE `orderid` = 149  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `cats` [ RunTime:0.0310s ]
+SQL: SHOW COLUMNS FROM `regions` [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `temples` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `products` WHERE `id` = 1870 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 246 LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT * FROM `cats` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `regions` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `temples` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order_details` WHERE `orderid` = 148  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `products` WHERE `id` = 1764 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 234 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cats` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `regions` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `temples` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\IndexController.class.php on line 98 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-10-08T14:21:36+08:00 ] ::1 /webjlcs/Admin/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-10-08T14:21:36+08:00 ] ::1 /webjlcs/Admin/Index/swich.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2018-10-08T14:21:36+08:00 ] ::1 /webjlcs/Admin/Index/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T14:21:36+08:00 ] ::1 /webjlcs/Admin/Index/css/main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T14:21:37+08:00 ] ::1 /webjlcs/Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `users` LIMIT 0,7   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keyword D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 59 行.
+NOTIC: [8] Use of undefined constant add - assumed 'add' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 63 行.
+NOTIC: [8] Use of undefined constant edit - assumed 'edit' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant del - assumed 'del' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant edit - assumed 'edit' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant del - assumed 'del' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant edit - assumed 'edit' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant del - assumed 'del' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant edit - assumed 'edit' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant del - assumed 'del' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant edit - assumed 'edit' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant del - assumed 'del' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant edit - assumed 'edit' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant del - assumed 'del' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant edit - assumed 'edit' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+NOTIC: [8] Use of undefined constant del - assumed 'del' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5bb8232fb57b66a4f55e01fb52596e8.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-10-08T14:21:37+08:00 ] ::1 /webjlcs/Admin/User/images/main/add.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T14:21:38+08:00 ] ::1 /webjlcs/Admin/User/images/main/list_input.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-10-08T14:21:38+08:00 ] ::1 /webjlcs/Admin/User/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T14:21:38+08:00 ] ::1 /webjlcs/Admin/User/css/main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T14:21:38+08:00 ] ::1 /webjlcs/Admin/User/images/main/list_bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-10-08T14:21:40+08:00 ] ::1 /webjlcs/Admin/Usercart/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user_cartids` [ RunTime:0.0312s ]
+SQL: SELECT * FROM `user_cartids` LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_cartids` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\UsercartController.class.php on line 22 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keyword D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5b40575dda5d129d41ccda12babe05c.php 第 61 行.
+NOTIC: [8] Use of undefined constant look - assumed 'look' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5b40575dda5d129d41ccda12babe05c.php 第 86 行.
+NOTIC: [8] Use of undefined constant look - assumed 'look' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b5b40575dda5d129d41ccda12babe05c.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-10-08T14:21:40+08:00 ] ::1 /webjlcs/Admin/Usercart/css/main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T14:21:40+08:00 ] ::1 /webjlcs/Admin/Usercart/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T14:21:40+08:00 ] ::1 /webjlcs/Admin/Usercart/images/main/list_input.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-10-08T14:21:40+08:00 ] ::1 /webjlcs/Admin/Usercart/images/main/list_bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+
+[ 2018-10-08T14:21:44+08:00 ] ::1 /webjlcs/Admin/Usercart/look/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user_cartids` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `owns` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `user_cartids` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE `user_cartid` = 'CJL-700001' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `owns` WHERE `user_id` = 44  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cats` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `regions` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `temples` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `products` WHERE `id` = 1764 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 234 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cats` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `regions` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `temples` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `products` WHERE `id` = 1764 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 234 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cats` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `regions` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `temples` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\UsercartController.class.php on line 49 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant doedit - assumed 'doedit' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b3fbc924bc98f87e9600d40929950054.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b3fbc924bc98f87e9600d40929950054.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-10-08T14:21:44+08:00 ] ::1 /webjlcs/Admin/Usercart/look/id/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user_cartids` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `owns` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `user_cartids` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE `user_cartid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `owns` WHERE `user_id` = null  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: info D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\UsercartController.class.php 第 48 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\UsercartController.class.php on line 49 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant doedit - assumed 'doedit' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b3fbc924bc98f87e9600d40929950054.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-10-08T14:21:44+08:00 ] ::1 /webjlcs/Admin/Usercart/look/id/css/main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user_cartids` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `owns` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `user_cartids` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE `user_cartid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `owns` WHERE `user_id` = null  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: info D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\UsercartController.class.php 第 48 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\UsercartController.class.php on line 49 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant doedit - assumed 'doedit' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\b3fbc924bc98f87e9600d40929950054.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-10-08T14:22:20+08:00 ] ::1 /webjlcs/Admin/Agent/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `agents` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `agents` WHERE ( agent_level=1 ) LIMIT 0,7   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE ( agent_level=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A01' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A01%' AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A01%' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A01%' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A02' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A02%' AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A02%' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A02%' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A03' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A03%' AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A03%' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A03%' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A04' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A04%' AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A04%' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A04%' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A05' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A05%' AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A05%' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A05%' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A06' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A06%' AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A06%' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A06%' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A07' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A07%' AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A07%' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A07%' AND `status` = 1  [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\AgentController.class.php on line 45 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant select - assumed 'select' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\3d2e2ca8a86b39f0414aa2f58c0839a7.php 第 61 行.
+NOTIC: [8] Undefined variable: keyword D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\3d2e2ca8a86b39f0414aa2f58c0839a7.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-10-08T14:22:21+08:00 ] ::1 /webjlcs/Admin/Agent/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T14:22:21+08:00 ] ::1 /webjlcs/Admin/Agent/css/main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T14:22:21+08:00 ] ::1 /webjlcs/Admin/Agent/images/main/list_input.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T14:22:21+08:00 ] ::1 /webjlcs/Admin/Agent/images/main/list_bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T16:29:41+08:00 ] ::1 /webjlcs/Admin/Agent/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `agents` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `agents` WHERE ( agent_level=1 ) LIMIT 0,7   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE ( agent_level=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A01' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A01%' AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A01%' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A01%' AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A02' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A02%' AND `status` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A02%' AND `status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A02%' AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A03' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A03%' AND `status` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A03%' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A03%' AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A04' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A04%' AND `status` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A04%' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A04%' AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A05' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A05%' AND `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A05%' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A05%' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A06' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A06%' AND `status` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A06%' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A06%' AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `pid` = 'A07' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A07%' AND `status` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `agent_aid` LIKE 'A07%' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `orders` WHERE `agent_aid` LIKE 'A07%' AND `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\AgentController.class.php on line 45 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant select - assumed 'select' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\3d2e2ca8a86b39f0414aa2f58c0839a7.php 第 61 行.
+NOTIC: [8] Undefined variable: keyword D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\3d2e2ca8a86b39f0414aa2f58c0839a7.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-10-08T16:29:42+08:00 ] ::1 /webjlcs/Admin/Agent/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T16:29:42+08:00 ] ::1 /webjlcs/Admin/Agent/css/main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T16:29:42+08:00 ] ::1 /webjlcs/Admin/Agent/images/main/list_bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-10-08T16:29:42+08:00 ] ::1 /webjlcs/Admin/Agent/images/main/list_input.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-10-08T16:29:42+08:00 ] ::1 /webjlcs/Admin/Agent/twoagent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `agents` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `agents` WHERE `agent_level` = 2 AND `pid` = 'A01' LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `agent_level` = 2 AND `pid` = 'A01' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `agents` WHERE `agent_level` = 1  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\AgentController.class.php on line 91 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant twoagent - assumed 'twoagent' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Admin\d9b61541a329ab968bb1f9a8554f6586.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-10-08T16:29:42+08:00 ] ::1 /webjlcs/Admin/Agent/css/main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T16:29:42+08:00 ] ::1 /webjlcs/Admin/Agent/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T16:29:42+08:00 ] ::1 /webjlcs/Admin/Agent/images/main/list_bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T16:29:42+08:00 ] ::1 /webjlcs/Admin/Agent/images/main/list_input.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-10-08T16:29:42+08:00 ] ::1 /webjlcs/Admin/Agent/threeagent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `agents` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `agents` WHERE `agent_level` = 3 AND `pid` = 'A01b01' LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `agents` WHERE `agent_level` = 3 AND `pid` = 'A01b01' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `agents` WHERE `agent_level` = 2  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Admin\Controller\AgentController.class.php on line 135 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2018-10-08T16:29:42+08:00 ] ::1 /webjlcs/Admin/Agent/css/main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:css
+
+[ 2018-10-08T16:29:42+08:00 ] ::1 /webjlcs/Admin/Agent/images/main/list_bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+
+[ 2018-10-08T16:29:42+08:00 ] ::1 /webjlcs/Admin/Agent/images/main/list_input.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+
+[ 2018-10-08T16:29:43+08:00 ] ::1 /webjlcs/Admin/Agent/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 非法操作:css
+

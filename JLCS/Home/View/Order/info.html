@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>中国帝宫</title>
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/css/order1.css" />
+    <style>
+
+    </style>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+<div id="glideDiv0">
+    <div id="nav2_ex" class="nav2_index">
+        <!--top -->
+        <div id="headTopBg">
+            <div id="headTop" class="w1024">
+                <div class="headTopRight">
+                    <ul id="nav_all">
+                        <if condition = "$_SESSION['name']">
+                            <li><a href="" >{$_SESSION['name']}</a></li>
+                            <a href="__MODULE__/Cart/index">我的认捐库</a>
+                            <li><a href="__MODULE__/User/dologot">退出</a></li>
+                            <else />
+                            <li><a href="__MODULE__/User/login" >登录</a></li>
+                            <li><a href="__MODULE__/User/register">注册</a></li>
+                        </if>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--top_end -->
+        <div class="nav2_ex">
+            <div id="topLogo"><a href="{:U('Index/index1')}"><img src="__PUBLIC__/images/logo.jpg"/></a></div>
+            <div id="topMenu" >
+                <a href="__MODULE__/Index/index">首页</a>
+                <a href="{:U('Index/smjs')}">寺庙供奉</a>
+                <a href="{:U('Index/smjs')}">生命关怀</a>
+                <a href="__MODULE__/Index/fjzh">佛教智慧</a>
+                <a href="__MODULE__/User/info">个人中心</a>
+                <a href="__MODULE__/Transfer/index">赠送</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="width: 1200px;margin: 0 auto;">
+<div class="box">首页 / 购物车 / 填写订单 / 支付</div>
+<div class="box1"><img src="__PUBLIC__/images/zhif.jpg" /></div>
+    <div class="content" style="text-align: center;line-height: 100px;">
+
+
+        <div class="content_info">您的订单号为:{$info.order_id},请您在<div class="time">尽快</div>付款，逾期订单自动删除。</div>
+        <div class="content_infos">应付金额:<div class="time">￥{$info.order_total_price}</div></div>
+    </div>
+<div class="pay">
+    <p><a href="javascript:void(0)" class="dashang" title="">选择支付平台:</a></p>
+    <form action="{:U('Pay/pay_')}" method="post">
+        <div class="alipay">
+            <input type="radio" id="forever" name="myradio" value="1" checked><label for="forever"><img src="__PUBLIC__/images/alipay.jpg" alt="支付宝支付人生"></label>
+        </div>
+        <!-- <div class="wechtpay">
+            <input type="radio" id="casual" name="myradio" value="2"><label for="casual"><img src="__PUBLIC__/images/wechat.jpg" alt=""></label>
+        </div>
+        <div class="yinpay">
+            <input type="radio" id="yinpay" name="myradio" value="3"><label for="yinpay"><div style="width: 70px;height: 48px;background:url('__PUBLIC__/images/yinpay.jpg') center no-repeat;position: relative;top:-40px;left: 30px;"></div></label>
+        </div> -->
+        <input type="hidden" name="order_id" value="{$_SESSION['order_id']}"/>
+        <input type="hidden" name="total" value="{$_SESSION['total']}" />
+        <div class="tijiao">
+            <input type="submit" value="确认支付"/>
+        </div>
+
+    </form>
+
+</div>
+<!--
+<div style="width: 1160px;height: 200px;background:white;margin: 0 auto;margin-top:10px; ">
+    <!--<img src="__MODULE__/Order/verify" alt="">
+    <img id="pic" alt="">
+</div>-->
+<script type="text/javascript">
+
+</script>
+    <include file="Public/footer" />
+</div>
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        ajax();
+    });
+
+    function ajax(){
+        var url= window.location.href ;
+        var urls='__MODULE__/Order/verify';
+        var imgname=new Date().getTime()+parseInt(100*Math.random());
+        var imgurl='__PUBLIC__/images/code/'+imgname+'.png';
+        $.post(urls,{url:url,imgname:imgname},function(data){
+                if(data !== 1){
+                    document.getElementById("pic").src = imgurl;
+                }
+        })
+    }
+
+
+//    alert(imgurl);
+</script>
+</html>

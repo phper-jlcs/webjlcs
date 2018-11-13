@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<div style="float: left;width:100px;height: 200px;margin-left: 20px;" class="xinye">
+    <div style="width: 100px;height: 10px;"></div>
+    <volist name="products" id="list">
+        <if condition="$list.product_store eq 0">
+            <div class="huise" style="font-size:15px;border:1px solid #c3c3c3;width:160px;height: 30px;float:left;text-align:center;line-height:30px;-webkit-box-shadow:5px 5px 5px #B37731;
+-moz-box-shadow:5px 5px 5px #B37731;-moz-border-radius: 8px;-webkit-border-radius: 8px; border-radius:8px;">已认捐</div>
+            <else />
+        <div  class="checkdiv" style="background:#FBF49A;font-size:15px;border:1px solid #c3c3c3;width:160px;height: 30px;float:left;text-align:center;line-height:30px;-webkit-box-shadow:5px 5px 5px #B37731;
+-moz-box-shadow:5px 5px 5px #B37731;-moz-border-radius: 8px;-webkit-border-radius: 8px; border-radius:8px;cursor: pointer; " id={$list.id} title="价格:￥{$list.now_price}">
+            <if condition="($list.danshuang eq '单位')">
+                排:{$list.product_name}  <img src="__PUBLIC__/images/danwei.png" width="40px" height="30px">
+                <elseif condition="($list.danshuang eq '佛龛')"/>
+                <div style="background: #ccc;width:160px;height: 30px;" class="fokan">{$list.product_name} </div>
+                <else />
+                排:{$list.product_name}  <img src="__PUBLIC__/images/shuangwei.png" width="40px" height="30px">
+            </if>
+
+       </div>
+</if>
+</volist>
+</div>
+</body>
+    <script type="text/javascript">
+        $('.checkdiv').click(function(){
+            var ids=$(this).attr('id');
+            window.location.href = "__MODULE__/Product/details?id="+ids;
+        })
+        $(".fokan").click(function(){
+            alert('佛龛不可认捐');
+            return false;
+        })
+    </script>
+</html>

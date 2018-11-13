@@ -1,0 +1,33 @@
+[ 2018-09-07T11:13:39+08:00 ] ::1 /webjlcs/index.php/ZHHome/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: ²»ÖªµÀÕâÑùµÄÖ÷»ú¡£  D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 103 è¡Œ.
+NOTIC: [2] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] php_network_getaddresses: getaddrinfo failed: ²»ÖªµÀÕâÑùµÄÖ÷»ú¡£  (trying to connect via tcp://my3208637.xincache1.cn:3306) D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 103 è¡Œ.
+ERR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ²»ÖªµÀÕâÑùµÄÖ÷»ú¡£ 
+
+[ 2018-09-07T11:18:46+08:00 ] ::1 /webjlcs/index.php/ZHHome/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: ²»ÖªµÀÕâÑùµÄÖ÷»ú¡£  D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 103 è¡Œ.
+NOTIC: [2] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] php_network_getaddresses: getaddrinfo failed: ²»ÖªµÀÕâÑùµÄÖ÷»ú¡£  (trying to connect via tcp://my3208637.xincache1.cn:3306) D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 103 è¡Œ.
+ERR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ²»ÖªµÀÕâÑùµÄÖ÷»ú¡£ 
+
+[ 2018-09-07T11:31:19+08:00 ] ::1 /webjlcs/index.php/ZHHome/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: ²»ÖªµÀÕâÑùµÄÖ÷»ú¡£  D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 103 è¡Œ.
+NOTIC: [2] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] php_network_getaddresses: getaddrinfo failed: ²»ÖªµÀÕâÑùµÄÖ÷»ú¡£  (trying to connect via tcp://my3208637.xincache1.cn:3306) D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 103 è¡Œ.
+ERR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ²»ÖªµÀÕâÑùµÄÖ÷»ú¡£ 
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>中国帝宫-赠送</title>
+		<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/transfer.css" />
+		<script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.2.min.js"></script>
+	</head>
+	<body scroll="no" style="overflow-x:hidden;">
+ <div id="glideDiv0">
+<div id="nav2_ex" class="nav2_index">
+<!--top -->
+<div id="headTopBg"> 
+<div id="headTop" class="w1024">
+ <div class="headTopRight">
+    <ul id="nav_all">
+        <if condition = "$_SESSION['name']">
+        <li><a href="" >{$_SESSION['name']}</a></li>
+            <a href="__MODULE__/Cart/index">我的认捐库</a>
+            <li><a href="__MODULE__/User/dologot">退出</a></li>
+        <else />
+      <li><a href="__MODULE__/User/login" >登录</a></li>
+      <li><a href="__MODULE__/User/register">注册</a></li>
+        </if>
+    </ul>
+ </div>
+ </div>
+ </div>
+<!--top_end -->
+
+<div class="nav2_ex">
+<div id="topLogo"><a href="{:U('Index/jlcs')}"><img src="__PUBLIC__/images/logo.jpg"/></a></div>
+<div id="topMenu" > 
+  <a href="__MODULE__/Index/index">首页</a>
+	<a href="{:U('Index/smjs')}">寺庙供奉</a>
+	<a href="{:U('Index/smjs')}">生命关怀</a>
+  <a href="__MODULE__/Index/fjzh">佛教智慧</a>
+    <a href="__MODULE__/User/info">个人中心</a>
+	<a href="__MODULE__/Transfer/index">赠送</a>
+</div>
+</div>
+</div>
+</div>
+ 	<div class="addmain">
+		<div class="addmains">
+			<h1>赠送申请</h1>
+			<form action="{:U('doadd')}" method="post" onsubmit="return add()">
+				<table style="width: 450px;height:400px;">
+					<tr>
+						<td>赠送商品名</td>
+						<td><select name="product_id" >
+								<foreach name="transfers" item="list">
+									<option value="{$list.product_id}" id="product_id">{$list.str}</option>
+								</foreach>
+
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>商品描述</td>
+						<td><textarea name='descr' style="width: 300px;height: 80px;" placeholder="请填写您对该商品的描述" id="descr"></textarea></td>
+					</tr>
+					<tr>
+						<td>心仪价格</td>
+						<td><input type="text" value="" placeholder="请填写您的价格" name="price" id="price"></td>
+					</tr>
+					<tr>
+						<td>联系人</td>
+						<td><input type="text" value="" placeholder="请填写您的姓名" name="relname" id="relname"></td>
+					</tr>
+					<tr>
+						<td>联系电话</td>
+						<td><input type="text" value="" placeholder="请填写您的联系方式" name="phone" id="phone"></td>
+					</tr>
+					<tr>
+						<td>交易地点</td>
+						<td><input type="text" value="" placeholder="可能交易地点" name="address" id="address"></td>
+					</tr>
+					<tr>
+						<td  colspan="2" ><input type="checkbox" value="1" id="checke" checked>我已经认真阅读该协议</td>
+
+					</tr>
+				</table>
+				<input type="submit" value="申请赠送" class="submittop">
+
+			</form>
+		</div>
+	</div>
+
+ <include file="Public/footer" />
+
+	</body>
+	<script type="text/javascript">
+
+		$("#checke").click(function(){
+			if($(this).attr('value') == 1){
+				$(this).attr('value','0');
+			}else{
+				$(this).attr('value','1');
+			}
+		});
+
+		function add(){
+			var relname=document.getElementById("relname").value;
+			var product_id=document.getElementById("product_id").value;
+			var descr=document.getElementById("descr").value;
+			var phone=document.getElementById("phone").value;
+			var address=document.getElementById("address").value;
+			var checke = document.getElementById("checke").value;
+			var matchResult=true;
+			if(relname==""||descr==""||phone==""||address==""){
+				alert("以上信息都为必填项");
+				matchResult=false;
+			}else if(product_id == ''){
+				alert('您当前没有可转让商品，请前去认捐吧!');
+				matchResult=false;
+			}else if(checke == '0'){
+				alert('请勾选协议');
+				matchResult=false;
+			}
+
+			return matchResult;
+		}
+
+
+
+	</script>
+</html>

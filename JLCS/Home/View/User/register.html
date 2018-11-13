@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>中国帝宫-会员注册</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/register.css">
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+	</head>
+	<body>
+		<div style="width: 100%;">
+			<div class="top center">
+					<div class="logo center">
+						<a href="__MODULE__/Index/index" target="_blank"><img src="__PUBLIC__/static/images/logo.png" alt=""></a>
+					</div>
+			</div>
+			<form method="post" action="__MODULE__/User/doregister" onsubmit="return login()">
+				<div class="regist">
+					<div class="regist_center">
+						<div class="regist_top">
+							<div class="left fl">会员注册</div>
+							<div class="hui fr"><a href="__MODULE__/Index/index" target="_self">回到官网</a></div>
+							<div class="clear"></div>
+							<hr width="598px">
+						</div>
+						<div class="regist_main center">
+							<div class="username">用&nbsp;&nbsp;户&nbsp;&nbsp;名:&nbsp;&nbsp;<input id="username" class="shurukuang" type="text" name="username" placeholder="请输入您的用户名"></div>
+							<div class="username">手&nbsp;&nbsp;机&nbsp;&nbsp;号:&nbsp;&nbsp;<input id="phone" class="shurukuang" type="text" name="phone" placeholder="请输入正确的手机号"></div>
+							<div class="username">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:&nbsp;&nbsp;<input id="relname" class="shurukuang" type="text" name="relname" placeholder="请输入您的真实姓名"></div>
+							<div class="username">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:&nbsp;&nbsp;<input id="pwd" class="shurukuang" type="text" name="password" placeholder="请设置您的登录密码"></div>
+							<div class="username yanzhen">验&nbsp;&nbsp;证&nbsp;&nbsp;码:&nbsp;&nbsp;<input id="code" class="shurukuang" type="text" name="yam" placeholder="请输入正确的验证码">
+								<input type="button" class="obtain" value="获取验证码" id="">
+							</div>
+						</div>
+						<div class="regist_submit">
+							<input class="submit" type="submit" name="submit" value="立即注册">
+						</div>
+						<div class="regist_submit">
+							<a href="{:U('User/activation')}"><input class="submit" type="button" name="submit" value="在线激活"></a>
+						</div>
+						<div style="margin-left: 400px;margin-top: -40px;">
+							<a href="__MODULE__/User/login" style="font-size:18px;color:#C76621;">已有账号,立即登录</a>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+<script type="text/javascript">
+	function login(){
+		var phone=document.getElementById("phone").value;
+		var code=document.getElementById("code").value;
+		var pwd=document.getElementById("pwd").value;
+		var relname=document.getElementById("relname").value;
+		var matchResult=true;
+		if(phone=="" ||!/^1[34578]\d{9}$/.test($("#phone").val())){
+			alert("请确认您输入的手机号格式是否正确!");
+			matchResult=false;
+		}else if(relname == '' ||!/^[\u4E00-\u9FA5]{2,4}$/.test($("#relname").val())){
+			alert('请确认您的名字是否合法!');
+			matchResult=false;
+		}else if(pwd == '' || pwd.length<6 || pwd.length>12){
+			alert('请确认您的密码长度是否在6-12位之间!');
+			matchResult=false;
+		}else if($(".obtain").attr('id') != $("#code").val()){
+			alert('您输入的验证码有误！请重新获取');
+			matchResult=false;
+		}
+		return matchResult;
+	}
+
+	$(".obtain").click(function(){
+		var phone=document.getElementById("phone").value;
+		if(phone == ''||!/^1[34578]\d{9}$/.test($("#phone").val())){
+			alert('电话号码为空或格式不正确！请填写');
+			return false;
+		}
+		var url = '__MODULE__/User/obtaincode_ajax';
+		$.post(url,{phone:phone},function(data){
+			var data = data;
+			$(".obtain").attr('id',data);
+			time(this);
+		})
+	})
+
+	//定时器
+	//验证码倒计时
+	var wait = 60;
+	function time(obj) {
+		if(wait==0) {
+			$(".obtain").removeAttr("disabled");
+			$(".obtain").val("获取验证码");
+			wait = 60;
+		}else {
+			$(".obtain").attr("disabled","true");
+			$(".obtain").val(wait+"秒后重试");
+			wait--;
+			setTimeout(function() {     //倒计时方法
+				time(obj);
+			},1000);    //间隔为1s
+		}
+	}
+</script>
+</html>

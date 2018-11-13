@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>全部订单</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="__PUBLIC__/wapjs/rem.js"></script> 
+    <script src="__PUBLIC__/wapjs/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/base.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/page.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/all.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/loaders.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/loading.css"/>
+<script type="text/javascript">
+	$(window).load(function(){
+		$(".loading").addClass("loader-chanage")
+		$(".loading").fadeOut(300)
+	})
+</script>
+</head>
+<!--loading页开始-->
+<div class="loading">
+	<div class="loader">
+        <div class="loader-inner pacman">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+	</div>
+</div>
+<!--loading页结束-->
+	<body>
+		<header class="mui-bar mui-bar-nav report-header box-s" id="header">
+			<a href="javascript:history.go(-1)"><i class="iconfont icon-fanhui fl"></i></a>
+			<p>全部订单</p>
+	    </header>
+	    <div id="main" class="mui-clearfix">
+	    	<div class="order-top clearfloat">
+	    		<ul>
+	    			<li class="clearfloats cur" value="1"><a href="javascript:void(0);">全部</a></li>
+	    			<li class="clearfloats " value="2"><a href="javascript:void(0);">待付款</a></li>
+	    			<li class="clearfloats" value="3"><a href="javascript:void(0);">待发货</a></li>
+	    			<li class="clearfloats" value="4"><a href="javascript:void(0);">待收货</a></li>
+	    			<li class="clearfloats" value="5"><a href="javascript:void(0);">待评价</a></li>
+	    		</ul>
+	    	</div>
+			<div class="jsons_show"></div>
+			<foreach name="orderinfos" item="list">
+	    	<div class="order-list clearfloat">
+	    		<p class="ordernum box-s">
+	    			订单号  {$list.order_id}
+					<if condition="($list.pay_status eq 0)">
+	    			<span>待付款</span>
+						<else />
+						<span>已付款</span>
+						</if>
+	    		</p>
+				<foreach name="list.productinfo" item="dest">
+	    		<div class="list clearfloat fl box-s">
+	    			<a href="pro-detail.html">
+		    			<div class="tu fl clearfloat">
+		    				<img src="__PUBLIC__/upload/2.jpg"/>
+		    			</div>
+		    			<div class="middle clearfloat fl">
+		    				<p class="tit">{$dest.name}</p>
+							<p class="fu-tit">
+								{$dest.description}
+							</p>
+		    				<p class="price clearfloat">
+		    					<span class="xprice fl">￥{$dest.now_price}</span>
+		    					<span class="yprice fl">￥{$dest.old_price}</span>
+		    					<span class="sjzhuanx fl">会员专享价</span>
+		    					<span class="shu">×1</span>
+		    				</p>
+		    			</div>
+	    			</a>
+	    		</div>
+				</foreach>
+				<a href="#" class="gopay-btn fr">
+					立即支付
+				</a>
+	    	</div>
+			</foreach>
+	    </div>
+	</body>
+	<script type="text/javascript" src="__PUBLIC__/wapjs/jquery-1.8.3.min.js" >
+	</script>
+	<script src="__PUBLIC__/wapjs/fastclick.js"></script>
+	<script src="__PUBLIC__/wapjs/mui.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/wapjs/hmt.js" >
+	</script>
+	<script type="text/javascript">
+		$(".clearfloats").click(function(){
+			var value= $(this).attr('value');
+			var url = "__MODULE__/User/ajax_order";
+			$(".clearfloats").removeClass('cur');
+			$(this).addClass('cur');
+			$(".order-list").hide();
+			$.ajax({
+				url:url,
+				type: 'POST',
+				data:{value:value},
+				success: function(data){
+					if(data != ''){
+						$('.jsons_show').html('');
+						$('.jsons_show').append(data);
+					}
+				}
+			})
+		})
+	</script>
+</html>

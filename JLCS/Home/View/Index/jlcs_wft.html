@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <title>九龙禅寺万佛堂</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="这是一个购买好东西的网站"/>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/css/banner.css">
+</head>
+<body style="overflow-x:hidden;">
+<div id="glideDiv0">
+    <div id="nav2_ex" class="nav2_index">
+        <!--top -->
+        <div id="headTopBg">
+            <div id="headTop" class="w1024">
+                <div class="headTopRight">
+                    <ul id="nav_all">
+                        <if condition = "$_SESSION['name']">
+                            <li><a href="" >{$_SESSION['name']}</a></li>
+                            <a href="__MODULE__/Cart/index">我的认捐库</a>
+                            <li><a href="__MODULE__/User/dologot">退出</a></li>
+                            <else />
+                            <li><a href="__MODULE__/User/login" >登录</a></li>
+                            <li><a href="__MODULE__/User/register">注册</a></li>
+                            <li><a href="__MODULE__/User/activation" >激活</a></li>
+                        </if>
+                        <!--<li><a href="">在线留言</a></li>
+                        <li><a href="">联系我们</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="clean"></div>
+        <div class="nav2_ex">
+            <div id="topLogo"><a href="__MODULE__/Index/index1">
+                    <if condition="($biaoshi eq 1)">
+                        <img src="__PUBLIC__/images/zhs_logo.png"/>
+                        <else />
+                        <img src="__PUBLIC__/images/logo.jpg"/>
+                        </if>
+                </a></div>
+            <div id="topMenu" >
+                <a href="__MODULE__/Index/index">首页</a>
+                <a href="{:U('Index/smjs')}">寺庙供奉</a>
+                <a href="{:U('Index/smjs')}">生命关怀</a>
+                <a href="__MODULE__/Index/fjzh">佛教智慧</a>
+                <a href="__MODULE__/User/info">个人中心</a>
+                <a href="__MODULE__/Transfer/index">赠送</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<!--top_end -->
+<div class="clear"></div>
+<div class="c">
+	<div>
+	   <img src="__PUBLIC__/images/banner.jpg"  style="width: 100%;"/>
+
+</div>
+<div class="box">
+    <div  class="avatar3" style="position:absolute; top:390px; left:965px;"><a href="{:U('Product/index',array('cat_id'=>2,'img'=>c))}"><img src='__PUBLIC__/images/wft/fxda.png' class="img3"></a></div>
+    <div  class="avatar1" style="position:absolute; top:389px; left:1060px;"><a href="{:U('Product/index',array('cat_id'=>2,'img'=>d))}"><img src='__PUBLIC__/images/wft/fxdb.png' class="img1"></a></div>
+    <div  class="avatar2" style="position:absolute; top:729px; left:960px;"><a href="{:U('Product/index',array('cat_id'=>1,'img'=>a))}" ><img src='__PUBLIC__/images/wft/feda.png' class="img2"></a></div>
+    <div  class="avatar4" style="position:absolute; top:729px; left:1053px;"><a href="{:U('Product/index',array('cat_id'=>1,'img'=>b))}" ><img src='__PUBLIC__/images/wft/fedb.png' class="img4"></a></div>
+    <!--<div  class="avatar7 tishi" style="position:absolute; top:582px; left:520px;"><a href="javascript:void(0);"><img src='__PUBLIC__/images/wft/fz.png' class="img7"></a></div>-->
+</div>
+<div class="suspend">
+    <dl>
+        <dt class="IE6PNG"></dt>
+        <dd class="suspendQQ"><a href="http://wpa.qq.com/msgrd?v=3&uin=1581893936&site=qq&menu=yes" target="_blank"></a></dd>
+        <dd class="suspendTel"><a href="http://wpa.qq.com/msgrd?v=3&uin=1581893936&site=qq&menu=yes" target="_blank"></a></dd>
+    </dl>
+</div>
+<!-- banner end-->
+<include file="Public/footer" />
+<!--foot_end -->
+
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $(".suspend").mouseover(function() {
+            $(this).stop();
+            $(this).animate({width: 160}, 400);
+        })
+
+        $(".suspend").mouseout(function() {
+            $(this).stop();
+            $(this).animate({width: 40}, 400);
+        });
+
+    });
+</script>
+</body>
+<script type="text/javascript">
+    $(".tishi").click(function(){
+        alert('还未开放，请关注后续公告!佛恩殿、佛孝殿可认捐');
+    })
+</script>
+</html>

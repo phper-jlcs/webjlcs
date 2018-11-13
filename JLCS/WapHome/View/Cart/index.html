@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>购物车</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="__PUBLIC__/wapjs/rem.js"></script> 
+    <script src="__PUBLIC__/wapjs/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/base.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/page.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/all.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/loaders.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/loading.css"/>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+	$(window).load(function(){
+		$(".loading").addClass("loader-chanage")
+		$(".loading").fadeOut(300)
+	})
+</script>
+</head>
+<!--loading页开始-->
+<div class="loading">
+	<div class="loader">
+        <div class="loader-inner pacman">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+	</div>
+</div>
+<!--loading页结束-->
+	<body>
+		<header class="mui-bar mui-bar-nav" id="header">
+			<div class="header-left fl">
+				购物车
+			</div>
+			<div class="header-right fr">
+				<button href="" class="del">
+					编辑
+				</button>
+			</div>
+	    </header>
+	    <div id="main" class="mui-clearfix">
+	    	<div class="contaniner fixed-contb">
+				<if condition="$status eq 1">
+					<span style="font-size: 22px;">您的购物车空空的，前去<a href="{:U('Index/index')}"><span style="font-size: 25px;color: green;">购买</span></a>吧!</span>
+					<else />
+				<volist name="carts" id="list">
+						<section class="shopcar">
+							<div class="shopcar-checkbox">
+								<label for="shopcar" onselectstart="return false" class="checklabel danxuan" id="{$list.cat_id}" value="{$list.now_price}" num="{$list.num}"></label>
+								<input type="checkbox" id="{$list.id}" name="test"/>
+							</div>
+							<figure><img src="__PUBLIC__/{$list.path}"/></figure>
+							<div class="shopclist clearfloat fl">
+								<p class="tit">{$list.name}</p>
+								<p class="fu-tit">
+									{$list.description}
+								</p>
+								<span class= "shanchu" value="{$list.cat_id}" style="position: absolute;left:200px;top:10px;color: red;display: none;">删除</span>
+								<div class="bottom clearfloat">
+									<span class="fl hicon">￥{$list.now_price}</span>
+									<span class="fl huicon">￥{$list.old_price}</span>
+									<span class="fl sjzx">会员促销价</span>
+									<span class="fr shu">×{$list.num}</span>
+								</div>
+							</div>
+						</section>
+				</volist>
+				<section class="shopcar shopcartwo">
+					<div class="shopcar-checkbox">
+						<label for="shopcar" onselectstart="return false" id="shopcar1" class="checklabel"></label>
+						<input type="checkbox"/>
+					</div>
+					<span class="fl qxuan">全选</span>
+					<form action="{:U('Order/index')}" method="post" onsubmit="return Settlement() ">
+						<input id="userName" class="cartid" type="hidden" name="cartid" value="">
+						<input id="userName" class="total" type="hidden" name="total" value="">
+						<a href="javascript:void(0)" class="jiesuan clearfloat fr box-s"><input name="" type="submit" value="去结算" style="background: #D24239;border: 0px"/></a>
+					</form>
+
+
+					<p class="fr heji"><span>共</span><span class="jianshu">0</span><span>件</span>
+
+						<span>合计：￥</span><span class="hejiji">0.00</span></p>
+				</section>
+					</if>
+				<!--去结算-->
+				
+			</div>
+			<script type="text/javascript">
+//				$(".shopcar-checkbox label").on('touchstart',function(){
+//					if($(this).hasClass('shopcar-checkd')){
+//						$(".shopcar-checkbox label").removeClass("shopcar-checkd")
+//					}else{
+//						$(".shopcar-checkbox label").addClass("shopcar-checkd")
+//					}
+//				})
+			var conts = 0;
+
+				//全选
+				$(function(){
+					$("#shopcar1").click(function(){
+						if($(this).hasClass('shopcar-checkd')){
+							$(".checklabel").removeClass('shopcar-checkd');
+							Count();
+						}else{
+							$(".checklabel").addClass('shopcar-checkd');
+							Count();
+						}
+					})
+					//单选
+					$(".danxuan").click(function(){
+						if($(this).hasClass('shopcar-checkd')){
+							$(this).removeClass('shopcar-checkd');
+							Count1();
+						}else{
+							$(this).addClass('shopcar-checkd');
+							Count1();
+						}
+					})
+
+					//计算价格
+
+					function Count(){
+						var nums =0 ;
+						$(".danxuan").each(function(){
+							if($(this).hasClass('shopcar-checkd')){
+								for (var i = 0; i < $(this).length; i++) {
+									nums = parseInt(nums)+parseInt($(this).attr('num'));
+									conts = parseInt(conts)+parseInt($(this).attr('value')*$(this).attr('num'));
+								}
+							}else{
+								conts = 0;
+							}
+							$(".jianshu").html(nums);
+							$(".hejiji").html((conts).toFixed(2));
+						})
+
+					}
+
+					function Count1(){
+						var conts= 0;
+						var nums = 0;
+						$(".danxuan").each(function(){
+							if($(this).hasClass('shopcar-checkd')){
+								for (var i = 0; i < $(this).length; i++) {
+									nums = parseInt(nums)+parseInt($(this).attr('num'));
+									conts = parseInt(conts)+parseInt($(this).attr('value')*$(this).attr('num'));
+								}
+							}
+							$(".jianshu").html(nums);
+							$(".hejiji").html((conts).toFixed(2));
+						})
+
+					}
+
+
+				})
+
+
+				//结算时
+				function Settlement(){
+					$(".danxuan").each(function(){
+						if($(this).hasClass('shopcar-checkd')){
+							var id = $(this).attr('id');
+							var ids = ','+id;
+							$(".cartid").val($(".cartid").val()+ids);
+						}
+					})
+					var total = $(".hejiji").html();
+					$(".total").val(total);
+					if($(".cartid").val() == ''){
+						alert('请选择您要购买的商品');
+						return false;
+					}
+				}
+
+				$(".del").click(function(){
+					$(".shanchu").css('display','block');
+				})
+
+
+
+					$(".shanchu").click(function(){
+						if (!confirm("您确认要删除吗？")) {  //判断出过来的购物车id是否为空
+							return false;
+						}
+						var id = $(this).attr('value');
+						var url = "__MODULE__/Cart/delcart";
+						$.post(url,{id:id},function(data){
+							if(data == 1){
+								location.reload();
+							}
+						})
+					})
+
+			</script>
+	    </div>
+	    
+	    <footer class="page-footer fixed-footer" id="footer">
+			<ul>
+				<li>
+					<a href="{:U('Index/index')}">
+						<img src="__PUBLIC__/img/footer001.png"/>
+						<p>首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="{:U('Cat/index')}">
+						<img src="__PUBLIC__/img/footer002.png"/>
+						<p>分类</p>
+					</a>
+				</li>
+				<li class="active">
+					<a href="{:U('Cart/index')}">
+						<img src="__PUBLIC__/img/footer003.png"/>
+						<p>购物车</p>
+					</a>
+				</li>
+				<li>
+					<a href="{:U('User/index')}">
+						<img src="__PUBLIC__/img/footer004.png"/>
+						<p>个人中心</p>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+	<script type="text/javascript" src="__PUBLIC__/wapjs/jquery-1.8.3.min.js" ></script>
+	<script src="__PUBLIC__/wapjs/jquery.SuperSlide.2.1.js" type="text/javascript"></script>
+	<script src="__PUBLIC__/wapjs/fastclick.js"></script>
+	<script src="__PUBLIC__/wapjs/mui.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/wapjs/hmt.js" ></script>
+	<!--插件-->
+	<link rel="stylesheet" href="__PUBLIC__/wapcss/swiper.min.css">
+	<script src="__PUBLIC__/wapjs/swiper.jquery.min.js"></script>
+	<!--插件-->
+	<script src="__PUBLIC__/wapjs/global.js"></script>
+	<script >
+	    $(function () {
+	        var banner = new Swiper('.banner',{
+	            autoplay: 5000,
+	            pagination : '.swiper-pagination',
+	            paginationClickable: true,
+	            lazyLoading : true,
+	            loop:true
+	        });
+	
+	         mui('.pop-schwrap .sch-input').input();
+	        var deceleration = mui.os.ios?0.003:0.0009;
+	         mui('.pop-schwrap .scroll-wrap').scroll({
+	                bounce: true,
+	                indicators: true,
+	                deceleration:deceleration
+	        });
+	        $('.top-sch-box .fdj,.top-sch-box .sch-txt,.pop-schwrap .btn-back').on('click',function () {
+	            $('html,body').toggleClass('holding');
+	            $('.pop-schwrap').toggleClass('on');
+	            if($('.pop-schwrap').hasClass('on')) {;
+	                $('.pop-schwrap .sch-input').focus();
+	            }
+	        });
+	
+	    });
+	</script>
+	<script type="text/javascript">
+		jQuery(".sideMenu").slide({
+			titCell:"h3",
+			targetCell:".slist",
+			effect:"slideDown",
+			delayTime:300 ,
+			triggerTime:150,
+			defaultPlay:true,
+			returnDefault:false,
+			trigger:"click"
+			});
+	</script>
+</html>

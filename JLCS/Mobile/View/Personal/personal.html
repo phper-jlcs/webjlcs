@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>账户与安全</title>
+		<link href="__PUBLIC__/static/css/style.css" rel="stylesheet">
+		<link href="__PUBLIC__/static/css/bootstrap.min.css" rel="stylesheet">
+		<script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <link href="static/css/IE8.css" rel="stylesheet">
+        <![endif]-->
+	</head>
+
+	<body>
+
+		<!--头部-->
+		<header>
+			<!--导航-->
+			<nav class="nav_top">
+				<div class="container">
+					<div class="navbar-header">
+						<div class="fanhui"><a href="javascript:history.go(-1)"><img src="__PUBLIC__/static/images/fanhui.png"/></a></div>
+						<button class="navbar-toggle collapsed mean" data-toggle="collapse" data-target="#mynavbar">                     
+		                      <span class="icon-bar"></span>
+		                      <span class="icon-bar"></span>
+		                      <span class="icon-bar"></span>
+		                 </button>
+						<a href="{:U('Index/index')}" class="navbar-brand logo"><img src="__PUBLIC__/static/images/logo.png"></a>
+					</div>
+					<div id="mynavbar" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav nav_li navbar-right">
+							<li>
+								<a href="{:U('Index/index')}">首页</a>
+							</li>
+							<li>
+								<a href="{:U('Index/smgf')}">寺庙供奉</a>
+							</li>
+							<li>
+								<a href="{:U('Index/smgh')}">生命关怀</a>
+							</li>
+							<li>
+								<a href="{:U('Index/fjzh')}">佛教智慧</a>
+							</li>
+							<li>
+								<a href="{:U('Personal/index')}">个人中心</a>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+        <div class="product">
+			<div class="container">
+				<div class="row v111" style="padding-bottom:100% ;display: block;" id="displaybody">
+					<div class="page clearfix">
+						<div class="title1">
+							<h2>账户与安全</h2>
+							<span>Personal Data</span>
+						</div>
+
+					</div>
+					<div class="news_div col-md-12 col-sm-12 col-xs-12">
+						<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="username">
+						  <h3>用户名<input style="width: 50%;float: right;border: none;color: #8C8C8C;" type="text" value="{$users.name}"/></h3>
+						</div>
+					</div>
+					<div class="news_div col-md-12 col-sm-12 col-xs-12">
+						<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+							<h3>会员卡号<input style="width: 50%;float: right;border: none;color: #8C8C8C;" type="text" value="{$users.user_cartid}" disabled/></h3>
+						</div>
+					</div>
+
+					<div class="news_div col-md-12 col-sm-12 col-xs-12">
+						<a href="{:U('Personal/binding')}">
+							<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="phone">
+								<h3>手机号码<input style="width: 50%;float: right;border: none;color: #8C8C8C;" type="text" value="{$users.phone}"/></h3>
+							</div>
+						</a>
+					</div>
+					<div class="news_div col-md-12 col-sm-12 col-xs-12">
+						<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+							<h3>代理商<input style="width: 50%;float: right;border: none;color: #8C8C8C;" type="text" value="{$users.agent}"/></h3>
+						</div>
+					</div>
+					<!--<div class="news_div col-md-12 col-sm-12 col-xs-12">
+						<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">						        
+						  <h3>
+						  	性&nbsp;&nbsp;&nbsp;别&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						  	 <input class="myforms-3-2" type="radio" checked ="checked" name="2" value="sex1">&nbsp;男&nbsp;&nbsp;
+                             <input class="myforms-3-3" type="radio"  name="2" value="sex2">&nbsp;女
+						  </h3>								
+						</div>
+					</div>-->
+
+				</div>
+				<div class="row v111" style="padding-bottom:50% ;display: none;" id="editusername">
+					<div class="page clearfix">
+						<div class="title1">
+							<h2>设置用户名</h2>
+							<span style="float: left;"> <button class="quxiao">取消</button></span>
+							<span>Personal Data</span>
+							<span style="float: right;"> <button class="wancheng">完成</button></span>
+						</div>
+
+					</div>
+					<div class="news_div col-md-12 col-sm-12 col-xs-12">
+						<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+							<h3><input style="width: 95%;float: left;border: none;color: #8C8C8C;" type="text"  value="{$users.name}" class="username"/></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="__PUBLIC__/static/js/jquery-3.1.1.min.js"></script>
+		<script src="__PUBLIC__/static/js/main.js"></script>
+		<script src="__PUBLIC__/static/js/bootstrap.min.js"></script>
+		<script>
+			$(function() {
+				$(".sub_lists li").click(function() {
+					$(this).siblings().removeClass('active');
+					$(this).addClass('active');
+					$('.lists ul').removeClass('show');
+					$('.lists ul').eq($(this).index()).addClass('show');
+				})
+
+			});
+			$("#username").click(function(){
+				$("#displaybody").css('display','none');
+				$("#editusername").css('display','block');
+			})
+			$("#phone").click(function(){
+				$("#displaybody").css('display','none');
+				$("#editusername").css('display','block');
+			})
+			$(".quxiao").click(function(){
+				$("#editusername").css('display','none');
+				$("#displaybody").css('display','block');
+			})
+
+			$(".wancheng").click(function(){
+				var username = $(".username").val();
+				var url = '__MODULE__/Personal/ajax_username';
+				$.post(url,{username:username},function(data){
+						if(data == 1){
+							alert('修改成功!');
+							$("#editusername").css('display','none');
+							$("#displaybody").css('display','block');
+							location.reload();
+						}else{
+							$("#editusername").css('display','none');
+							$("#displaybody").css('display','block');
+						}
+				})
+			})
+		</script>
+	</body>
+
+</html>

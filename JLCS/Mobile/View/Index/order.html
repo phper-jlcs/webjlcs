@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>中国帝宫-认捐</title>
+		<link href="__PUBLIC__/static/css/style.css" rel="stylesheet">
+		<link href="__PUBLIC__/static/css/bootstrap.min.css" rel="stylesheet">
+		<script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/area.js"></script>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <link href="static/css/IE8.css" rel="stylesheet">
+        <![endif]-->
+	</head>
+
+	<body>
+
+		<!--头部-->
+		<header>
+			<!--导航-->
+			<nav class="nav_top">
+				<div class="container">
+					<div class="navbar-header">
+						<div class="fanhui"><a href="javascript:history.go(-1)"><img src="__PUBLIC__/static/images/fanhui.png"/></a></div>
+						<button class="navbar-toggle collapsed mean" data-toggle="collapse" data-target="#mynavbar">                     
+		                      <span class="icon-bar"></span>
+		                      <span class="icon-bar"></span>
+		                      <span class="icon-bar"></span>
+		                 </button>
+						<a href="{:U('index')}" class="navbar-brand logo"><img src="__PUBLIC__/static/images/logo.png"></a>
+					</div>
+					<div id="mynavbar" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav nav_li navbar-right">
+							<li>
+								<a href="{:U('Index/index')}">首页</a>
+							</li>
+							<li>
+								<a href="{:U('Index/smgf')}">寺庙供奉</a>
+							</li>
+							<li>
+								<a href="{:U('Index/smgh')}">生命关怀</a>
+							</li>
+							<li>
+								<a href="{:U('Index/fjzh')}">佛教智慧</a>
+							</li>
+							<li>
+								<a href="{:U('Personal/index')}">个人中心</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!--幻灯片-->
+		<section class="banner">
+		   <img src="__PUBLIC__/static/images/contact.jpg">	
+		</section>
+        <!--联系-->
+		<form action="{:U('checkorder')}" method="post" onsubmit="return check()">
+		<div class="container contact">
+			<div class="row">
+				<div class="title1">
+			<h2>认捐</h2>
+			<span>Pledging</span>
+					</div>
+				<div class="huanyanshow_con col-md-7 col-sm-12 col-xs-12">
+					<div class="form_3">
+							<ul class="clearfix">
+								<li><span>莲位位置：</span>{$productinfo.temple}->{$productinfo.region}->{$productinfo.palace}->{$productinfo.productname}</li>
+								<li><span>价格：</span>￥{$productinfo.now_price}</li>
+								<li><span>姓名：</span><input type="text" placeholder="请输入您的姓名" name="relname" class="name" value=""/></li>
+								<li><span>代理商：</span><input type="text" placeholder="请输入代理商编号,若无则无需填" name="agent" class="agent" value=""/></li>
+								<li><span>身份证号：</span><input type="text" placeholder="请输入您的身份证号" name="cid" class="cid" value=""/></li>
+								<li><span>手机：</span><input type="text" placeholder="请输入您的手机号" name="phone" class="phone" value=""/></li>
+								<li>
+									<span>地址：</span>					
+									<div class="info">
+	                                <div>
+	                                <select id="s_province" name="s_province"></select>  
+                                    <select id="s_city" name="s_city" ></select>  
+                                    <select id="s_county" name="s_county"></select>
+                                    <script type="text/javascript">_init_area();</script>
+                                    </div>
+										<br>
+                                    <div id="show"></div>
+                                    </div>
+                                    <input style="width: 100%;padding-top: 1%;" type="text" placeholder="请填写完整地址（街道）" name="address" class="address" value=""/>
+								</li>
+								<input type="hidden" value="{$productinfo.productid}" name="product_id">
+							</ul>
+
+						<div class="text_a">
+							<span>祈愿：</span>
+							<p>赞佛偈</p>
+							<p>阿弥陀佛身金色，相好光明五等伦。</p>
+							<p>白毫婉转五须弥，绀目澄清四大海。</p>
+							<p>广中化佛无数亿，化菩萨众亦无边。</p>
+							<p>四十八愿度众生，九品咸令登彼岸。</p>
+					    </div>
+					    <div class="text_b">
+							<p>弟子就吐今于九龙禅寺万佛堂内虔诚供奉药师佛</p>
+							<p>祈愿去病消灾，增幅天寿。</p>
+							<p>默念：</p>
+							<p>南无药师琉璃光如来！</p>
+							<p>南无药师琉璃光如来！</p>
+							<p>南无药师琉璃光如来！</p>
+					    </div>
+					        		
+				        </div>
+				        
+				  </div>
+		   	</div>
+		</div> 		   
+
+	   <!--联系我们-->
+		<footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div style="padding-bottom: 50px;" class="container-fluid">
+				<div class="row">
+				<div class="footera-article">
+					<div class="footera-sa"><span class="top">＜</span></div>
+					<div class="footera-sm">						
+						</div>
+						<div class="footera-sg">
+							<div class="text_c">
+								<input type="submit" value="立即认捐">
+					        </div>
+						</div>
+				</div>
+			 </div>
+		  </div>
+		</footer>
+		</form>
+		<script src="__PUBLIC__/static/js/jquery-3.1.1.min.js"></script>
+		<script src="__PUBLIC__/static/js/main.js"></script>
+		<script src="__PUBLIC__/static/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			function check(){
+				if($(".name").val() == ''){
+					alert('请填入您的姓名');
+					return false;
+				}else if(!/^[\u4E00-\u9FA5]{1,6}$/.test($(".name").val())){
+					alert('姓名格式有误');
+					return false;
+				}
+				else if($(".cid").val() == ''){
+					alert('身份证号不能为空！');
+					return false;
+				}else if(!/^(\d{15}|\d{17}[\dXx])$/.test($(".cid").val())){
+					alert('身份证号格式不正确！');
+					return false;
+				}else if(!/^1[34578]\d{9}$/.test($(".phone").val())){
+					alert('请检查您的手机号是否有误');
+					return false;
+				}else if($(".phone").val() == ''){
+					alert('请填入您的手机号');
+					return false;
+				}else if($("#s_province").val() == '省份'){
+					alert('请选择您的收货地址');
+					return false;
+				}else if($("#s_city").val() == '地级市'){
+					alert('请选择地级市');
+					return false;
+				}else if($("#s_county").val() == '市、县级市'){
+					alert('请选择市、县级市');
+					return false;
+				}else if($(".address").val() == ''){
+					alert('请填写完整地址');
+					return false;
+				}
+			}
+			
+		var Gid  = document.getElementById ;
+        var showArea = function(){
+	    Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" + 	
+	    Gid('s_city').value + " - 县/区" + 
+	    Gid('s_county').value + "</h3>"
+						}
+
+
+		</script>
+	</body>
+
+</html>

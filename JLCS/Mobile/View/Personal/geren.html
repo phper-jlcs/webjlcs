@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>选位系统</title>
+		<link href="__PUBLIC__/static/css/style.css" rel="stylesheet">
+		<link href="__PUBLIC__/static/css/bootstrap.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <link href="static/css/IE8.css" rel="stylesheet">
+        <![endif]-->
+	</head>
+
+	<body>
+
+		<!--头部-->
+		<header>
+			<!--导航-->
+			<nav class="nav_top">
+				<div class="container">
+					<div class="navbar-header">
+						<div class="fanhui"><a href="javascript:history.go(-1)"><img src="__PUBLIC__/static/images/fanhui.png"/></a></div>
+						<button class="navbar-toggle collapsed mean" data-toggle="collapse" data-target="#mynavbar">                     
+		                      <span class="icon-bar"></span>
+		                      <span class="icon-bar"></span>
+		                      <span class="icon-bar"></span>
+		                 </button>
+						<a href="{:U('Index/index')}" class="navbar-brand logo"><img src="__PUBLIC__/static/images/logo.png"></a>
+					</div>
+					<div id="mynavbar" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav nav_li navbar-right">
+							<li>
+								<a href="{:U('Index/index')}">首页</a>
+							</li>
+							<li>
+								<a href="{:U('Index/smgf')}">寺庙供奉</a>
+							</li>
+							<li>
+								<a href="{:U('Index/smgh')}">生命关怀</a>
+							</li>
+							<li>
+								<a href="{:U('Index/fjzh')}">佛教智慧</a>
+							</li>
+							<li>
+								<a href="{:U('Personal/index')}">个人中心</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!--幻灯片-->
+		<section class="banner1">
+			<!--<div>
+		   <img style="width: 20%;margin: 10% 40%;" src="__PUBLIC__/static/images/xiaotu.png">
+		   </div>-->
+		</section>
+        <div class="product">
+			<div class="container">
+				<div class="row" style="padding-bottom:50% ;">
+					<div class="page clearfix">
+						<div class="title1">
+							<h2>个人中心</h2>
+							<span>Personal Centres</span>
+						</div>
+						<ul class="sub-list1">
+							<li class="active">
+								<img src="__PUBLIC__/static/images/dingdan.png"/>
+								<a href="{:U('Order/index')}">我的认捐</a>
+							</li>
+							<li>
+								<img src="__PUBLIC__/static/images/liulan.png"/>
+								<a href="{:U('Personal/browse')}">浏览记录</a>
+							</li>
+						</ul>
+					</div>
+					<div class="news_div col-md-12 col-sm-12 col-xs-12">
+						<a href="{:U('Personal/personal')}">
+						<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">						        
+						  <h3><img src="__PUBLIC__/static/images/xiugai.png"/>&nbsp;&nbsp;&nbsp;&nbsp;账户与安全</h3>
+						</div>
+						</a>
+					</div>
+					<div class="news_div col-md-12 col-sm-12 col-xs-12">
+						<a href="{:U('Personal/feedback')}">
+						<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">						        
+						  <h3><img src="__PUBLIC__/static/images/yijian.png"/>&nbsp;&nbsp;&nbsp;&nbsp;意见反馈</h3>
+						</div>
+						</a>
+					</div>
+					<div class="news_div col-md-12 col-sm-12 col-xs-12">
+						<a href="tel:18408241858">
+						<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">						        
+						  <h3><img src="__PUBLIC__/static/images/lianxi.png"/>&nbsp;&nbsp;&nbsp;&nbsp;联系我们</h3>
+						</div>
+						</a>
+					</div>
+					<div class="news_div col-md-12 col-sm-12 col-xs-12">
+						<a href="{:U('Personal/give')}">
+						<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+						  <h3><img src="__PUBLIC__/static/images/zengsong.png"/>&nbsp;&nbsp;&nbsp;&nbsp;赠送<img style="float: right;margin-right: 5%;" src="__PUBLIC__/static/images/jiantou.png"/></h3>
+						</div>
+						</a>
+					</div>
+					<div class="news_div col-md-12 col-sm-12 col-xs-12">
+						<a href="javascript:void(0);" onclick="alert('详情请拨打电话咨询！')">
+						<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+							<h3><img src="__PUBLIC__/static/images/shezhi.png"/>&nbsp;&nbsp;&nbsp;&nbsp;关于认捐</h3>
+						</div>
+						</a>
+					</div>
+					<div class="news_div col-md-12 col-sm-12 col-xs-12">
+						<a href="{:U('Personal/install')}">
+						<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">						        
+						  <h3><img src="__PUBLIC__/static/images/shezhi.png"/>&nbsp;&nbsp;&nbsp;&nbsp;设置</h3>
+						</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="__PUBLIC__/static/js/jquery-3.1.1.min.js"></script>
+		<script src="__PUBLIC__/static/js/main.js"></script>
+		<script src="__PUBLIC__/static/js/bootstrap.min.js"></script>
+		<script>
+			$(function() {
+				$(".sub_lists li").click(function() {
+					$(this).siblings().removeClass('active');
+					$(this).addClass('active');
+					$('.lists ul').removeClass('show');
+					$('.lists ul').eq($(this).index()).addClass('show');
+				})
+
+			});
+		</script>
+	</body>
+
+</html>

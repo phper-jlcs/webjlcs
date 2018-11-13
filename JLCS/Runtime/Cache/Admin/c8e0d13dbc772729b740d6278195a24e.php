@@ -1,0 +1,108 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>主要内容区main</title>
+    <link href="css/css.css" type="text/css" rel="stylesheet" />
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/webjlcs/Public/images/admin/main/favicon.ico" />
+    <style>
+        body{overflow-x:hidden; background:#f2f0f5; padding:15px 0px 10px 5px;}
+        #searchmain{ font-size:12px;}
+        #search{ font-size:12px; background:#548fc9; margin:10px 10px 0 0; display:inline; width:100%; color:#FFF; float:left}
+        #search form span{height:40px; line-height:40px; padding:0 0px 0 10px; float:left;}
+        #search form input.text-word{height:24px; line-height:24px; width:180px; margin:8px 0 6px 0; padding:0 0px 0 10px; float:left; border:1px solid #FFF;}
+        #search form input.text-but{height:24px; line-height:24px; width:55px; background:url(images/main/list_input.jpg) no-repeat left top; border:none; cursor:pointer; font-family:"Microsoft YaHei","Tahoma","Arial",'宋体'; color:#666; float:left; margin:8px 0 0 6px; display:inline;}
+        #search a.add{ background:url(images/main/add.jpg) no-repeat -3px 7px #548fc9; padding:0 10px 0 26px; height:40px; line-height:40px; font-size:14px; font-weight:bold; color:#FFF; float:right}
+        #search a:hover.add{ text-decoration:underline; color:#d2e9ff;}
+        #main-tab{ border:1px solid #eaeaea; background:#FFF; font-size:12px;}
+        #main-tab th{ font-size:12px; background:url(images/main/list_bg.jpg) repeat-x; height:32px; line-height:32px;}
+        #main-tab td{ font-size:12px; line-height:40px;}
+        #main-tab td a{ font-size:12px; color:#548fc9;}
+        #main-tab td a:hover{color:#565656; text-decoration:underline;}
+        .bordertop{ border-top:1px solid #ebebeb}
+        .borderright{ border-right:1px solid #ebebeb}
+        .borderbottom{ border-bottom:1px solid #ebebeb}
+        .borderleft{ border-left:1px solid #ebebeb}
+        .gray{ color:#dbdbdb;}
+        td.fenye{ padding:10px 0 0 0; text-align:right;}
+        .bggray{ background:#f9f9f9}
+        .pager span {
+            background: #8FC41F;
+            color: #fff;
+            border: 1px solid #8FC41F;
+            padding: 3px 10px;
+            margin-left: 8px;
+        }
+        .pager a {
+            border: 1px solid #666666;
+            padding: 3px 10px;
+            margin-left: 8px;
+            text-decoration: none;
+            color: #333;
+            outline: none;
+        }
+        #position{margin-top: 10px;}
+    </style>
+</head>
+<body>
+<!--main_top-->
+<table width="99%" border="0" cellspacing="0" cellpadding="0" id="searchmain">
+    <tr>
+        <td width="99%" align="left" valign="top">您的位置：库存管理   >  单个殿库存</td>
+    </tr>
+    <tr>
+        <td align="left" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" id="search">
+                <tr>
+                    <td width="90%" align="left" valign="middle">
+                        <form method="post" action="<?php echo U('select');?>">
+                            <span>查询区域：</span>
+                            <select name="position" id="position">
+                                <?php if(is_array($cat_parts)): foreach($cat_parts as $key=>$list): ?><option value="<?php echo ($list["id"]); ?>"><?php echo ($list["cat_part_name"]); ?></option><?php endforeach; endif; ?>
+                            </select>
+                            <input name="" type="submit" value="查询" class="text-but" style="color: white;position: absolute;left: 170px;">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td align="left" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" id="main-tab">
+                <tr>
+                    <th align="center" valign="middle" class="borderright">编号</th>
+                    <th align="center" valign="middle" class="borderright">殿区</th>
+                    <th align="center" valign="middle" class="borderright">总计</th>
+                    <th align="center" valign="middle" class="borderright">佛像位(双)</th>
+                    <th align="center" valign="middle" class="borderright">佛像位(单)</th>
+                    <th align="center" valign="middle" class="borderright">莲花位(双)</th>
+                    <th align="center" valign="middle" class="borderright">莲花位(单)</th>
+                    <th align="center" valign="middle" class="borderright">已售数量</th>
+                    <th align="center" valign="middle" class="borderright">未售数量</th>
+                    <th align="center" valign="middle">操作</th>
+                </tr>
+
+                <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
+                    <td align="center" valign="middle" class="borderright borderbottom"><?php echo ($info["id"]); ?></td>
+                    <td align="center" valign="middle" class="borderright borderbottom"><?php echo ($info["cat_part_name"]); ?></td>
+                    <td align="center" valign="middle" class="borderright borderbottom"><?php echo ($info["store"]); ?></td>
+                    <td align="center" valign="middle" class="borderright borderbottom"><?php echo ($shuangwei["f_count"]); ?></td>
+                    <td align="center" valign="middle" class="borderright borderbottom"><?php echo ($danwei["f_count"]); ?></td>
+                    <td align="center" valign="middle" class="borderright borderbottom"><?php echo ($shuangwei["l_count"]); ?></td>
+                    <td align="center" valign="middle" class="borderright borderbottom"><?php echo ($danwei["l_count"]); ?></td>
+                    <td align="center" valign="middle" class="borderright borderbottom"><?php echo ($info["yishou"]); ?></td>
+                    <td align="center" valign="middle" class="borderright borderbottom"><?php echo ($info["weishou"]); ?></td>
+                    <td align="center" valign="middle" class="borderbottom">
+                        <a href="<?php echo U(showe,array('id'=>$info['id'] ));?>" target="mainFrame" onFocus="this.blur()" class="add">查看已售位置</a>
+                    </td>
+                </tr>
+
+            </table></td>
+    </tr>
+    <tr>
+        <td align="right" ><ul class="paginList pager"><!-- 分页显示 --><?php echo ($page); ?></ul></td>
+    </tr>
+</table>
+</body>
+</html>

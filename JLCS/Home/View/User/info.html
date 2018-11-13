@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>中国帝宫-个人中心</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="__PUBLIC__/css/css2.css" />
+        <link rel="stylesheet" href="__PUBLIC__/css/ms-style.min.css" />
+        <link rel="stylesheet" href="__PUBLIC__/css/sui.css" />
+        <script type="text/javascript" src="__PUBLIC__/js/jquery-latest.js"></script>
+        <script type="text/javascript" src="__PUBLIC__/js/pc.js"></script>
+        <script type="text/javascript" src="__PUBLIC__/js/area.js"></script>
+        <style>
+        body {
+            background: #f5f5f5;
+        }
+            .sui-table th{
+            padding: 16px 8px;
+            line-height: 18px;
+            text-align: center;
+            vertical-align: middle;
+            border-top: 1px solid #e6e6e6;
+            font-weight: normal;
+            font-size: 14px;
+            color: #333333;
+           }
+           .sui-table td {
+            padding: 16px 8px;
+            line-height: 18px;
+            text-align: center;
+            vertical-align: middle;
+            border-top: 1px solid #e6e6e6;
+            font-weight: normal;
+            font-size: 12px;
+            color: #333333;
+           }
+    img {
+        max-width: 100%;
+        height: auto;
+        /*vertical-align: bottom;*/
+        border: 0;
+        -ms-interpolation-mode: bicubic;
+        margin-left: -10px;
+    }
+a{
+    color: #000000;
+}
+            progress {
+                width: 300px;
+                border: 1px solid #ffffff;
+                background-color: #e6e6e6;
+                color: #0064B4;
+                /*IE10*/
+            }
+            
+            progress::-moz-progress-bar {
+                background: #FFFFFF;
+            }
+            
+            progress::-webkit-progress-bar {
+                background: #ccc;
+            }
+            
+            progress::-webkit-progress-value {
+                background: #FF7700;
+            }
+            a{
+                color: #000000;
+            }
+            .sui-table th, .sui-table td {
+            padding: 16px 8px;
+            line-height: 18px;
+            text-align: center;
+            vertical-align: middle;
+            border-top: 1px solid #e6e6e6;
+            
+        }
+     .sui-nav.nav-tabs > .active > a {
+        border:1px #fff solid;
+        background-color: #fff;
+         border-bottom-color: transparent; 
+        cursor: default;
+        font-weight: normal;
+        color: #F2873B;
+        }
+        .sui-nav.nav-tabs > li > a {
+            color: #333333;
+            line-height: 18px;
+            -webkit-border-radius: 3px 3px 0 0;
+            -moz-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0;
+            border: 1px #fff solid;
+            border-bottom: 1px #fff solid;
+            height: 30px;
+            width: 80px;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+        .sui-nav.nav-tabs {
+            border-bottom: 1px solid #CECECE;
+            padding-left: 5px;
+        }
+
+        .sui-nav.nav-tabs > li {
+            margin-bottom: -1px;
+             background-color: #fff; 
+             border-bottom: 1px #ccc solid;
+        }
+        .sui-nav.nav-tabs > .active {
+            border-bottom: 0;
+        }
+        .sui-nav.nav-tabs > li + li {
+            margin-left: -3px;
+        }
+        </style>
+    </head>
+
+    <body class="ms-body" style="overflow-x:hidden;">
+        <div id="glideDiv0">
+    <div id="nav2_ex" class="nav2_index">
+        <!--top -->
+        <div id="headTopBg">
+            <div id="headTop" class="w1024">
+                <div class="headTopRight">
+                    <ul id="nav_all">
+                        <if condition = "$_SESSION['name']">
+                            <li><a href="" >{$_SESSION['name']}</a></li>
+                            <a href="__MODULE__/Cart/index">我的认捐库</a>
+                            <li><a href="__MODULE__/User/dologot">退出</a></li>
+                            <else />
+                            <li><a href="__MODULE__/User/login" >登录</a></li>
+                            <li><a href="__MODULE__/User/register">注册</a></li>
+                        </if>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--top_end -->
+        <div class="clean"></div>
+        <div class="nav2_ex">
+            <div id="topLogo"><a href="__MODULE__/Index/index1"><img src="__PUBLIC__/images/logo.jpg"/></a></div>
+            <div id="topMenu" >
+                <a href="__MODULE__/Index/index">首页</a>
+                <a href="{:U('Index/smjs')}">寺庙供奉</a>
+                <a href="{:U('Index/smjs')}">生命关怀</a>
+                <a href="__MODULE__/Index/fjzh">佛教智慧</a>
+                <a href="__MODULE__/User/info" style="color: red;">个人中心</a>
+                <a href="__MODULE__/Transfer/index">赠送</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+<!-- banner start -->
+
+<div class="banner">
+        <header class="ms-header ms-header-inner ms-head-position">
+            <article class="ms-useinfo" style="margin-top:30px">
+                <div class="header-useinfo" id="">
+                    <div class="ms-avatar">
+                        <a style="display:block;margin-left:50px;">{$_SESSION['name']}</a>
+                    </div>
+
+                    <div class="ms-name-info">
+                        <div class="info-member" id="blink">
+                            <span style="margin-left: 20px;">
+                         尊 敬 的 会 员，欢 迎 您！！！</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </header>
+</div>
+        <div id="ms-center" class="container">
+            <div class="menu">
+                <div class="menu-side">
+                    <div class="side-neck" style="margin-top: 20px;">
+                        <i></i>
+                    </div>
+                    <div class="ms-side" style="margin-top: 20px;">
+                        <article class="side-menu side-menu-off">
+                            <dl class="side-menu-tree" style="padding-left: 50px;height: 150px;">
+                                <dt><img   style="margin-right: 10px;margin-left: -20px;"/><a href="__MODULE__/Cart/index">我的认捐库</a></dt>
+                                <dt><img   style="margin-right: 10px;margin-left: -20px;"/>会员信息</dt>
+                                <ul class="ulmenu1">
+                                    <li><a href="javascript:void(0);">个人信息</a></li>
+                                    <li><a href="javascript:void(0);">我的订单</a></li>
+                                    <li><a href="javascript:void(0);">我的认捐</a></li>
+                                 </ul>
+                            </dl>
+                            <a ison="on" class="switch-side-menu icon-up-side"><i></i></a>
+                        </article>
+                    </div>
+                  </div>
+                </div>
+
+        <div class="content">
+             <div class="menu1 menu_tab">
+                 <!--TAB1-->
+                    <div id="tab1" class="tab active1" style="margin-top: 30px;display: block;">
+                         <div class="public_m1">
+                                <div class="public_m2">资料管理</div>
+                                <hr style=" height:1px;border:none;border-top:1px solid #185598;" />
+                             <span style="color: red;font-size: 18px;">赶快完善您的个人信息吧！</span>
+
+                              <div class="divv">
+                                  <span style="display:inline-block;font-size: 18px;color:green;margin-top:10px;">基本信息:</span><br/>
+                                  <form action="{:U('edit_info')}" method="post" onsubmit="return checksbmit()">
+                                      <input type="hidden" name="id" value="{$users.id}">
+                                      <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 10px;height: 20px;"> 用&nbsp;&nbsp;户&nbsp;&nbsp;名: <input type="text" name="name" value="{$users.name}" style="margin-left:31px;width: 240px;height: 25px;" class="name"></br></div>
+                                      <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 10px;height: 20px;"> 密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码: <input type="password" name="password" value="" style="width:240px;height: 25px;margin-left:30px;" placeholder="不填,默认不修改" class="pssword"></br></div>
+                                      <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 20px;height: 20px;"> 注册时间:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$users.regtime}</br></div>
+                                      <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 10px;height: 20px;"> 电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话: <input type="text" name="phone" value="{$users.phone}" style="margin-left:30px;width: 240px;height: 25px;" placeholder="请输入您的电话" class="phone"></br></div>
+                                      <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 10px;height: 20px;"> 代&nbsp;&nbsp;理&nbsp;&nbsp;商: <input type="text" name="agent" value="{$users.agent}" style="margin-left:31px;width: 240px;height: 25px;" placeholder="请输入代理商编号" class="agent"></br></div>
+                                      <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 10px;height: 20px;">
+							          <span>身份证号:</span>
+							          <input style="margin-left:32px;width: 240px;height: 25px;" value="{$user_infos.cid}" placeholder="请输入您的身份证号" name="cid" class="cid"/>
+						              </div>
+						              <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 10px;height: 20px;">
+							          <span>家庭地址:</span>
+							          <div class="info">
+	                                  <div>
+	                                  <select id="s_province" name="s_province"></select>  
+                                      <select id="s_city" name="s_city" ></select>  
+                                      <select id="s_county" name="s_county"></select>
+                                      <script type="text/javascript">_init_area();</script>
+                                      </div>
+                                      <div id="show"></div>
+                                      </div>
+							          <input style="margin-top: 10px;width: 340px;height: 30px;" value="{$user_infos.address}" placeholder="请输入您的详细地址" name="address" class="address"/>
+						              </div>
+                                      <input type="submit" name="" class="xiugai" value="修改" style="width: 60px;height: 30px;border: 1px solid green;background: green;color: white;position: relative;left: 100px; top:80px;"/>
+                                  </form>
+                              </div>
+                         </div>
+                    </div>
+                 <!--TAB2-->
+                <div  id="tab2" class="tab active1" style="margin-top: 30px;">
+                                      <div class="public_m1">
+                                       <div class="public_m2">订单列表</div>
+                                       <hr style=" height:1px;border:none;border-top:1px solid #185598;" />
+
+                                    <div class="tab-content" style="width: 1000px;margin-top: 10px;border:1px #fff solid; border-top:transparent;margin-left: 30px;">
+
+                                         <div id="profile" class="tab-pane active" style="padding: 00px 00px;">
+                                         <div style="width: 100%;border: 1px #ccc solid;line-height: 50px;background-color: #fdfdfd">
+                                            <span style="color: #858585;margin-left: 160px;">认捐商品</span>
+                                            <span style="color: #858585;margin-left: 220px;">数量</span>
+                                            <span style="color: #858585;margin-left: 210px;">订单总价(元)</span>
+                                            <span style="color: #858585;margin-left: 55px;">订单状态</span>
+                                            <span style="color: #858585;margin-left: 55px;">订单操作</span>
+                                         </div>
+                                        <volist id="list" name="orders">
+                                            <form method="post" action="{:U('Pay/info')}">
+                                            <div style="width: 100%;height: 150px;border: 1px #addff8 solid;">
+
+                                                <div style="width: 100%;height: 50px;background-color: #eaf9ff;vertical-align: middle;font-size: 12px;">
+                                                    <span style="line-height: 50px;">{$list.createtime}</span>
+                                                    <span style="line-height: 50px;margin-left: 20px;">订单号：{$list.order_id}</span>
+                                                </div>
+                                                <div style="float: left;width: 65%;height: 93px;">
+                                                    <div style="width: 100%;">
+                                                        <img src="__PUBLIC__/images/details/image/01.jpg" style="height: 100px;float: left;margin-left:0px;" />
+                                                        <dl style="width: 220px;float: left;margin-left: 60px;margin-top: 40px;">祈福莲位</dl>
+                                                        <del style="display: inline-block;margin-left: -38px;margin-top: 20px;color: #858585;"></del>
+                                                        <dl style="float: left;margin-left: 60px;margin-top: 40px;">{$list.order_num}</dl>
+                                                    </div>
+                                                </div>
+
+                                                <div style="float: left;height:100px;border-left: 1px #addff8 solid;width: 11%;text-align: center;">
+
+                                                    <span style="font-weight: bold;margin-top: 30px;display: block;">￥{$list.order_total_price}</span>
+                                                </div>
+                                                <if condition="($list.status eq '1')">
+                                                <div style="float: left;height:100px;border-left: 1px #addff8 solid;width: 11%;text-align: center ;">
+                                                    <dl style="margin-top: 30px;font-size: 25px;color:green;">已付款</dl>
+                                                </div>
+                                                    <div style="float: left;height:100px;border-left: 1px #addff8 solid;width: 11%;text-align: center ;">
+                                                        <dl style="margin-top: 30px;">查看详情</dl>
+                                                    </div>
+                                                        <else />
+                                                    <div style="float: left;height:100px;border-left: 1px #addff8 solid;width: 11%;text-align: center ;">
+                                                        <dl style="margin-top: 30px;font-size: 22px;color:red;">未付款</dl>
+                                                    </div>
+                                                    <input type="hidden" name="order_total_price" value="{$list.order_total_price}">
+                                                    <input type="hidden" name="order_id" value="{$list.order_id}">
+                                                    <div style="float: left;height:100px;border-left: 1px #addff8 solid;width: 11%;text-align: center ;">
+                                                        <dl style="margin-top: 30px;font-size: 25px;color:red;">
+                                                            <input type="submit" value="立即支付" style="color:white;font-size: 16px;background:green;"></dl>
+                                                        <dl style="margin-top: 10px;"><a href="{:U('Product/details?id='.$list['id'])}">查看详情</a></dl>
+                                                    </div>
+                                                        </if>
+                                            </div>
+                                                </form>
+                                                </volist>
+                                         </div>
+                                    </div>
+                                    </div>
+                            </div>
+                 <!--TAB3-->
+                 <div id="tab3" class="tab active1" style="margin-top: 30px;">
+                     <div class="public_m1">
+                         <div class="public_m2">认捐列表</div>
+                         <hr style=" height:1px;border:none;border-top:1px solid #185598;" />
+                         <span style="color: red;font-size: 20px;font-weight: bold;">中国帝宫欢迎您的认捐！</span>
+                         <br><br>
+                         <span style="color:rebeccapurple;font-size: 18px;">您当前已认捐常州*九龙禅寺 万佛堂->佛恩殿A区 78|79-05号佛像位，您的供奉权证号为CJL-I-A78|79-05。</span><br><br><br>                        
+                     </div>
+                     
+                 </div>
+                 <!--<div class="aaa" style="display: none;">
+                 <div class="shade">
+		             </div>
+            <div class="shade_content">
+			<div class="col-xs-12 shade_colse">
+				<button onclick="javascript:onclick_close();">x</button>
+			</div>
+			<div class="nav shade_content_div">
+				<div class="col-xs-12 shade_title">
+					填写个人信息
+				</div>
+				<div class="col-xs-12 shade_from">
+					<form action="" method="post" id="saveReportForm" onsubmit="return saveReport()">
+						<div class="col-xs-12">
+							<span class="span_style" id="">身份证号：</span>
+							<input style="width: 310px;" class="input_style" type="" name="address" id="agentname" value="" placeholder="请输入您的身份证号" />
+						</div>
+						<div class="col-xs-12">
+							<span class="span_style" id="">家庭地址：</span>
+							<div class="info">
+	                         <div>
+	                          <select id="s_province" name="s_province"></select>  
+                              <select id="s_city" name="s_city" ></select>  
+                              <select id="s_county" name="s_county"></select>
+                              <script type="text/javascript">_init_area();</script>
+                             </div>
+                              <div id="show"></div>
+                              </div>
+							<input style="width: 310px;margin: 5px;margin-left: 105px;" class="input_style" type="" name="agent_aid" id="agent_aid" value="" placeholder="请输入您的详细地址" />
+						</div>
+						<div class="col-xs-12">
+							<input type="button" class="sub_set" id="sub_setID" value="提交" />
+							<input class="btn_remove" type="button" id="" onclick="javascript:onclick_close();" value="取消" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		</div>-->
+
+                 <div id="tab3" class="tab active1" style="margin-top: 30px;">
+                     <div class="public_m1">
+                         <div class="public_m2">认捐列表</div>
+                         <hr style=" height:1px;border:none;border-top:1px solid #185598;" />
+                         <span style="color: red;font-size: 20px;font-weight: bold;">您还没有认捐任何莲花位！前去 <a href="">认捐吧!</a>  </span>
+                         <br><br>
+                     </div>
+                 </div>
+
+                </div>
+            </div>
+
+</div> 
+        <div class="clear "></div>
+    </body>
+    <script type="text/javascript"> 
+                function changeColor(){
+                var color="#f00|green|blue";
+                color=color.split("|");
+                document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)];
+                }
+                setInterval("changeColor()",200);
+    </script>
+    <script type="text/javascript">
+        $(".side-menu-tree ul li").click(function(){
+            var index=$(this).index();  //获取列表li 索引值 0 1 2
+            $(".menu_tab > div").eq(index).show().siblings().hide(); //在按钮选中时在下面显示相应的内容，同时隐藏不需要的框架内容
+        })
+
+        $(".creatediv").click(function(){
+            $("#dialog").slideDown(200);
+        });
+
+        $(".close").click(function(){
+            $("#dialog").css('display','none');
+        })
+
+        var Gid  = document.getElementById ;
+        var showArea = function(){
+	    Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" + 	
+	    Gid('s_city').value + " - 县/区" + 
+	    Gid('s_county').value + "</h3>"
+						}
+
+
+        function checksbmit(){
+            if($(".name").val() == ''){
+                alert('用户名不能为空');
+                return false;
+            }else if($(".phone").val() == ''||!/^1[34578]\d{9}$/.test($(".phone").val())){
+                alert('请确认您输入的手机号格式是否正确!');
+                return false;
+            }else if(!/^(\d{15}|\d{17}[\dXx])$/.test($(".cid").val())){
+                alert('请检查身份证是否有误!');
+                return false;
+            }else if($("#s_province").val() == '省份'){
+                alert('家庭地址不能为空!');
+                return false;
+            }else if($("#s_city").val() == '地级市'){
+                alert('家庭地址不完整!');
+                return false;
+            }else if($("#s_county").val() == '市、县级市'){
+                alert('家庭地址不完整!');
+                return false;
+            }else if($(".address").val() == ''){
+                alert('详细地址不能为空!');
+                return false;
+            }
+        }
+    </script>
+</html>

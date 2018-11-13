@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中国帝宫-九龙禅寺</title>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/style.css" />
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function (){
+            document.querySelector(".rotate-circle").addEventListener("mouseover",function (){
+                if(this.classList.contains('rotate')){
+                    this.classList.remove('rotate');
+                }else{
+                    this.classList.add('rotate');
+                }
+            },false)
+
+            document.querySelector(".rotate-circle1").addEventListener("mouseover",function (){
+                if(this.classList.contains('rotate1')){
+                    this.classList.remove('rotate1');
+                }else{
+                    this.classList.add('rotate1');
+                }
+            },false)
+        }
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?fffbd8919f6f2b6aaf974fc9cf090ce1";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+<body style="overflow-x:hidden;">
+
+<div id="glideDiv0">
+<div id="nav2_ex" class="nav2_index">
+<!--top -->
+<div id="headTopBg"> 
+<div id="headTop" class="w1024">
+ <div class="headTopRight">
+    <ul id="nav_all">
+        <if condition = "$_SESSION['name']">
+        <li><a href="" >{$_SESSION['name']}</a></li>
+            <a href="__MODULE__/Cart/index">我的认捐库</a>
+            <li><a href="__MODULE__/User/dologot">退出</a></li>
+        <else />
+             <li><a href="__MODULE__/User/login" >登录</a></li>
+             <li><a href="__MODULE__/User/register">注册</a></li>
+            <li><a href="__MODULE__/User/activation" >激活</a></li>
+        </if>
+
+    </ul>
+ </div>
+ </div>
+ </div>
+<!--top_end -->
+<div class="clean"></div>
+<div class="nav2_ex">
+<div id="topLogo"><a href="{:U('Index/jlcs')}"><img src="__PUBLIC__/images/logo.jpg"/></a></div>
+<div id="topMenu" > 
+  <a href="__MODULE__/Index/index" style="color:red;" >首页</a>
+  <a href="{:U('smjs')}">寺庙供奉</a>
+  <a href="{:U('smgh')}">生命关怀</a>
+  <a href="__MODULE__/Index/fjzh">佛教智慧</a>
+    <a href="{:U('User/info')}">个人中心</a>
+    <a href="__MODULE__/Transfer/index">赠送</a>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+
+<div class="clear"></div>
+<!-- banner start -->
+    <div class="banner">
+      <div style="width: 1200px;margin: 0 auto" >
+     <img src="__PUBLIC__/images/banner.jpg"  style="width: 100%;"/>
+    
+	     <div>
+            <div style="margin-bottom: 10px;margin-left: 200px">
+            	<div style="float: left;"><img src="__PUBLIC__/images/zb.png"/></div>
+            	<div style="float: left;font-size: 24px;margin: 5px 5px;">九龙禅寺宣传视频</b></div>
+            	<div style="float: left;"><img src="__PUBLIC__/images/yb.png"/></div>
+            </div>
+            <div>
+                <video controls  style="margin-top: 20px;margin-left: 180px;">
+                    <source src="__PUBLIC__/images/sp.mp4" />
+                </video>
+            </div>
+        </div>
+        <div>
+            <div style="margin: 10px -30px;margin-left:260px;">
+            	<div style="float: left;"><img src="__PUBLIC__/images/zb.png"/></div>
+            	<div style="float: left;font-size: 24px;margin: 5px 5px;">九龙迎佛</b></div>
+            	<div style="float: left;"><img src="__PUBLIC__/images/yb.png"/></div>
+            </div>
+            <div class="clear"></div>
+            <div style="float: left;margin-right: 36px;margin-left: 180px;">
+             	<div class="avatar1">
+             	    <a href="__URL__/jlcs_wft">
+             	    	<img class="img1" src="__PUBLIC__/images/wanfo.jpg" style="width: 410px;margin-top: 20px;"/>
+             	    </a>
+             	</div>
+             	<p>万佛堂</p>
+            </div>
+            <div style="float: left;">
+             	<div class="avatar2">
+             	    <a href="__URL__/jlcs_hjzc">
+             		    <img class="img2" src="__PUBLIC__/images/huangjia.jpg" style="width: 410px;margin-top: 20px;"/>            	
+             	    </a>            	
+             	</div>
+             	<p>皇家宗祠</p>
+            </div>
+        </div>
+        </div>
+</div>
+<!-- banner end-->
+<div class="clear"></div>
+<div class="c">
+<!--foot_start -->
+<include file="Public/footer" />
+<!--foot_end -->
+</div>
+</body>
+</html>

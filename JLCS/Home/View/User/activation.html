@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0182)http://www.htmlsucai.com/demo/2017/08/%e4%bb%bf%e5%b0%8f%e7%b1%b3%e5%95%86%e5%9f%8e%e7%bd%91%e7%ab%99%e7%ba%afHTML%e6%a8%a1%e6%9d%bf%e6%ba%90%e7%a0%81%e4%b8%8b%e8%bd%bd/register.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>中国帝宫-会员激活</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/register.css">
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+	</head>
+	<body>
+		<form method="post" action="__MODULE__/User/doactivation" onsubmit="return login()">
+		<div class="regist">
+			<div class="regist_center">
+				<div class="regist_top">
+					<div class="left fl">会员卡激活</div>
+					<div class="hui fr"><a href="__MODULE__/Index/index" target="_self">回到官网</a></div>
+					<div class="clear"></div>
+					<hr width="598px">
+
+				</div>
+				<div class="regist_main center">
+					<span style="color:red;font-size: 20px;text-align: center;">中国帝宫感谢您的认捐!功德无量!</span>
+					<div class="username">会&nbsp;员&nbsp;卡&nbsp;号:&nbsp;<input id="userName" class="shurukuang" type="text" name="user_cartid" placeholder="请输入您持有的会员卡号"><span style="color: red;">*必填项</span></div>
+					<div class="username">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:&nbsp;&nbsp;&nbsp;&nbsp;<input id="relname" class="shurukuang" type="text" name="relname" placeholder="请输入您的真实姓名"><span style="color: red;">*必填项</span></div>
+					<div class="username">手&nbsp;&nbsp;机&nbsp;&nbsp;号:&nbsp;&nbsp;&nbsp;&nbsp;<input id="phone" class="shurukuang" type="text" name="phone" placeholder="请输入您的手机号码"><span style="color: red;">*必填项</span></div>
+					<div class="username">代&nbsp;&nbsp;理&nbsp;&nbsp;商:&nbsp;&nbsp;&nbsp;&nbsp;<input id="agent" class="shurukuang" type="text" name="agent" placeholder="请输入您的销售代理编号，若无请忽略"></div>
+					<div class="username">供奉权证号:<input id="gongfeng" class="shurukuang" type="text" name="gongfeng" placeholder="请输入您的供奉权证编号" onkeyup="checkwarrant(this);"><span style="color: red;">*必填项</span></div>
+					<div class="username">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:&nbsp;&nbsp;&nbsp;&nbsp;<input id="pwd" class="shurukuang" type="password" name="password" placeholder="请设置您的密码"><span style="color: red;">*必填项</span></div>
+
+
+				</div>
+				<div class="regist_submit">
+					<input class="submit" type="submit" name="submit" value="立即激活">
+				</div>
+
+			</div>
+		</div>
+		</form>
+	
+</body>
+<script type="text/javascript">
+	function login(){
+		var userName=document.getElementById("userName").value;
+		var relname=document.getElementById("relname").value;
+		var phone=document.getElementById("phone").value;
+		var gongfeng=document.getElementById("gongfeng").value;
+		var pwd=document.getElementById("pwd").value;
+		var checkstate = true;
+		if(userName == ''){
+			alert('会员卡号不能为空');
+			checkstate = false;
+		}else if(relname == '' ||!/^[\u4E00-\u9FA5]{2,4}$/.test($("#relname").val())){
+			alert('请确认您的姓名是否合法!');
+			checkstate = false;
+		}else if(phone == '' ||!/^1[34578]\d{9}$/.test($("#phone").val())){
+			alert("请确认您输入的手机号格式是否正确!");
+			checkstate = false;
+		}else if(gongfeng == ''){
+			alert('供奉权证号不能为空');
+			checkstate = false;
+		}else if(pwd == ''){
+			alert('密码不能为空!');
+			checkstate = false;
+		}
+		return checkstate;
+	}
+
+	$("#gongfeng").blur(function(){
+		var warrant = $(this).val();
+		var url = '__MODULE__/User/checkwarrant';
+		$.post(url,{id:warrant},function(data){
+			if(data == 0){
+				alert('请验证您的供奉权证号是否正确!');
+				$("#gongfeng").val("");
+			}
+		})
+	});
+</script>
+</html>

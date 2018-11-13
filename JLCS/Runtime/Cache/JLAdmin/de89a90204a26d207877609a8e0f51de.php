@@ -1,0 +1,152 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>主要内容区main</title>
+    <link href="css/css.css" type="text/css" rel="stylesheet" />
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/main/favicon.ico" />
+    <script charset="utf-8" src="/webjlcs/Public/Ueditor/ueditor.config.js"></script>
+    <script charset="utf-8" src="/webjlcs/Public/Ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/webjlcs/Public/Ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" src="/webjlcs/Public/js/jquery-1.8.3.min.js"></script>
+    <style>
+        body{overflow-x:hidden; background:#f2f0f5; padding:15px 0px 10px 5px;}
+        #searchmain{ font-size:12px;}
+        #search{ font-size:12px; background:#548fc9; margin:10px 10px 0 0; display:inline; width:100%; color:#FFF}
+        #search form span{height:40px; line-height:40px; padding:0 0px 0 10px; float:left;}
+        #search form input.text-word{height:24px; line-height:24px; width:180px; margin:8px 0 6px 0; padding:0 0px 0 10px; float:left; border:1px solid #FFF;}
+        #search form input.text-but{height:24px; line-height:24px; width:55px; background:url(images/main/list_input.jpg) no-repeat left top; border:none; cursor:pointer; font-family:"Microsoft YaHei","Tahoma","Arial",'宋体'; color:#666; float:left; margin:8px 0 0 6px; display:inline;}
+        #search a.add{ background:url(images/main/add.jpg) no-repeat 0px 6px; padding:0 10px 0 26px; height:40px; line-height:40px; font-size:14px; font-weight:bold; color:#FFF}
+        #search a:hover.add{ text-decoration:underline; color:#d2e9ff;}
+        #main-tab{ border:1px solid #eaeaea; background:#FFF; font-size:12px;}
+        #main-tab th{ font-size:12px; background:url(images/main/list_bg.jpg) repeat-x; height:32px; line-height:32px;}
+        #main-tab td{ font-size:12px; line-height:40px;}
+        #main-tab td a{ font-size:12px; color:#548fc9;}
+        #main-tab td a:hover{color:#565656; text-decoration:underline;}
+        .bordertop{ border-top:1px solid #ebebeb}
+        .borderright{ border-right:1px solid #ebebeb}
+        .borderbottom{ border-bottom:1px solid #ebebeb}
+        .borderleft{ border-left:1px solid #ebebeb}
+        .gray{ color:#dbdbdb;}
+        td.fenye{ padding:10px 0 0 0; text-align:right;}
+        .bggray{ background:#f9f9f9; font-size:14px; font-weight:bold; padding:10px 10px 10px 0; width:120px;}
+        .main-for{ padding:10px;}
+        .main-for input.text-word{ width:310px; height:36px; line-height:36px; border:#ebebeb 1px solid; background:#FFF; font-family:"Microsoft YaHei","Tahoma","Arial",'宋体'; padding:0 10px;}
+        .main-for select{ width:310px; height:36px; line-height:36px; border:#ebebeb 1px solid; background:#FFF; font-family:"Microsoft YaHei","Tahoma","Arial",'宋体'; color:#666;}
+        .main-for input.text-but{ width:100px; height:40px; line-height:30px; border: 1px solid #cdcdcd; background:#e6e6e6; font-family:"Microsoft YaHei","Tahoma","Arial",'宋体'; color:#969696; float:left; margin:0 10px 0 0; display:inline; cursor:pointer; font-size:14px; font-weight:bold;}
+        #addinfo a{ font-size:14px; font-weight:bold; background:url(images/main/addinfoblack.jpg) no-repeat 0 1px; padding:0px 0 0px 20px; line-height:45px;}
+        #addinfo a:hover{ background:url(images/main/addinfoblue.jpg) no-repeat 0 1px;}
+    </style>
+</head>
+<body>
+<!--main_top-->
+<table width="99%" border="0" cellspacing="0" cellpadding="0" id="searchmain">
+    <tr>
+        <td width="99%" align="left" valign="top">您的位置：文章管理&nbsp;&nbsp;>&nbsp;&nbsp;添加文章</td>
+    </tr>
+
+    <tr>
+        <td align="left" valign="top">
+            <form method="post" action="<?php echo U('doadd');?>" onsubmit="return add()">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" id="main-tab">
+                    <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
+                        <td align="right" valign="middle" class="borderright borderbottom bggray">文章标题：</td>
+                        <td align="left" valign="middle" class="borderright borderbottom main-for">
+                            <input type="text" name="title" value="" class="text-word" id="name" placeholder="请输入文章标题">
+                        </td>
+                    </tr>
+                    <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
+                        <td align="right" valign="middle" class="borderright borderbottom bggray">所属寺庙：</td>
+                        <td align="left" valign="middle" class="borderright borderbottom main-for">
+                            <select name="temple" id="checktemple" onchange="temples()" >
+                               <?php if(is_array($temples)): foreach($temples as $key=>$list): ?><option value="<?php echo ($list["id"]); ?>" ><?php echo ($list["temple"]); ?></option><?php endforeach; endif; ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
+                        <td align="right" valign="middle" class="borderright borderbottom bggray">所属类别：</td>
+                        <td align="left" valign="middle" class="borderright borderbottom main-for">
+                            <select name="cat_id" id="catid">
+                                <?php if(is_array($article_assorts)): foreach($article_assorts as $key=>$list): ?><option value="<?php echo ($list["id"]); ?>"><?php echo ($list["name"]); ?></option><?php endforeach; endif; ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
+                        <td align="right" valign="middle" class="borderright borderbottom bggray">文章内容：</td>
+                        <td align="left" valign="middle" class="borderright borderbottom main-for">
+                            <script id="editor" type="text/plain" name="content"   style="width:800px;height:300px;"></script>
+                        </td>
+                    </tr>
+                    <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
+                        <td align="right" valign="middle" class="borderright borderbottom bggray">简介：</td>
+                        <td align="left" valign="middle" class="borderright borderbottom main-for">
+                            <input type="text" name="brief" value="" class="text-word" id="pwd" placeholder="请输入简介">
+                        </td>
+                    </tr>
+                    <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
+                        <td align="right" valign="middle" class="borderright borderbottom bggray">作者：</td>
+                        <td align="left" valign="middle" class="borderright borderbottom main-for">
+                            <input type="text" name="author" value="" class="text-word" id="author">
+                        </td>
+                    </tr>
+                    <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
+                        <td align="right" valign="middle" class="borderright borderbottom bggray">是否置顶：</td>
+                        <td align="left" valign="middle" class="borderright borderbottom main-for">
+                            <select name="zhiding" id="">
+                                <option value="0">不置顶</option>
+                                <option value="1">置顶</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
+                        <td align="right" valign="middle" class="borderright borderbottom bggray">&nbsp;</td>
+                        <td align="left" valign="middle" class="borderright borderbottom main-for">
+                            <input name="" type="submit" value="添加" class="text-but">
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+</table>
+</body>
+<script type="text/javascript">
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    var ue = UE.getEditor('editor');
+
+    function add(){
+        var title =document.getElementById('name').value;
+        var editor =document.getElementById('editor').value;
+        var author =document.getElementById('author').value;
+        var martrue = true;
+        if(title == '' || editor=='' ||author ==''){
+            alert('请检查是否填写完全');
+           martrue = false;
+        }
+        return martrue;
+    }
+
+    function temples(){
+        var templeid = document.getElementById('checktemple').value;
+        var url= '/webjlcs/JLAdmin/Article/checktemple';
+        $.post(url,{id:templeid},function(data){
+            if(data != 'a'){
+               var data = data;
+                var xqo = eval('(' + data + ')');
+                $("#catid").html("");
+                for(var i in xqo){
+                    var name = xqo[i].name;
+                    var id = xqo[i].id;
+                    $("<option value="+id+" >"+name+"</option>").appendTo("#catid")
+                }
+            }else{
+                alert('该寺庙下没有栏目');
+            }
+        })
+    }
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,309 @@
+[ 2018-09-21T09:29:42+08:00 ] ::1 /webjlcs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-21T09:30:32+08:00 ] ::1 /webjlcs/Home/Index/jlcs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Home\Controller\IndexController.class.php on line 63 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Home\062cab7d9290c2f44e9ae89f45a38e94.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-21T09:30:35+08:00 ] ::1 /webjlcs/Home/Index/jlcs_wft
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant c - assumed 'c' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Home\5cb929016d38edd85eb81463fba35eee.php 第 49 行.
+NOTIC: [8] Use of undefined constant d - assumed 'd' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Home\5cb929016d38edd85eb81463fba35eee.php 第 50 行.
+NOTIC: [8] Use of undefined constant a - assumed 'a' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Home\5cb929016d38edd85eb81463fba35eee.php 第 51 行.
+NOTIC: [8] Use of undefined constant b - assumed 'b' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Home\5cb929016d38edd85eb81463fba35eee.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-09-21T09:31:22+08:00 ] ::1 /webjlcs/Home/Product/index/cat_id/2/img/c.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: biaoshi D:\phpStudy\WWW\webjlcs\JLCS\Home\Controller\ProductController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\webjlcs\JLCS\Home\Controller\ProductController.class.php 第 80 行.
+NOTIC: [8] Undefined variable: owns D:\phpStudy\WWW\webjlcs\JLCS\Home\Controller\ProductController.class.php 第 81 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Home\ea0431c51db31da3c7e38dd28575eae0.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.122007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.122007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-09-21T09:31:23+08:00 ] ::1 /webjlcs/Home/Product/ajax_show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0650s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `goods` WHERE `owns` = 'a' AND `cat_id` = 2 ORDER BY goods_name ASC  [ RunTime:0.0330s ]
+SQL: SELECT * FROM `products` WHERE `goods_id` = '728'  [ RunTime:0.0340s ]
+SQL: SELECT * FROM `products` WHERE `goods_id` = '730'  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `products` WHERE `goods_id` = '732'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE `goods_id` = '734'  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `products` WHERE `goods_id` = '736'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE `goods_id` = '738'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE `goods_id` = '2982'  [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-09-21T10:05:37+08:00 ] ::1 /webjlcs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-09-21T14:35:50+08:00 ] ::1 /webjlcs/Home/Product/details?id=6300
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `products` WHERE `id` = 6300 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 736 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: image D:\phpStudy\WWW\webjlcs\JLCS\Home\Controller\ProductController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: biaoshi D:\phpStudy\WWW\webjlcs\JLCS\Home\Controller\ProductController.class.php 第 120 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant nowurl - assumed 'nowurl' D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Home\18ed692e241ae46ad08194b00ff164c2.php 第 527 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-09-21T14:35:54+08:00 ] ::1 /webjlcs/Home/Order/ajax_order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-21T14:35:54+08:00 ] ::1 /webjlcs/Home/Order/index?id=6300
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `user_infos` [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `users` WHERE `name` = 'admintong' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user_infos` WHERE `user_id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `products` WHERE `id` = 6300 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 736 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 736 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: biaoshi D:\phpStudy\WWW\webjlcs\JLCS\Home\Controller\OrderController.class.php 第 44 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\phpStudy\WWW\webjlcs\JLCS\Home\Controller\OrderController.class.php on line 45 and defined D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\webjlcs\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: sign D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Home\65a998279edf4dd27955e907386055e1.php 第 248 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Home\65a998279edf4dd27955e907386055e1.php 第 301 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Home\65a998279edf4dd27955e907386055e1.php 第 322 行.
+NOTIC: [8] Undefined variable: cartid D:\phpStudy\WWW\webjlcs\JLCS\Runtime\Cache\Home\65a998279edf4dd27955e907386055e1.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-09-21T14:35:58+08:00 ] ::1 /webjlcs/Home/Order/create_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `order_details` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `user_infos` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `carts` [ RunTime:0.1190s ]
+SQL: SHOW COLUMNS FROM `agrrements` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `products` WHERE `id` = 6300 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE `name` = 'admintong' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user_infos` WHERE `id` = 113 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: beizhu D:\phpStudy\WWW\webjlcs\JLCS\Home\Controller\OrderController.class.php 第 217 行.
+SQL: INSERT INTO `orders` (`order_id`,`order_num`,`order_total_price`,`user_id`,`status`,`createtime`,`agent_aid`,`beizhu`,`user_info_id`,`phone`) VALUES ('1537511942','1','60000','1','0','2018-09-21 14:35:58','A03',NULL,'113','18408241858') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `cats` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `regions` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `temples` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `products` WHERE `id` = 6300 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 736 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cats` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `regions` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `temples` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `products` WHERE `id` = 6300 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `order_details` (`orderid`,`product_id`,`num`,`price`,`user_id`,`description`) VALUES ('166','6300','1','60000.00','1','CJL-Ⅱ-A10|11-06') [ RunTime:0.0000s ]
+SQL: DELETE FROM `carts` WHERE `user_id` = 1 AND `products_id` = 0 [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-21T14:36:00+08:00 ] ::1 /webjlcs/Home/Order/checkorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-09-21T14:36:00+08:00 ] ::1 /webjlcs/Home/Order/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] include(/webjlcsThinkPHP/Library/Vendor/phpqrcode/phpqrcode.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\phpStudy\WWW\webjlcs\JLCS\Home\Controller\OrderController.class.php 第 295 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '/webjlcsThinkPHP/Library/Vendor/phpqrcode/phpqrcode.php' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\webjlcs\JLCS\Home\Controller\OrderController.class.php 第 295 行.
+
+[ 2018-09-21T15:23:41+08:00 ] ::1 /webjlcs/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

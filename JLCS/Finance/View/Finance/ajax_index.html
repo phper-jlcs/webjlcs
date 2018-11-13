@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="main-tab">
+    <tr>
+        <th align="center" valign="middle" class="borderright">总利润</th>
+        <th align="center" valign="middle" class="borderright">成本</th>
+        <th align="center" valign="middle" class="borderright">纯利润</th>
+        <th align="center" valign="middle">操作</th>
+    </tr>
+    <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
+        <td align="center" valign="middle" class="borderright borderbottom"> {$data.alltotal}</td>
+        <td align="center" valign="middle" class="borderright borderbottom"> {$data.stocktotal}</td>
+        <td align="center" valign="middle" class="borderright borderbottom">{$data.profit}</td>
+        <td align="center" valign="middle" class="borderbottom">
+            <a href="" target="mainFrame" onclick="return del()" class="add">编辑</a>
+            <span class="gray">&nbsp;|&nbsp;</span><a href="" target="mainFrame" onFocus="this.blur()" class="add">编辑</a>
+        </td>
+    </tr>
+</table>
+
+</body>
+
+</html>

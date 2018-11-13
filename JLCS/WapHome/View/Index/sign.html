@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>登录</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="js/rem.js"></script> 
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/page.css"/>
+    <link rel="stylesheet" type="text/css" href="css/all.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loaders.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
+<script type="text/javascript">
+	$(window).load(function(){
+		$(".loading").addClass("loader-chanage")
+		$(".loading").fadeOut(300)
+	})
+</script>
+</head>
+<!--loading页开始-->
+<div class="loading">
+	<div class="loader">
+        <div class="loader-inner pacman">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+	</div>
+</div>
+<!--loading页结束-->
+	<body>
+		<header class="mui-bar mui-bar-nav report-header box-s" id="header">
+			<a href="javascript:history.go(-1)"><i class="iconfont icon-fanhui fl"></i></a>
+			<p>登录</p>
+	    </header>
+	    <div id="main" class="mui-clearfix">
+	    	<div class="sign clearfloat">
+	    		<div class="list clearfloat">
+	    			<ul>
+	    				<li>
+	    					<i class="iconfont icon-gerenzhongxin fl"></i>
+	    					<input type="text" name="" id="" value="" class="text fl" placeholder="请输入手机号码" />
+	    				</li>
+	    				<li>
+	    					<i class="iconfont icon-mima fl"></i>
+	    					<input type="text" name="" id="" value="" class="text fl" placeholder="请输入6-16位密码" />
+	    				</li>
+	    			</ul>
+	    			<a href="#" class="tui-btn">
+						登录
+					</a>
+					<div class="bottom clearfloat box-s">
+						<div class="left fl clearfloat">
+							<input type="checkbox" name="" id="check" value="" />
+							<label for="check">同意此《<span>会员政策</span>》</label>
+						</div>
+						<div class="right fr clearfloat">
+							忘记密码？
+							<a href="register.html">立即注册</a>
+						</div>
+					</div>
+	    		</div>
+	    	</div>
+	    </div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+	<script src="js/fastclick.js"></script>
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript" src="js/hmt.js" ></script>
+</html>

@@ -1,0 +1,2867 @@
+@charset "utf-8";
+/* CSS Document */
+body{ margin:0px; padding:0px;}
+#glideDiv0{top:0;left:0; width:100%; min-width:1160px; height:108px; z-index:99999;}
+.white_content2-aa1{
+    background: #9d932d;
+    width:12px;
+    height: 260px;
+    margin-left:799px;
+    margin-top: -190px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-aa1:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-aaa{
+    background: #9d932d;
+    width:60px;
+    height: 14px;
+    margin-left: 24px;
+    margin-top: 10px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-aaa:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-bbb{
+    background: #9d932d;
+    width:60px;
+    height: 14px;
+    margin-left: 113px;
+    margin-top: -14px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-bbb:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-ccc{
+    background: #9d932d;
+    width:60px;
+    height: 14px;
+    margin-left: 200px;
+    margin-top: -14px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-ccc:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-ddd{
+    background: #9d932d;
+    width:60px;
+    height: 14px;
+    margin-left: 288px;
+    margin-top: -14px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-ddd:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-eee{
+    background: #9d932d;
+    width:60px;
+    height: 14px;
+    margin-left: 378px;
+    margin-top: -14px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-eee:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-fff{
+    background: #9d932d;
+    width:60px;
+    height: 14px;
+    margin-left: 466px;
+    margin-top: -14px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-fff:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-ggg{
+    background: #9d932d;
+    width:60px;
+    height: 14px;
+    margin-left: 555px;
+    margin-top: -14px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-ggg:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-hhh{
+    background: #9d932d;
+    width:60px;
+    height: 14px;
+    margin-left: 644px;
+    margin-top: -14px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-hhh:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-iii{
+    background: #9d932d;
+    width:60px;
+    height: 14px;
+    margin-left: 733px;
+    margin-top: -14px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-iii:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-jjj{
+    background: #9d932d;
+    width:85px;
+    height: 14px;
+    margin-top: 262px;
+    margin-left: 23px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-jjj:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-kkk{
+    background: #9d932d;
+    width:85px;
+    height: 14px;
+    margin-top: -14px;
+    margin-left: 180px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-kkk:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-lll{
+    background: #9d932d;
+    width:165px;
+    height: 14px;
+    margin-top: -14px;
+    margin-left: 290px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-lll:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-mmm{
+    background: #9d932d;
+    width:240px;
+    height: 14px;
+    margin-top: -14px;
+    margin-left: 555px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-mmm:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-nnn{
+    background: #9d932d;
+    width:12px;
+    height: 265px;
+    margin-left: 10px;
+    margin-top: -275px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-nnn:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-www{
+    background: #9d932d;
+    width:12px;
+    height: 265px;
+    margin-left: 796px;
+    margin-top: -193px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-www:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-ooo{
+    background: #9d932d;
+    width:23px;
+    height: 193px;
+    margin-left: 87px;
+    margin-top: -265px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-ooo:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-ppp{
+    background: #9d932d;
+    width:23px;
+    height: 193px;
+    margin-left: 176px;
+    margin-top: -193px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-ppp:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-qqq{
+    background: #9d932d;
+    width:23px;
+    height: 193px;
+    margin-left: 265px;
+    margin-top: -193px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-qqq:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-rrr{
+    background: #9d932d;
+    width:23px;
+    height: 193px;
+    margin-left: 353px;
+    margin-top: -193px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-rrr:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-sss{
+    background: #9d932d;
+    width:23px;
+    height: 193px;
+    margin-left: 442px;
+    margin-top: -193px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-sss:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-ttt{
+    background: #9d932d;
+    width:23px;
+    height: 193px;
+    margin-left: 531px;
+    margin-top: -193px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-ttt:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-uuu{
+    background: #9d932d;
+    width:23px;
+    height: 193px;
+    margin-left: 619px;
+    margin-top: -193px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-uuu:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content2-vvv{
+    background: #9d932d;
+    width:23px;
+    height: 193px;
+    margin-left: 707px;
+    margin-top: -193px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content2-vvv:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+
+.wanfot a{
+    color:#A84C10;
+}
+
+
+.white_content3-a{
+    background: #9d932d;
+    width: 268px;
+    height: 26px;
+    margin-left: 30px;
+    margin-top: 11px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content3-a:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content3-b{
+    background: #9d932d;
+    width: 220px;
+    height: 26px;
+    margin-left: 381px;
+    margin-top: -26px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content3-b:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content3-c{
+    background: #9d932d;
+    width: 105px;
+    height: 26px;
+    margin-left: 687px;
+    margin-top: -26px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content3-c:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content3-d{
+    background: #9d932d;
+    width: 15px;
+    height: 228px;
+    margin-left: 10px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content3-d:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content3-e{
+    background: #9d932d;
+    width: 13px;
+    height: 230px;
+    margin-left: 795px;
+    margin-top: -230px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content3-e:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content3-f{
+    background: #9d932d;
+    width: 100px;
+    height: 26px;
+    margin-left: 690px;
+    margin-top: 5px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content3-f:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content3-g{
+    background: #9d932d;
+    width: 28px;
+    height: 26px;
+    margin-left: 24px;
+    margin-top: -26px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content3-g:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content3-h{
+    background: #9d932d;
+    width: 458px;
+    height: 26px;
+    margin-left: 142px;
+    margin-top: -25px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content3-h:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+
+
+.white_content4-a{
+    background: #9d932d;
+    width: 678px;
+    height: 15px;
+    margin-left: 88px;
+    margin-top: 11px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content4-a:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content4-b{
+    background: #9d932d;
+    width: 265px;
+    height: 11px;
+    margin-left: 67px;
+    margin-top: 263px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content4-b:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content4-c{
+    background: #9d932d;
+    width: 236px;
+    height: 11px;
+    margin-left: 532px;
+    margin-top: -12px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content4-c:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content4-d{
+    background: #9d932d;
+    width: 30px;
+    height: 72px;
+    margin-left: 37px;
+    margin-top: -272px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content4-d:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content4-e{
+    background: #9d932d;
+    width: 30px;
+    height: 72px;
+    margin-left: 768px;
+    margin-top: -72px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content4-e:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content4-f{
+    background: #9d932d;
+    width: 30px;
+    height: 72px;
+    margin-left: 768px;
+    margin-top: 22px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content4-f:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content4-g{
+    background: #9d932d;
+    width: 30px;
+    height: 72px;
+    margin-left: 37px;
+    margin-top: -73px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content4-g:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content4-h{
+    background: #9d932d;
+    width: 30px;
+    height: 50px;
+    margin-left: 37px;
+    margin-top: 22px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content4-h:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content4-i{
+    background: #9d932d;
+    width: 266px;
+    height: 22px;
+    margin-left: 67px;
+    margin-top: -165px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content4-i:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content4-j{
+    background: #9d932d;
+    width: 266px;
+    height: 22px;
+    margin-left: 67px;
+    margin-top: 72px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content4-j:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content4-k{
+    background: #9d932d;
+    width: 234px;
+    height: 22px;
+    margin-left:533px;
+    margin-top: -116px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content4-k:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content4-l{
+    background: #9d932d;
+    width: 234px;
+    height: 22px;
+    margin-left: 533px;
+    margin-top: 72px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content4-l:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content4-m{
+    background: #9d932d;
+    width: 30px;
+    height: 50px;
+    margin-left: 768px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content4-m:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content4-n{
+    background: #9d932d;
+    width: 23px;
+    height: 120px;
+    margin-left: 680px;
+    margin-top: -120px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content4-n:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+
+.white_content5-a{
+    background: #9d932d;
+    width: 198px;
+    height: 19px;
+    margin-left: 40px;
+    margin-top: 18px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content5-a:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content5-b{
+    background: #9d932d;
+    width: 198px;
+    height: 19px;
+    margin-left: 298px;
+    margin-top: -19px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content5-b:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content5-c{
+    background: #9d932d;
+    width: 240px;
+    height: 19px;
+    margin-left: 557px;
+    margin-top: -19px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content5-c:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content5-d{
+    background: #9d932d;
+    width: 30px;
+    height: 200px;
+    margin-left: 10px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content5-d:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content5-e{
+    background: #9d932d;
+    width: 30px;
+    height: 200px;
+    margin-left: 770px;
+    margin-top: -200px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content5-e:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content5-f{
+    background: #9d932d;
+    width: 260px;
+    height: 18px;
+    margin-left: 512px;
+    margin-top: 45px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content5-f:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content5-g{
+    background: #9d932d;
+    width: 230px;
+    height: 18px;
+    margin-left: 50px;
+    margin-top: -18px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content5-g:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content5-h{
+    background: #9d932d;
+    width: 60px;
+    height: 120px;
+    margin-left: 238px;
+    margin-top: -262px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content5-h:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content5-i{
+    background: #9d932d;
+    width: 60px;
+    height: 120px;
+    margin-left: 495px;
+    margin-top: -119px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content5-i:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+
+
+.white_content6-a{
+    background: #9d932d;
+    width: 227px;
+    height: 10px;
+    margin-left: 560px;
+    margin-top: 15px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content6-a:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content6-b{
+    background: #9d932d;
+    width: 160px;
+    height: 15px;
+    margin-left: 626px;
+    margin-top: 42px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content6-b:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content6-c{
+    background: #9d932d;
+    width: 160px;
+    height: 15px;
+    margin-left: 626px;
+    margin-top: 43px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content6-c:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content6-d{
+    background: #9d932d;
+    width: 160px;
+    height: 15px;
+    margin-left: 626px;
+    margin-top: 49px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content6-d:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content6-e{
+    background: #9d932d;
+    width: 12px;
+    height: 46px;
+    margin-left: 785px;
+    margin-top: -182px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content6-e:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content6-f{
+    background: #9d932d;
+    width: 12px;
+    height: 46px;
+    margin-left: 785px;
+    margin-top: 14px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content6-f:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content6-g{
+    background: #9d932d;
+    width: 12px;
+    height: 46px;
+    margin-left: 785px;
+    margin-top: 14px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content6-g:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content6-h{
+    background: #9d932d;
+    width: 12px;
+    height: 82px;
+    margin-left: 773px;
+    margin-top: 18px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content6-h:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content6-i{
+    background: #9d932d;
+    width: 740px;
+    height: 6px;
+    margin-left: 35px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content6-i:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content6-j{
+    background: #9d932d;
+    width: 10px;
+    height: 20px;
+    margin-left: 25px;
+    margin-top: -28px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content6-j:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content6-k{
+    background: #9d932d;
+    width: 10px;
+    height: 158px;
+    margin-left: 543px;
+    margin-top: -257px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.white_content6-k:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+
+
+.white_content7-a{
+    background: #9d932d;
+    width: 30px;
+    height: 12px;
+    margin-left: 14px;
+    margin-top: 16px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-a:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content7-b{
+    background: #9d932d;
+    width: 328px;
+    height: 12px;
+    margin-left: 81px;
+    margin-top: -12px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-b:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content7-c{
+    background: #9d932d;
+    width:104px;
+    height: 12px;
+    margin-left: 445px;
+    margin-top: -12px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-c:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content7-d{
+    background: #9d932d;
+    width:120px;
+    height: 12px;
+    margin-left: 659px;
+    margin-top: -12px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-d:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content7-e{
+    background: #9d932d;
+    width:12px;
+    height: 247px;
+    margin-left: 779px;
+    margin-top: 8px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-e:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content7-f{
+    background: #9d932d;
+    width:27px;
+    height: 176px;
+    margin-left: 655px;
+    margin-top: -173px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-f:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content7-g{
+    background: #9d932d;
+    width:27px;
+    height: 176px;
+    margin-left: 536px;
+    margin-top: -176px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-g:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content7-h{
+    background: #9d932d;
+    width:12px;
+    height: 176px;
+    margin-left: 433px;
+    margin-top: -176px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-h:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content7-i{
+    background: #9d932d;
+    width:12px;
+    height: 176px;
+    margin-left: 409px;
+    margin-top: -176px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-i:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content7-j{
+    background: #9d932d;
+    width:27px;
+    height: 176px;
+    margin-left: 290px;
+    margin-top: -176px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-j:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content7-k{
+    background: #9d932d;
+    width:27px;
+    height: 176px;
+    margin-left: 172px;
+    margin-top: -176px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-k:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content7-l{
+    background: #9d932d;
+    width:12px;
+    height: 176px;
+    margin-left: 68px;
+    margin-top: -176px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-l:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content7-m{
+    background: #9d932d;
+    width:12px;
+    height: 176px;
+    margin-left: 44px;
+    margin-top: -176px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-m:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content7-n{
+    background: #9d932d;
+    width:88px;
+    height: 12px;
+    margin-left: 83px;
+    margin-top: 2px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-n:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content7-o{
+    background: #9d932d;
+    width:88px;
+    height: 12px;
+    margin-left: 200px;
+    margin-top: -12px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-o:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content7-p{
+    background: #9d932d;
+    width:88px;
+    height: 12px;
+    margin-left: 319px;
+    margin-top: -12px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-p:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content7-q{
+    background: #9d932d;
+    width:88px;
+    height: 12px;
+    margin-left: 448px;
+    margin-top: -12px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-q:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content7-r{
+    background: #9d932d;
+    width:88px;
+    height: 12px;
+    margin-left: 565px;
+    margin-top: -12px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content7-r:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+
+
+.white_content8-a{
+    background: #9d932d;
+    width: 88px;
+    height: 12px;
+    margin-left: 81px;
+    margin-top: 10px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-a:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-b{
+    background: #9d932d;
+    width: 88px;
+    height: 12px;
+    margin-left: 198px;
+    margin-top: -12px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-b:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-c{
+    background: #9d932d;
+    width:88px;
+    height: 12px;
+    margin-left: 318px;
+    margin-top: -12px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-c:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-d{
+    background: #9d932d;
+    width:88px;
+    height: 12px;
+    margin-left: 447px;
+    margin-top: -12px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-d:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-e{
+    background: #9d932d;
+    width:12px;
+    height: 247px;
+    margin-left: 779px;
+    margin-top: 6px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-e:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-f{
+    background: #9d932d;
+    width:26px;
+    height: 176px;
+    margin-left: 655px;
+    margin-top: -250px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-f:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-g{
+    background: #9d932d;
+    width:27px;
+    height: 176px;
+    margin-left: 536px;
+    margin-top: -176px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-g:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-h{
+    background: #9d932d;
+    width:12px;
+    height: 176px;
+    margin-left: 432px;
+    margin-top: -176px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-h:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-i{
+    background: #9d932d;
+    width:12px;
+    height: 176px;
+    margin-left: 407px;
+    margin-top: -176px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-i:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-j{
+    background: #9d932d;
+    width:26px;
+    height: 176px;
+    margin-left: 289px;
+    margin-top: -176px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-j:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-k{
+    background: #9d932d;
+    width:26px;
+    height: 176px;
+    margin-left: 171px;
+    margin-top: -176px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-k:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-l{
+    background: #9d932d;
+    width:12px;
+    height: 176px;
+    margin-left: 66px;
+    margin-top: -176px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-l:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-m{
+    background: #9d932d;
+    width:12px;
+    height: 176px;
+    margin-left: 42px;
+    margin-top: -176px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-m:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-n{
+    background: #9d932d;
+    width:330px;
+    height: 11px;
+    margin-left: 78px;
+    margin-top: 83px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-n:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-o{
+    background: #9d932d;
+    width:330px;
+    height: 11px;
+    margin-left: 448px;
+    margin-top: -11px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-o:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-p{
+    background: #9d932d;
+    width:88px;
+    height: 12px;
+    margin-left: 564px;
+    margin-top: -284px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-p:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+
+
+
+.white_content8-aa{
+    background: #9d932d;
+    width: 62px;
+    height: 10px;
+    margin-left: 166px;
+    margin-top: 85px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-aa:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-ba{
+    background: #9d932d;
+    width: 62px;
+    height: 10px;
+    margin-left: 265px;
+    margin-top: -10px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-ba:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-ca{
+    background: #9d932d;
+    width:62px;
+    height: 10px;
+    margin-left: 357px;
+    margin-top: -10px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-ca:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-da{
+    background: #9d932d;
+    width:62px;
+    height: 10px;
+    margin-left: 448px;
+    margin-top: -10px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-da:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-ea{
+    background: #9d932d;
+    width:62px;
+    height: 10px;
+    margin-left: 550px;
+    margin-top: -10px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-ea:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-fa{
+    background: #9d932d;
+    width:62px;
+    height: 10px;
+    margin-left: 641px;
+    margin-top: -10px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-fa:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-ga{
+    background: #9d932d;
+    width:62px;
+    height: 10px;
+    margin-left: 732px;
+    margin-top: -10px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-ga:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-ha{
+    background: #9d932d;
+    width:10px;
+    height: 71px;
+    margin-left: 798px;
+    margin-top: 4px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-ha:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-ia{
+    background: #9d932d;
+    width:21px;
+    height: 71px;
+    margin-left: 707px;
+    margin-top: -71px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-ia:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-ja{
+    background: #9d932d;
+    width:21px;
+    height: 71px;
+    margin-left: 615px;
+    margin-top: -71px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-ja:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-ka{
+    background: #9d932d;
+    width:10px;
+    height: 71px;
+    margin-left: 534px;
+    margin-top: -71px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-ka:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-la{
+    background: #9d932d;
+    width:10px;
+    height: 71px;
+    margin-left: 515px;
+    margin-top: -71px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-la:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-ma{
+    background: #9d932d;
+    width:22px;
+    height: 71px;
+    margin-left: 423px;
+    margin-top: -71px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-ma:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-na{
+    background: #9d932d;
+    width:21px;
+    height: 71px;
+    margin-left: 332px;
+    margin-top: -71px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-na:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-oa{
+    background: #9d932d;
+    width:10px;
+    height: 71px;
+    margin-left: 252px;
+    margin-top: -71px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-oa:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-pa{
+    background: #9d932d;
+    width:10px;
+    height: 71px;
+    margin-left: 232px;
+    margin-top: -71px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-pa:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-az{
+    background: #9d932d;
+    width: 10px;
+    height: 71px;
+    margin-left: 152px;
+    margin-top: -71px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-az:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-ab{
+    background: #9d932d;
+    width: 10px;
+    height: 157px;
+    margin-left: 140px;
+    margin-top: -157px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-ab:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-ac{
+    background: #9d932d;
+    width:10px;
+    height: 214px;
+    margin-left: 10px;
+    margin-top: -157px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-ac:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-ad{
+    background: #9d932d;
+    width:148px;
+    height: 5px;
+    margin-left: 22px;
+    margin-top: 1px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-ad:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-ae{
+    background: #9d932d;
+    width:10px;
+    height: 67px;
+    margin-left:170px;
+    margin-top: -5px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-ae:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-af{
+    background: #9d932d;
+    width:122px;
+    height: 6px;
+    margin-left: 181px;
+    margin-top: -8px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-af:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-ag{
+    background: #9d932d;
+    width:23px;
+    height: 76px;
+    margin-left: 304px;
+    margin-top: -76px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-ag:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-ah{
+    background: #9d932d;
+    width:23px;
+    height: 76px;
+    margin-left: 449px;
+    margin-top: -76px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-ah:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-ai{
+    background: #9d932d;
+    width:171px;
+    height: 6px;
+    margin-left: 474px;
+    margin-top: -5px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-ai:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-aj{
+    background: #9d932d;
+    width:10px;
+    height: 60px;
+    margin-left: 649px;
+    margin-top: -66px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-aj:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content8-ak{
+    background: #9d932d;
+    width:135px;
+    height: 6px;
+    margin-left: 661px;
+    margin-top: -61px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content8-ak:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+
+
+
+
+
+.white_content9-aa{
+    background: #9d932d;
+    width: 286px;
+    height: 10px;
+    margin-left: 355px;
+    margin-top: 25px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content9-aa:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content9-ba{
+    background: #9d932d;
+    width: 156px;
+    height: 21px;
+    margin-left: 355px;
+    margin-top: 70px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content9-ba:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content9-ca{
+    background: #9d932d;
+    width:156px;
+    height: 21px;
+    margin-left: 355px;
+    margin-top: 71px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content9-ca:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content9-da{
+    background: #9d932d;
+    width:143px;
+    height: 10px;
+    margin-left: 365px;
+    margin-top: 71px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content9-da:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content9-ea{
+    background: #9d932d;
+    width:14px;
+    height: 10px;
+    margin-left: 627px;
+    margin-top: -25px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content9-ea:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content9-fa{
+    background: #9d932d;
+    width:118px;
+    height: 10px;
+    margin-left: 681px;
+    margin-top: -11px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content9-fa:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content9-ga{
+    background: #9d932d;
+    width:170px;
+    height: 10px;
+    margin-left: 628px;
+    margin-top: -166px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content9-ga:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content9-ha{
+    background: #9d932d;
+    width:157px;
+    height: 10px;
+    margin-left: 628px;
+    margin-top: -22px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content9-ha:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content9-ia{
+    background: #9d932d;
+    width:105px;
+    height: 10px;
+    margin-left: 680px;
+    margin-top: -90px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content9-ia:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content9-ja{
+    background: #9d932d;
+    width:11px;
+    height: 70px;
+    margin-left: 786px;
+    margin-top: 1px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content9-ja:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content9-ka{
+    background: #9d932d;
+    width:10px;
+    height: 70px;
+    margin-left: 343px;
+    margin-top: -71px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content9-ka:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content9-la{
+    background: #9d932d;
+    width:10px;
+    height: 70px;
+    margin-left: 343px;
+    margin-top: 21px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content9-la:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content9-ma{
+    background: #9d932d;
+    width:10px;
+    height: 48px;
+    margin-left: 343px;
+    margin-top:22px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content9-ma:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+
+
+
+
+
+.white_content10-aa{
+    background: #9d932d;
+    width: 85px;
+    height: 10px;
+    margin-left: 31px;
+    margin-top: 15px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-aa:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-ba{
+    background: #9d932d;
+    width: 86px;
+    height: 10px;
+    margin-left: 149px;
+    margin-top: -10px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-ba:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-ca{
+    background: #9d932d;
+    width:72px;
+    height: 10px;
+    margin-left: 447px;
+    margin-top: -10px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-ca:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-da{
+    background: #9d932d;
+    width:10px;
+    height: 64px;
+    margin-left: 520px;
+    margin-top: 0px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-da:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-ea{
+    background: #9d932d;
+    width:21px;
+    height: 106px;
+    margin-left: 424px;
+    margin-top: -74px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-ea:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-fa{
+    background: #9d932d;
+    width:10px;
+    height: 106px;
+    margin-left: 260px;
+    margin-top: -105px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-fa:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-ga{
+    background: #9d932d;
+    width:10px;
+    height: 98px;
+    margin-left: 240px;
+    margin-top: -99px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-ga:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-ha{
+    background: #9d932d;
+    width:21px;
+    height: 98px;
+    margin-left: 122px;
+    margin-top: -97px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-ha:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-ia{
+    background: #9d932d;
+    width:21px;
+    height: 97px;
+    margin-left: 707px;
+    margin-top: 71px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-ia:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-ja{
+    background: #9d932d;
+    width:21px;
+    height: 97px;
+    margin-left: 617px;
+    margin-top: -97px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-ja:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-ka{
+    background: #9d932d;
+    width:10px;
+    height: 97px;
+    margin-left: 538px;
+    margin-top: -97px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-ka:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-la{
+    background: #9d932d;
+    width:10px;
+    height: 97px;
+    margin-left: 519px;
+    margin-top: -97px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-la:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-ma{
+    background: #9d932d;
+    width:22px;
+    height: 97px;
+    margin-left: 427px;
+    margin-top: -97px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-ma:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-na{
+    background: #9d932d;
+    width:21px;
+    height: 97px;
+    margin-left: 339px;
+    margin-top: -97px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-na:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-oa{
+    background: #9d932d;
+    width:10px;
+    height: 97px;
+    margin-left: 260px;
+    margin-top: -97px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-oa:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-pa{
+    background: #9d932d;
+    width:10px;
+    height: 97px;
+    margin-left: 240px;
+    margin-top: -97px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-pa:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-az{
+    background: #9d932d;
+    width: 10px;
+    height: 97px;
+    margin-left: 162px;
+    margin-top: -97px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-az:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-ab{
+    background: #9d932d;
+    width: 10px;
+    height: 99px;
+    margin-left: 15px;
+    margin-top: -267px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-ab:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-ac{
+    background: #9d932d;
+    width:10px;
+    height: 97px;
+    margin-left: 797px;
+    margin-top: 70px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-ac:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-ad{
+    background: #9d932d;
+    width:268px;
+    height: 10px;
+    margin-left: 530px;
+    margin-top: -181px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-ad:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-ae{
+    background: #9d932d;
+    width:67px;
+    height: 10px;
+    margin-left:173px;
+    margin-top: 173px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-ae:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-af{
+    background: #9d932d;
+    width:60px;
+    height: 7px;
+    margin-left: 273px;
+    margin-top: -8px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-af:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-ag{
+    background: #9d932d;
+    width:60px;
+    height: 9px;
+    margin-left: 364px;
+    margin-top: -8px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-ag:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-ah{
+    background: #9d932d;
+    width:61px;
+    height: 9px;
+    margin-left: 452px;
+    margin-top: -9px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-ah:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-ai{
+    background: #9d932d;
+    width:61px;
+    height: 9px;
+    margin-left: 552px;
+    margin-top: -9px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-ai:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-aj{
+    background: #9d932d;
+    width:61px;
+    height: 9px;
+    margin-left: 642px;
+    margin-top: -9px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-aj:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.white_content10-ak{
+    background: #9d932d;
+    width:61px;
+    height: 9px;
+    margin-left: 732px;
+    margin-top: -9px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.white_content10-ak:hover{
+    background:black;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}

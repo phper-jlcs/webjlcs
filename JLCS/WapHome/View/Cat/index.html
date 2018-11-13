@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta charset="utf-8">
+	<title>所有分类</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/font-awesome.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/wapcss/swiper-3.2.5.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/wapcss/ectouch.css" />
+	<link rel="stylesheet" href="__PUBLIC__/wapcss/search.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/base.css"/>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/page.css"/>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/all.css"/>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/mui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/loaders.min.css"/>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/wapcss/loading.css"/>
+</head>
+<body style="max-width:640px;font-size: 14px;">
+<div id="loading"><img src="__PUBLIC__/wapimages/loading.gif" /></div>
+<div class="con">
+	<div class="category-top">
+		<header>
+			<section class="search">
+				<div class="text-all dis-box j-text-all">
+					<div class="box-flex input-text"> <a class="a-search-input j-search-input" href="javascript:void(0)"></a>
+						<input type="text" placeholder="商品搜索" />
+						<i class="iconfont icon-guanbi is-null j-is-null"></i> </div>
+				</div>
+			</section>
+		</header>
+	</div>
+
+	<aside>
+		<div class="menu-left scrollbar-none" id="sidebar">		
+			<ul>
+				<foreach name="weixin_cats" item="list">
+					<li  style="padding-top: 2em;font-size: 1.1rem;">{$list.name}</li>
+				</foreach>
+			</ul>
+		</div>
+	</aside>
+	<div style="margin-left: 8.6rem;margin-top: 7rem;text-align: center;">
+		<img src="__PUBLIC__/upload/gg.jpg" style="width: 100%;"/>
+		<p style="font-size: 2rem;margin-top: 2.7rem;">—— 手串 ——</b>
+	</div>
+	<foreach name="weixin_cats" item="list">
+		<section class="menu-right padding-all j-content">
+			<ul>
+				<foreach name="list.info" item="test">
+					<li class="w-3"><a href="{:U('catinfo',array('cat_name'=>$test['name']))}"></a> <img src="__PUBLIC__/{$test.path}" style="width: 100%;height: 100px;"/><span style="font-size: 1.5rem;">{$test.name}</span></li>
+				</foreach>
+
+			</ul>
+		</section>
+	</foreach>
+
+
+
+
+
+</div>
+<footer class="page-footer fixed-footer" id="footer">
+	<ul>
+		<li >
+			<a href="{:U('Index/index')}">
+				<img src="__PUBLIC__/img/footer001.png"/>
+				<p>首页</p>
+			</a>
+		</li>
+		<li class="active">
+			<a href="{:U('Cat/index')}">
+				<img src="__PUBLIC__/img/footer002.png"/>
+				<p>分类</p>
+			</a>
+		</li>
+		<li>
+			<a href="{:U('Cart/index')}">
+				<img src="__PUBLIC__/img/footer003.png"/>
+				<p>购物车</p>
+			</a>
+		</li>
+		<li>
+			<a href="{:U('User/index')}">
+				<img src="__PUBLIC__/img/footer004.png"/>
+				<p>个人中心</p>
+			</a>
+		</li>
+	</ul>
+</footer>
+<div class="search-div j-search-div ts-3">
+	<section class="search">
+		<form action="{:U('Index/sousuo')}" method="post">
+			<div class="text-all dis-box j-text-all">
+				<div class="box-flex input-texts">
+					<input class="j-input-text" type="text" name="souname" placeholder="请输入搜索关键词！" value="" />
+					<i class="iconfont icon-guanbi is-null j-is-null"></i> </div>
+				<button type="submit" class="btn-submit">搜索</button>
+			</div>
+		</form>
+	</section>
+	<section class="search-con">
+		<div class="swiper-scroll history-search">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<p>
+						<label class="fl">热门搜索</label>
+					</p>
+					<ul class="hot-search a-text-more">
+						<li class="w-3"><a href="#"><span>檀香</span></a></li>
+						<li class="w-3"><a href="#"><span>香皂</span></a></li>
+					</ul>
+					<p class="hos-search">
+						<label class="fl">最近搜索</label>
+						<span class="fr" onClick="javascript:clearHistroy();"><i class="fr"></i></span> </p>
+					<ul class="hot-search a-text-more a-text-one" id="search_histroy">
+					</ul>
+				</div>
+			</div>
+			<div class="swiper-scrollbar"></div>
+		</div>
+	</section>
+</div>
+<script type="text/javascript">
+	//设置cookie
+	function setCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+d.toUTCString();
+		document.cookie = cname + "=" + cvalue + "; " + expires;
+	}
+	function clearHistroy(){
+		setCookie('ECS[keywords]', '', -1);
+		document.getElementById("search_histroy").style.visibility = "hidden";
+	}
+</script>
+<script type="text/javascript" src="__PUBLIC__/wapjs/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/wapjs/swiper-3.2.5.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/wapjs/ectouch.js"></script>
+<script type="text/javascript" src="__PUBLIC__/wapjs/jquery.json.js"></script>
+<script type="text/javascript" src="__PUBLIC__/wapjs/common.js"></script>
+<script type="text/javascript">
+	$(function($){
+		$('#sidebar ul li').click(function(){
+			$(this).addClass('active').siblings('li').removeClass('active');
+			var index = $(this).index();
+			$('.j-content').eq(index).show().siblings('.j-content').hide();
+		})
+	})
+</script>
+</body>
+</html>
