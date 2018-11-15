@@ -1,7 +1,308 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="917c842b-321b-459c-99b9-3841f5ba367f" name="默认的" comment="" />
+    <list default="true" id="917c842b-321b-459c-99b9-3841f5ba367f" name="默认的" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/JLAdmin/Conf/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/JLHome/Conf/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/1d81b86fffe57dc2e7cc1853e6b1e35f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/259d058e90478d6f51d5147486b28438.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/3324648246764589cd7008946c0a6f88.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/337775fbc21077f34d7221cdcfde20c4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/39dc7359c7764e55e1e4bc10efa098e9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/3a606986cd17d14f6504e05722d2d9b4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/3d28ec372821016f53673fcf93d9db70.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/3d2e2ca8a86b39f0414aa2f58c0839a7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/435448b55c7155489c4cffe160e0dfc0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/463bb9307974380c7ae753dab02ed3e5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/492767339777bde8c9c48b6e5525e5e6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/4e23f51afda80d4b7f4ae0b4d3aa9297.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/4ebd51b537c0a446cd6fd51f84a41181.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/6082cd3b179a4f66bc07e7204420e7bb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/6170facf4083ece28849088759fca9c1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/62505a882ee91898c9f43df3e8160a3d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/690cc1efdeb3b11f1e83f975eee8e40c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/69fd0d38b12e4eb44fdd18b7e4de31ea.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/72235bf6aea56bce5df8ee46354e7db5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/8247330f7c11eac6a38f0168ac9aa616.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/8b9782417926a9b988d602937051cfd6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/9fe254aea343f2fe90c11d942012454d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/a0f02cedb83987b66fe13cbded0ae86a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/b0b6955569d3119d68d1d3d9c07a93ca.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/b3fbc924bc98f87e9600d40929950054.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/b5b40575dda5d129d41ccda12babe05c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/b5bb8232fb57b66a4f55e01fb52596e8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/c09f9a032bb458b73b65ad177c0a68ee.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/c50560b37df16c6c245f026be7582500.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/c8e0d13dbc772729b740d6278195a24e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/c9700052b431022dd6f6a1028884ff8a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/cf4b7396f4bb98cc1b6fdb95de79f9bd.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/d27b06607349bb44926ee18f9f318708.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/d9b61541a329ab968bb1f9a8554f6586.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/e91c413efcb497cb46bb2036ad9e81df.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/edf86af4b0d2346ca9b6f2e7ec568a1d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/f4985a384334a9eb1e30b4779da8d104.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/f81a45a8ea591655f70299a852beb6a2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/fe3086ec64d1981a28d72d829882a6c0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Admin/ffe16296c9d805f49e1bc2d20a63aa43.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Finance/0c998b77d4456b2a6c1ce93ea0d44aac.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Finance/132b1f9cd8bab1ba3276836805d5acd1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Finance/328c1a8a6258ee05e5dbf229b235d985.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Finance/3bc299b855fe5b1d85eff26677649fd7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Finance/4cf2dae457a1fd1eb0fa1254ddb304a4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Finance/51286230f7bd772f3e33159d3919b320.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Finance/869a959fac3cc2ec71ee2eaaf46e43fa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Finance/933da06d75d1f621b3e39f915133581c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Finance/9cf241a8c199c764b48ea1153897f804.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Finance/b8f151c318cc96cbc16402c1be97d4e6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Finance/cf00f2749d1addf2ed014196a80f454c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Finance/ddb371317cd9af406c472219a2202cba.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Finance/e9cce4c1ae3d6d7a9159249f50f555c9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Finance/ee4f919ef1a84f2b68d7f6b825e04722.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Finance/f6665d12a5868a33ae12f5e981801f2d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/062cab7d9290c2f44e9ae89f45a38e94.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/18ed692e241ae46ad08194b00ff164c2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/2a3c73ae1b9f0547775f613192c00bbe.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/30a51e9986c23d5a7dcfd731f2350e5e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/33fa987f25aab2dd2b54c95fc212ff34.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/34cdc84ebbb0ba5ea83c8eabaffb9d8b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/4bbb38b117febdd46a91876e67c6bfe1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/5528b877e263e31f8d376502de777061.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/56acfc127842c44117d8ad10e652ad59.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/5cb929016d38edd85eb81463fba35eee.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/62c7ef482f1ac8f6d7c8fccbf7dacbf8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/65a998279edf4dd27955e907386055e1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/69fd0d38b12e4eb44fdd18b7e4de31ea.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/7d7ccee0ccedc567d0d144bcb3251ea7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/86970505b0993c7994b3d9683eb2674e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/887492078d9f11e5bba9a63efc7e91e1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/9244369b22198ed9dbc069d439cfd707.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/a0f02cedb83987b66fe13cbded0ae86a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/b5bc3c4675df3432699cb038380770c2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/b8186a40ba548116754786a7e684e886.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/cc0528be2aa6b1e70fc7320e76b455b9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/d01a1bb2ad39334803c795e43a581320.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/d0e2f10772365e506346c7fd209d57a7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/d27b06607349bb44926ee18f9f318708.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/ea0431c51db31da3c7e38dd28575eae0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/f5a7a9de3104140a4b3edf0b25375c3c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Home/fb6696b387873d409ac9dd70c1aa2f5e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/JLAdmin/075c13e5d7111521fa5d7456dbc18231.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/JLAdmin/0d2f879114be03815490c299b5985a91.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/JLAdmin/436f7987201df0d29df79194884a9cdf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/JLAdmin/509fb3f681a46b54d761550b4b28e3bd.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/JLAdmin/63d48a8d741029c1446af893acf83267.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/JLAdmin/76d6eeef77a4648700e1ff4e2637f9be.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/JLAdmin/be4ff0f3a681570cf7f17d7407909f51.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/JLAdmin/de89a90204a26d207877609a8e0f51de.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/JLAdmin/e38de5da37c67f63ba89a57defdf5459.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/JLAdmin/fd5f37c8a62ad3657c76e89b10495809.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/JLHome/2a59452de2e341ca375d51d335f3d80d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/JLHome/3889fda35dcf18a2740d82cf7403aafb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/JLHome/63d2c0a668c238ca8bdc0222332735ea.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/JLHome/76a13a0e0c730e7578478d7effb5a3f5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/JLHome/7de05d71e6c245e6517ea0e885bf0965.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/JLHome/d534965ee83d1a09090e0ef817ba09a5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/JLHome/fd89b6c5bbfc7ab8560ef9231a1537f4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Mobile/31399b3c30cf1831b371278e443e6a74.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Mobile/39491768d997fc65be38d37562a682a0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Mobile/b8757fbc18ced01e6ab6cc54b60211db.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/Mobile/c7bfe10cbf14357932b0f7b8edddc81b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/ZHHome/16f67fe4047b92199530e3a6e6aea342.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/ZHHome/24c2b356416245b8d95bc68d93fb491c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/ZHHome/40117e064571135c62a84ca839182bfd.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/ZHHome/4ceb6e12779458f5037bfd9a4c6c9455.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/ZHHome/516693470657f78b799f8c1a5f789aa1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/ZHHome/853e095ac0bdfdba8da2f1204046c67c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Cache/ZHHome/e1f30beab1845ffc58f328ce0ce7935d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/1532679365-18_07_27.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/1532679374-18_07_27.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/1532679537-18_07_27.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/1532679547-18_07_27.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/1532681219-18_07_27.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/1537166667-18_09_17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/1537166682-18_09_17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/1537166732-18_09_17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/1537167000-18_09_17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/1537174876-18_09_17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/1537175132-18_09_17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/1537175199-18_09_17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/18_07_27.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/18_07_30.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/18_07_31.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/18_08_21.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/18_08_24.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/18_09_17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/18_09_18.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/18_09_19.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/18_09_20.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/18_09_21.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/18_09_27.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/18_10_08.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/18_11_06.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/18_11_07.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/18_11_08.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Admin/18_11_13.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_07_27.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_07_30.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_07_31.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_01.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_02.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_03.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_06.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_07.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_08.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_09.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_10.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_13.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_14.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_15.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_20.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_21.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_22.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_23.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_24.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_29.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_08_31.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_09_07.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_09_12.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_09_13.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_09_17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_09_18.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_09_19.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_09_20.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_09_21.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_09_25.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_09_26.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_09_27.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_09_28.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_09_29.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_10_08.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_10_09.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_10_11.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_10_12.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_10_16.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_10_18.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_10_22.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_10_31.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_11_02.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_11_05.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_11_06.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_11_07.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_11_08.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_11_13.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Common/18_11_14.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Finance/18_09_18.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_07_27.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_07_30.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_07_31.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_01.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_02.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_03.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_06.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_07.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_08.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_09.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_10.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_13.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_14.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_15.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_16.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_20.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_21.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_22.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_23.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_24.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_29.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_08_31.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_09_07.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_09_12.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_09_13.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_09_17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_09_18.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_09_19.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_09_20.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_09_21.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_09_25.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_09_26.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_09_27.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_09_28.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_09_29.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_10_08.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_10_09.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_10_11.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_10_12.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_10_16.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_10_18.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_10_22.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_10_31.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_11_02.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_11_05.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_11_06.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_11_07.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_11_08.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_11_13.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Home/18_11_14.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLAdmin/18_10_08.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_07_27.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_07_30.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_07_31.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_08_01.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_08_02.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_08_03.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_08_06.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_08_07.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_08_08.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_08_13.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_08_14.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_08_21.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_08_24.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_09_07.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_09_13.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_09_17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_09_18.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_09_19.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_09_20.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_09_21.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_09_25.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_09_27.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_09_28.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_09_29.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_10_08.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_10_09.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_10_11.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_10_12.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_10_18.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_11_02.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_11_07.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_11_08.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/JLHome/18_11_13.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Mobile/18_08_21.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/Mobile/18_08_24.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_08_01.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_08_06.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_08_07.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_08_08.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_08_09.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_08_10.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_08_13.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_08_14.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_08_15.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_08_21.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_08_22.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_08_23.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_08_24.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_09_07.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_09_17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_09_27.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_10_31.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_11_02.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_11_05.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_11_06.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JLCS/Runtime/Logs/ZHHome/18_11_07.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="webjlcs.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -59,10 +360,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="function.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JLCS/Common/Common/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.197615">
+            <state vertical-scroll-proportion="-4.296296">
               <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
               <folding>
                 <element signature="e#6#94#0#PHP" expanded="true" />
@@ -73,6 +374,26 @@
                 <element signature="n#pagefenye#0;n#!!top" expanded="false" />
                 <element signature="n#obtain#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserModel.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JLCS/Mobile/Model/UserModel.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="31.037037">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.16286644">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -155,7 +476,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JLCS/JLHome/Controller/IndexController.class.php" />
         <option value="$PROJECT_DIR$/JLCS/JLHome/View/Index/contents.html" />
         <option value="$PROJECT_DIR$/JLCS/Home/View/User/login.html" />
         <option value="$PROJECT_DIR$/JLCS/Mobile/View/Index/region.html" />
@@ -206,6 +526,7 @@
         <option value="$PROJECT_DIR$/JLCS/Home/Controller/OrderController.class.php" />
         <option value="$PROJECT_DIR$/JLCS/Home/View/Order/index.html" />
         <option value="$PROJECT_DIR$/JLCS/Home/View/Product/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -255,8 +576,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -299,25 +620,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ThinkPHP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webjlcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webjlcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Public" />
+              <option name="myItemId" value="JLCS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -400,7 +703,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33534744" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33459213" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32482994" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -440,22 +743,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JLCS/Home/View/Order/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="581" column="49" selection-start-line="581" selection-start-column="49" selection-end-line="581" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JLCS/Home/Controller/OrderController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="332" column="24" selection-start-line="332" selection-start-column="24" selection-end-line="332" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/Smarty/Smarty.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.259259">
@@ -804,7 +1091,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JLCS/Common/Common/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.197615">
+        <state vertical-scroll-proportion="-4.296296">
           <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
           <folding>
             <element signature="e#6#94#0#PHP" expanded="true" />
@@ -815,6 +1102,22 @@
             <element signature="n#pagefenye#0;n#!!top" expanded="false" />
             <element signature="n#obtain#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JLCS/Mobile/Model/UserModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="31.037037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16286644">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
