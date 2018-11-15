@@ -6,10 +6,10 @@
     <meta name="description" content="中国帝宫是上海通则久文化发展公司研发的供佛教信仰者在线认捐莲花位的一个选位系统,致力于打造国内规模最大的佛孝生态圈。">
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes” />
     <title>中国帝宫</title>
-    <link type="text/css" rel="stylesheet" href="/webjlcs/Public/css/style.css" />
-    <link rel="stylesheet" href="/webjlcs/Public/css/normalize.min.css">
-    <link rel="stylesheet" href="/webjlcs/Public/css/style2.css">
-    <script type="text/javascript" src="/webjlcs/Public/js/jquery-1.11.3.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/webjlcs1.0/Public/css/style.css" />
+    <link rel="stylesheet" href="/webjlcs1.0/Public/css/normalize.min.css">
+    <link rel="stylesheet" href="/webjlcs1.0/Public/css/style2.css">
+    <script type="text/javascript" src="/webjlcs1.0/Public/js/jquery-1.11.3.min.js"></script>
     <script>
         var _hmt = _hmt || [];
         (function() {
@@ -35,7 +35,7 @@
             left:850px;">
             <span style="color:black;font-size: 18px;">九龙禅寺宣传视频:</span>
             <video controls width="400">
-                <source src="/webjlcs/Public/images/sp.mp4" />
+                <source src="/webjlcs1.0/Public/images/sp.mp4" />
             </video>
         </div>
        
@@ -142,7 +142,7 @@
       </a> </div>
   </div>
 </div>
-<script src="/webjlcs/Public/js/index1.js"></script>
+<script src="/webjlcs1.0/Public/js/index1.js"></script>
     </div>
 <div style="width: 1366px;height: 70px;margin: 0 auto;">
     <span style="float: left;margin-top:10px;margin-left: 20px;font-size: 18px;">友情链接:</span>
