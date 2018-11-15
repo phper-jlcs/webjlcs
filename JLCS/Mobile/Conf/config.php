@@ -23,4 +23,5 @@ return array(
         //支付失败跳转到的页面，我这里跳转到项目的User控制器，myorder方法，并传参unpay（未支付列表）
         'errorpage'=>'User/myorder?ordtype=unpay',
     ),
+    'LOAD_EXT_FILE'=>'ifunction'
 );
