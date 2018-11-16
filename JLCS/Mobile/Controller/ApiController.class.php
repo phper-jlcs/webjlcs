@@ -15,8 +15,6 @@ class ApiController extends Controller {
     public function reg_dis_user(){
         $phone = I('post.phone');
         $user_id = I('post.user_id');
-        $phone = 18408241858;
-        $user_id = 1;
         check_is_null($phone,'手机号不能为空');
         check_is_null($user_id,'用户id不能为空');
         $User = new \Mobile\Model\UserModel();

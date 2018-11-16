@@ -79,7 +79,7 @@
 								<input type="button" value="获取验证码" onclick="alert('您还未开通手机验证！');">
 							</ul>
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 xqwzzz">
-								<input type="submit" value="注册">
+								<input type="submit" value="注册"><input type="button" value="成为分销商" id="to_reg">
 							</div>
 						</div>
 					</div>
@@ -148,5 +148,28 @@
 		}
 		return matchResult;
 	}
+	var url = '__MODULE__/Api/reg_dis_user';
+	var user_id = '1';
+	var phone = '18408241858';
+	$("#to_reg").click(function(){
+		ajax_reg();
+	})
+	function ajax_reg(){
+		$.ajax({
+			type: "POST",
+			url: url,
+			dataType:'json',
+			data:{
+				user_id:user_id,
+				phone:phone
+			},
+			success: function (response) {
+				alert(response.msg);
+				console.log(response);
+			}
+		});
+	}
+
+
 </script>
 </html>

@@ -6,14 +6,17 @@
  * Time: 14:36
  */
 
-  function check_is_null($val,$msg){
-    if(is_null($val) || $val === ''){
-        $response['code'] = 300;
-        $response['msg'] = $msg;
-        echo (json_encode($response,JSON_UNESCAPED_SLASHES));
-        // echo json_encode($this->response);exit;
+    define('HTTP_ERR_CODE','300');
+    define('HTTP_SUC_CODE','200');
+
+    function check_is_null($val,$msg){
+        if(is_null($val) || $val === ''){
+            $response['code'] = HTTP_ERR_CODE;
+            $response['msg'] = $msg;
+            echo (json_encode($response,JSON_UNESCAPED_SLASHES));
+            // echo json_encode($this->response);exit;
+        }
     }
-}
 
  function send_ok_response($data,$code = '200'){
     $response['code'] = $code;
