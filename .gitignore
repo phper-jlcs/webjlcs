@@ -1,9 +1,9 @@
 
 JLCS/Runtime/Cache
-ThinkPHP/Conf/convention.php
+ThinkPHP/Conf
 .idea/
 JLCS/Runtime
-JLCS/JLAdmin/Conf/config.php
-JLCS/JLHome/Conf/config.php
-JLCS/ZHHome/Conf/config.php
-ThinkPHP/Conf/convention.php
+JLCS/JLAdmin/Conf
+JLCS/JLHome/Conf
+JLCS/ZHHome/Conf
+ThinkPHP/Conf
