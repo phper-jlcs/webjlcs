@@ -148,8 +148,9 @@
 		}
 		return matchResult;
 	}
-	var url = '__MODULE__/Api/reg_dis_user';
+	var url = '__MODULE__/Api/create_code';
 	var user_id = '1';
+	var id = '1';
 	var phone = '18408241858';
 	$("#to_reg").click(function(){
 		ajax_reg();
@@ -161,11 +162,12 @@
 			dataType:'json',
 			data:{
 				user_id:user_id,
-				phone:phone
+				phone:phone,
+				id:id,
 			},
 			success: function (response) {
 				alert(response.msg);
-				console.log(response);
+//				console.log(response);
 			}
 		});
 	}
