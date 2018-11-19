@@ -58,7 +58,43 @@ class ApiController extends Controller {
      */
     public function make_connection()
     {
-
+        $token = I('post.token');
+        $phone = I('post.phone');
+        $name = I('post.name');
+        $password = I('post.password');
+        check_is_null($token,'推荐人token不能为空');
+        check_is_null($phone,'手机号不能为空');
+        check_is_null($password,'密码不能为空');
+        //check token是否有效
+        $User = D('User');
+        $is_token = $User->check_token($token);
+        if(!$is_token){
+            send_error_response('推荐人token无效！');
+        }
+        //推荐人信息
+        $dis_user_id = $is_token['user_id'];
+        $user_info = array(
+            'name' => $name,
+            'password' => md5($password),
+            'regtime' => date('Y-m-d H:i:s'),
+            'level' => 2,
+            'phone' => $phone,
+            'dis_user_id' => $dis_user_id
+        );
+        $register = $User->register_user($user_info);
+        if($register == 'name repeat'){
+            send_error_response('用户名重复！');
+        }
+        if($register == 'phone repeat'){
+            send_error_response('手机号重复！');
+        }
+        if($register == 'success -1'){
+            $data ['msg'] = '个人信息未完善!';
+            send_ok_response($data);
+        }
+        if($register == 'success'){
+            send_ok_response($register);
+        }
     }
 
     /**

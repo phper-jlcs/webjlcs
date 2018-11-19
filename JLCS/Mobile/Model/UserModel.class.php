@@ -20,6 +20,7 @@ class UserModel extends Model
     {
         $this->Dis_User = M('dis_user');
         $this->User = M('users');
+        $this->User_info = M('user_infos');
     }
 
     /**
@@ -54,4 +55,49 @@ class UserModel extends Model
         }
         return $user_find;
     }
+
+
+    public function check_token($token){
+        $fiter =array('token'=>$token);
+        $user_select = $this->Dis_User->where($fiter)->find();
+        if(!$user_select){
+            return false;
+        }
+        return $user_select;
+    }
+
+    public function register_user($uer_info){
+        //当前账号及手机号并未重名及注册
+        $filter['phone'] = $uer_info['phone'];
+        $check['name'] = $uer_info['name'];
+        $name = $this->User->where($check)->find();
+        $phone = $this->User->where($filter)->field('id','name','password','regtime')->find();
+        if(isset($name)){
+            return 'name repeat';
+        }
+        if(isset($phone)){
+            return 'phone repeat';
+        }
+        if($id = $this->User->add($uer_info)){
+            //创建userinfo表
+            $user_infoData = array(
+                'user_id'=>$id,
+                'relname'=>'',
+                'phone'=>$uer_info['phone'],
+            );
+            $user_infos = $this->User_info->add($user_infoData);
+            if($user_infos){
+                session('name', $uer_info['name']);   // 当前用户名
+                return 'success';
+            }else{
+                return 'success -1';
+            }
+        }else{
+            return false;
+        }
+    }
+
+
+
+
 }
