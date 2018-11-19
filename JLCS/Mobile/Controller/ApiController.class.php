@@ -102,7 +102,28 @@ class ApiController extends Controller {
      */
     public function dis_index()
     {
-
+        $user_id = I('post.$user_id');
+        $User = D('User');
+        $Order = D('Order');
+        $user_id = 1;
+        //会员总数
+        //校验分销商身份
+        $is_user = $User->check_user($user_id);
+        if(!$is_user){
+            send_error_response('您还不是分销商！');
+        }
+        $user_count = $User->get_user_list($user_id);
+        //订单总数(未付款,已付款)
+        $dis_user_id = $is_user['id'];
+        $order_list = $Order->get_order_list($dis_user_id);
+        //利润
+        $data = array(
+            'user_count' =>   $user_count,
+            'order_list' =>  $order_list,
+            'count_no_pay' => $order_list['count_no_pay'],
+            'count_pay' => $order_list['count_pay']
+        );
+        send_ok_response($data);
     }
 
     /**

@@ -42,7 +42,12 @@ class UserModel extends Model
         );
         $user_add = $this->Dis_User->add($data);
         if($user_add){
-            return true;
+            $id = $this->User->where(array('user_id'=>$user_find['id']))->save(array('is_dis'=>1));
+            if($id){
+                return true;
+            }else{
+                return false;
+            }
         }
         return false;
     }
@@ -95,6 +100,22 @@ class UserModel extends Model
         }else{
             return false;
         }
+    }
+
+    public function check_user($user_id){
+        $filter = array('user_id'=>$user_id);
+        $user = $this->Dis_User->where($filter)->find();
+        if($user){
+            return $user;
+        }
+        return false;
+    }
+
+    public function get_user_list($user_id){
+        $sql=" SELECT count(*) as count FROM dis_user as a LEFT JOIN users as b ON a.id = b.dis_user_id WHERE a.user_id = '{$user_id}'";
+        $user = $this->db()->query($sql);
+        $count = $user['count'];
+        return $count;
     }
 
 
