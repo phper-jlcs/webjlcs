@@ -6,8 +6,8 @@ class DisController extends Controller {
         $dis_mdl = M('dis_user');
         $order_mdl = M('dis_orders');
         $_GET['p'] = isset($_GET['p'])? $_GET['p'] : '1';
-        $dis_user = $dis_mdl->page($_GET['p'],7)->where('level=1')->select();
-        $count = $dis_mdl->where('level=1')->count();
+        $dis_user = $dis_mdl->page($_GET['p'],7)->select();
+        $count = $dis_mdl->count();
         $Page = new\Think\Page($count,7);
         $Page->lastSuffix=false;
         $Page->setConfig('prev','上一页');
