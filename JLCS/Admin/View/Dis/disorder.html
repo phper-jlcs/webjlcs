@@ -49,7 +49,7 @@
 <!--main_top-->
 <table width="100%" border="0" cellspacing="0" cellpadding="0" id="searchmain">
     <tr>
-        <td width="100%" align="left" valign="top">您的位置：订单管理:&nbsp;&nbsp;&nbsp;
+        <td width="100%" align="left" valign="top">您的位置：分销订单管理:&nbsp;&nbsp;&nbsp;
             <select name="pay_status" id="pay_status" onchange="temples()">
                 <option value="3">全部订单</option>
                 <option value="1">已付款</option>
@@ -83,17 +83,6 @@
                         </form>
 
                     </td>
-                    <td width="30%"  valign="middle">
-
-                        <form method="post" action="{:U('select',array('cat'=>'cid'))}">
-                            <div style="position: relative;width: 200px;height: 50px;">
-                                <span>协议编号：</span>
-                                <input type="text" name="keyword" value="{$keyword3}" class="text-word" style="width: 120px;">
-                                <input name="" type="submit" value="查询" class="text-but" style="color: white;position: relative;top:-40px;left:110px;">
-                            </div>
-                        </form>
-
-                    </td>
                     <div style="position: relative;top:-20px;left: 700px;"><a href="javascript:put_out();" class="add fb J_showdialog"><em>选中要导出的订单</em></a></div>
                 </tr>
             </table>
@@ -104,51 +93,34 @@
             <thead class="beitianjia">
             <tr>
                 <th width="5%"><input type="checkbox" id="check_all" onclick="change_all()"/></th>
-                <th align="center" valign="middle" class="borderright">订单号</th>
                 <th align="center" valign="middle" class="borderright">会员名</th>
-                <th align="center" valign="middle" class="borderright">会员卡号</th>
-                <th align="center" valign="middle" class="borderright">供奉权证号</th>
-                <th align="center" valign="middle" class="borderright">
-                    总价</th>
-                <th align="center" valign="middle" class="borderright">
-                    状态</th>
-                <th align="center" valign="middle" class="borderright">
-                    数量</th>
+                <th align="center" valign="middle" class="borderright">支付金额</th>
                 <th align="center" valign="middle" class="borderright">下单时间</th>
-                <th align="center" valign="middle" class="borderright">管理费时间（倒计时）</th>
-                <th align="center" valign="middle" class="borderright">代理商</th>
+                <th align="center" valign="middle" class="borderright">状态</th>
+                <th align="center" valign="middle" class="borderright">支付成功时间</th>
                 <th align="center" valign="middle">操作</th>
             </tr>
             </thead>
 
                 <tbody id="clearbody">
-                <foreach name="orders" item="list">
+                <foreach name="dis_orders" item="list">
                     <tr id="order{$list.id}" onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
                         <td align="center"><input type="checkbox" class="checkboxa" value="{$list.id}"/></td>
-                        <td align="center" valign="middle" class="borderright borderbottom"> {$list.order_id}</td>
-                        <td align="center" valign="middle" class="borderright borderbottom">{$list.name}</td>
-                        <td align="center" valign="middle" class="borderright borderbottom">{$list.user_cartid}</td>
+                        <td align="center" valign="middle" class="borderright borderbottom"> {$list.order_name}</td>
+                        <td align="center" valign="middle" class="borderright borderbottom">{$list.order_money}</td>
+                        <td align="center" valign="middle" class="borderright borderbottom"> {$list.oder_time}</td>
                         <td align="center" valign="middle" class="borderright borderbottom">
-                            <foreach name="list.warrants" item="test">
-                                {$test}
-                            </foreach>
-                        </td>
-                        <td align="center" valign="middle" class="borderright borderbottom"> {$list.order_total_price}</td>
-                        <td align="center" valign="middle" class="borderright borderbottom">
-                            <if condition="$list['status'] eq 0">
+                            <if condition="$list['order_status'] eq 0">
                                 <span style="color:red;font-size: 18px;">未付款</span>
-                                <elseif condition="$list['status'] eq 1"/>
+                                <elseif condition="$list['order_status'] eq 1"/>
                                 <span style="color:blue;">已付款</span>
                                 <else />
                                 <span style="color:green;">已收货</span>
                             </if>
                         </td>
-                        <td align="center" valign="middle" class="borderright borderbottom">{$list.order_num}</td>
-                        <td align="center" valign="middle" class="borderright borderbottom">{$list.createtime}</td>
-                        <td align="center" valign="middle" class="borderright borderbottom">{$list.count_down}天</td>
-                        <td align="center" valign="middle" class="borderright borderbottom">{$list.agent_aid}</td>
+                        <td align="center" valign="middle" class="borderright borderbottom">{$list.pay_succ_time}</td>
                         <td align="center" valign="middle" class="borderbottom">
-                            <a href="{:U(edit,array('id'=>$list['id']))}" target="mainFrame" onFocus="this.blur()" class="add">编辑</a>
+                            <a href="{:U(edit,array('id'=>$list['id']))}" target="mainFrame" onFocus="this.blur()" class="add">冻结</a>
                             <span class="gray">&nbsp;|&nbsp;</span>
                             <a href="{:U('del_wuxiao',array('id'=>$list['id'] ))}" target="mainFrame" onFocus="this.blur()" class="add" onClick="return confirm('确定作废?作废后不再显示');">作废无效订单</a>
                         </td>
