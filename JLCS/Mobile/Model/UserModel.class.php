@@ -118,6 +118,15 @@ class UserModel extends Model
         return $count;
     }
 
+    public function check_is_disuser($id){
+        $filter = array('id'=>$id);
+        $user = $this->User->where($filter)->find();
+        if($user && $user['dis_user_id']){
+            return $user;
+        }
+        return false;
+    }
+
 
 
 

@@ -160,12 +160,17 @@ class IndexController extends Controller {
         $order_mdl = M('orders');
         $order_detail_mdl = M('order_details');
         $user_info_mdl = M('user_infos');
+        $dis_order_model = M('dis_orders');
+        $user_model = D('user');
         $products = $product_mdl->where(array('id'=>$_POST['product_id']))->find();
         //创建订单
         //1.创建订单 个人信息参数组
         if($_POST){
             //优先判断商品是否为已售
             if($products['product_store'] == 1){
+                //判断用户是否是分销推荐用户
+                $user_id = $_SESSION['id'];
+                $is_dis_user = $user_model->check_is_disuser($user_id);
                 //拼接 地址
                 $address = $_POST['s_province'].$_POST['s_city'].$_POST['s_county'].$_POST['address'];
                 $user_info = array(
@@ -192,7 +197,13 @@ class IndexController extends Controller {
                         $agent_aid = $_POST['agent'];
                         $user_info_id = $user_add;
                         $agreement_id = 111111;
-
+                        if($is_dis_user){
+                            $is_dis = 1;
+                            $dis_user_id = $is_dis_user['dis_user_id'];
+                        }else{
+                            $is_dis = 0;
+                            $dis_user_id = 0;
+                        }
                         $order_info = array(
                             'order_id'=>$order_id,
                             'order_num'=>$num,
@@ -204,12 +215,26 @@ class IndexController extends Controller {
                             'user_info_id'=>$user_info_id,
                             'agreement_id'=>$agreement_id,
                             'phone' =>$_POST['phone'],
+                            'is_dis'=>$is_dis,
+                            'dis_user_id'=>$dis_user_id
                         );
                         //生成订单
                         $orders = $order_mdl->add($order_info);
 
                         if($orders){
-                            //
+                            //创建一套订单进分销订单表
+                            if($is_dis_user){
+                                $id_orderData = array(
+                                    'order_name'=>$order_id,
+                                    'uid'=>$user_id,
+                                    'order_money'=>$order_total,
+                                    'pid_1'=>1,
+                                    'order_time'=>date('Y-m-d H:i:s',time()),
+                                    'order_status'=>0
+                                );
+
+                                $dis_orders = $dis_order_model->add($id_orderData);
+                            }
                             //查询 生成供奉权证接口
                             $warrant_number = warrant_select($_POST['product_id']);
                             //
