@@ -56,6 +56,13 @@ class OrderModel extends Model
         $total['pay'] = $count_1[0]['count'];
     }
 
+    public function get_finace($dis_user_id,$pid)
+    {
+        $sql = " SELECT sum(a.order_money) as total_money FROM dis_orders as a WHERE a.order_status = 1 and {$pid} = '{$dis_user_id}'";
+        $result = $this->db()->query($sql);
+        return $result[0]['total_money'];
+    }
+
 
 
 

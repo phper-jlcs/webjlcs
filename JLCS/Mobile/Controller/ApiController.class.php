@@ -6,6 +6,9 @@ class ApiController extends Controller {
 
 //    const HOST_SHARE_URL = 'http://www.zztns.com/Mobile/Dis/share';
     const HOST_SHARE_URL = 'localhost/webjlcs/Mobile/Dis/share';
+    const rate_1 = '0.2';
+    const rate_2 = '0.05';
+    const rate_3 = '0.08';
     public function __construct()
     {
         setAccess();
@@ -113,15 +116,20 @@ class ApiController extends Controller {
             send_error_response('您还不是分销商！');
         }
         $user_count = $User->get_user_list($user_id);
-        //订单总数(未付款,已付款)
+        //订单列表(未付款,已付款)
         $dis_user_id = $is_user['id'];
         $order_list = $Order->get_order_list($dis_user_id);
         //利润
+        $total_money_1 = $Order->get_finace($dis_user_id,'pid_1'); //1级分销下的订单总金额
+        $total_money_2 = $Order->get_finace($dis_user_id,'pid_2'); //2级分销下的订单总金额
+        $total_money_3 = $Order->get_finace($dis_user_id,'pid_3'); //3级分销下的订单总金额
+        $lirun = bcadd(bcadd(bcmul($total_money_1,self::rate_1,2),bcmul($total_money_2,self::rate_2,2)),bcmul($total_money_3,self::rate_3,2),2);
         $data = array(
             'user_count' =>   $user_count,
             'order_list' =>  $order_list,
             'count_no_pay' => $order_list['count_no_pay'],
-            'count_pay' => $order_list['count_pay']
+            'count_pay' => $order_list['count_pay'],
+            'yinde' => $lirun,
         );
         send_ok_response($data);
     }
