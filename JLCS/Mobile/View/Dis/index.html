@@ -68,6 +68,7 @@
 
 					<div class="news_top">
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+							<a href="{:U('Dis/dis_regist')}"><div style="width: 100px;height: 20px;position: absolute;top:1250px;left: 300px;" id="register"></div></a>
 							<a href="javascript:void(0);"><img src="__PUBLIC__/static/images/fenxiao.jpg" /></a>
 						</div>
 
@@ -98,18 +99,29 @@
 		<script src="__PUBLIC__/static/js/bootstrap.min.js"></script>
 	</body>
 	<script type="text/javascript">
-		function confirm(){
-			var url = '__MODULE__/Personal/islogin';
-			var id = $(".renjuan").attr('value');
-			$.post(url,{id:id},function(data){
-				if(data == 'b'){
-					alert('未登录,请前去登录');
-					window.location.href = "__MODULE__/Personal/login?id="+id;
-				}else{
-					window.location.href = "__MODULE__/Index/order?id="+id;
+
+		var url = '__MODULE__/Api/create_code';
+		var user_id = '1';
+		var id = '1';
+		var phone = '18408241858';
+		$("#to_reg").click(function(){
+			ajax_reg();
+		})
+		function ajax_reg(){
+			$.ajax({
+				type: "POST",
+				url: url,
+				dataType:'json',
+				data:{
+					user_id:user_id,
+					phone:phone,
+					id:id,
+				},
+				success: function (response) {
+					alert(response.msg);
+//				console.log(response);
 				}
-			})
-			return false;
+			});
 		}
 	</script>
 
