@@ -20,8 +20,9 @@ class ApiController extends Controller {
     public function reg_dis_user(){
         $phone = I('post.phone');
         $user_id = I('post.user_id');
-        check_is_null($phone,'手机号不能为空');
-        check_is_null($user_id,'用户id不能为空');
+        if(!$phone || !$user_id){
+            send_error_response('参数不能为空！');
+        }
         $User = new \Mobile\Model\UserModel();
         //检测是否已经是分销商
         $is_dis = $User->check_dis($user_id);
@@ -29,6 +30,8 @@ class ApiController extends Controller {
             send_error_response('您已经是分销商了！');
         }
         $user_reg = $User->reg_dis_user($phone,$user_id);
+        //修改user表
+        $User->update_user($user_id);
         if(!$user_reg){
             send_error_response('注册失败！');
         }

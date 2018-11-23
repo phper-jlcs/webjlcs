@@ -9,5 +9,13 @@ class DisController extends Controller {
     }
 
 
+    public function dis_regist()
+    {
+        $user_id = $_SESSION['id'];
+        $this->assign('user_id',$user_id);
+        $this->show();
+    }
+
+
 
 }

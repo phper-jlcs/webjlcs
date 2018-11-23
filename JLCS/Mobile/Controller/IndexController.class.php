@@ -326,4 +326,8 @@ class IndexController extends Controller {
         $this->show();
     }
 
+    public function dis(){
+        $this->display('Dis/index');
+    }
+
 }

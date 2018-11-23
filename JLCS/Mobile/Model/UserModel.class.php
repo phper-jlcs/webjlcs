@@ -126,6 +126,14 @@ class UserModel extends Model
         }
         return false;
     }
+    public function update_user($id){
+        $data['is_dis'] = 1;
+        $user = $this->User->where(array('id'=>$id))->save($data);
+       if($user){
+           return false;
+       }
+        return false;
+    }
 
 
 

@@ -5,10 +5,18 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 		<title>中国帝宫-三级分销</title>
 		<link href="__PUBLIC__/static/css/style.css" rel="stylesheet">
 		<link href="__PUBLIC__/static/css/bootstrap.min.css" rel="stylesheet">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+=======
+		<title>在线分销</title>
+		<link href="__PUBLIC__/static/css/style.css" rel="stylesheet">
+		<link href="__PUBLIC__/static/css/bootstrap.min.css" rel="stylesheet">
+		<script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+>>>>>>> 582fd3d1a303241d8925b505971af731a18cda15
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
         <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -50,11 +58,16 @@
 							<li>
 								<a href="{:U('Personal/index')}">个人中心</a>
 							</li>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 582fd3d1a303241d8925b505971af731a18cda15
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</header>
+<<<<<<< HEAD
 		<!--幻灯片-->
 		<section class="banner">
 			<img src="__PUBLIC__/static/images/dis.png">
@@ -102,10 +115,35 @@
 		<!--联系我们-->
 		<footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<div class="container-fluid">
+=======
+
+		<section class="banner">
+			<img src="__PUBLIC__/static/images/news1.jpg">
+		</section>
+
+		<section class="news1">
+			<div class="container">
+				<div class="row">
+
+					<div class="news_top">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+							<a href="{:U('Dis/dis_regist')}"><div style="width: 100px;height: 20px;position: absolute;top:1250px;left: 300px;" id="register"></div></a>
+							<a href="javascript:void(0);"><img src="__PUBLIC__/static/images/fenxiao.jpg" /></a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div style="padding-bottom: 50px;" class="container-fluid">
+>>>>>>> 582fd3d1a303241d8925b505971af731a18cda15
 				<div class="row">
 				<div class="footera-article">
 					<div class="footera-sa"><span class="top">＜</span></div>
 					<div class="footera-sm">
+<<<<<<< HEAD
 						<ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								<li>
 									<a href="{:U('Index/index')}">首页</a>
@@ -130,6 +168,14 @@
 						<div class="footera-sg">
 							<p class="footera-sgp">公司名称：通则久&nbsp;&nbsp;&nbsp;联系电话：0519-8324-7330&nbsp;&nbsp;&nbsp;地址：江苏省常州市新北区九龙路98号</p>
 							<p class="footera_p">@2017-2027 通则久&nbsp;&nbsp;苏ICP证000000号 苏公网备111012066666611号</p>
+=======
+						
+						</div>
+						<div class="footera-sg">
+								<div class="renjuan" value="{$productinfo.productid}">
+									<a href="{:U('order',array('id'=>$productinfo['productid']))}" onclick="return confirm('是否删除此节点？');" >立即认捐</a>
+								</div>
+>>>>>>> 582fd3d1a303241d8925b505971af731a18cda15
 						</div>
 				</div>
 			 </div>
@@ -139,5 +185,34 @@
 		<script src="__PUBLIC__/static/js/main.js"></script>
 		<script src="__PUBLIC__/static/js/bootstrap.min.js"></script>
 	</body>
+<<<<<<< HEAD
+=======
+	<script type="text/javascript">
+
+		var url = '__MODULE__/Api/create_code';
+		var user_id = '1';
+		var id = '1';
+		var phone = '18408241858';
+		$("#to_reg").click(function(){
+			ajax_reg();
+		})
+		function ajax_reg(){
+			$.ajax({
+				type: "POST",
+				url: url,
+				dataType:'json',
+				data:{
+					user_id:user_id,
+					phone:phone,
+					id:id,
+				},
+				success: function (response) {
+					alert(response.msg);
+//				console.log(response);
+				}
+			});
+		}
+	</script>
+>>>>>>> 582fd3d1a303241d8925b505971af731a18cda15
 
 </html>
