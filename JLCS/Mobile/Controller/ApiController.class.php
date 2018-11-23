@@ -5,7 +5,7 @@ use Think\Controller;
 class ApiController extends Controller {
 
 //    const HOST_SHARE_URL = 'http://www.zztns.com/Mobile/Dis/share';
-    const HOST_SHARE_URL = 'localhost/webjlcs/Mobile/Dis/share';
+    const HOST_SHARE_URL = 'localhost/webjlcs/Mobile/Dis/index';
     const rate_1 = '0.2';
     const rate_2 = '0.05';
     const rate_3 = '0.08';
@@ -53,8 +53,8 @@ class ApiController extends Controller {
         }
         $token = $is_dis['token'];
         $share_url = self::HOST_SHARE_URL.'?token='.$token;
-        $img_qrcode = qrcode($share_url);
-        send_ok_response($img_qrcode);
+//        $img_qrcode = qrcode($share_url);
+        send_ok_response($share_url);
     }
 
 

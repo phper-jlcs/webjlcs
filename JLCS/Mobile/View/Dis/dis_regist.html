@@ -76,6 +76,9 @@
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 xqwzzz">
 								<input type="hidden" class="get_user_id" value="{$user_id}">
 								<input type="button" value="成为分销商" id="to_reg">
+								<input type="hidden" value="" id="dis_user_id">
+								<input type="button" value="点击获取分销url" id="to_get_code" style="display: none;">
+								<input type="text" value="" id="code_get" style="display: none;">
 							</div>
 						</div>
 					</div>
@@ -158,12 +161,35 @@
 				if(response.code == 300){
 					alert(response.msg);
 				}else if(response.code == 200){
-					alert('注册成功!')
+					alert('注册成功!');
+					$("#to_get_code").css('display','block');
+					$("#dis_user_id").attr('value',response.result);
 				}
 			}
 		});
 	})
 
+
+	$("#to_get_code").click(function(){
+		var url = '__MODULE__/Api/create_code';
+		var id = $("#dis_user_id").val();
+		$.ajax({
+			type: "POST",
+			url: url,
+			dataType:'json',
+			data:{
+				id:id,
+			},
+			success: function (response) {
+				if(response.code == 300){
+					alert(response.msg);
+				}else if(response.code == 200){
+					$("#code_get").attr('value',response.result);
+					$("#code_get").css('display','block');
+				}
+			}
+		});
+	})
 
 
 </script>

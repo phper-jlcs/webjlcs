@@ -76,8 +76,8 @@
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<img src="__PUBLIC__/static/images/dis5.png">
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">						
-							<input type="submit" value="我要认捐" style="float: right;background-color: #da2828;color: white;border: none;width: 90px;height: 25px;border-bottom-left-radius: 5px;border-top-left-radius: 5px;">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<a href="{:U('Dis/dis_regist')}"><input type="button" value="我要分销" style="float: right;background-color: #da2828;color: white;border: none;width: 90px;height: 25px;border-bottom-left-radius: 5px;border-top-left-radius: 5px;" id="to_reg"></a>
 							<img src="__PUBLIC__/static/images/dis6.png">						
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -86,16 +86,6 @@
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<img src="__PUBLIC__/static/images/dis8.jpg">
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<ul class="clearfix">
-								<li><input style="width: 80%;height: 40px;margin-top: 10px;border: none;border-radius: 5px" type="text" name="name" id="name" placeholder="邀请人:"/></li>
-								<li><input style="width: 80%;height: 40px;margin: 10px 0 10px 0;border: none;border-radius: 5px" type="text" name="phone" id="phone" placeholder="姓名:"/></li>
-								<li><input style="width: 80%;height: 40px;border: none;border-radius: 5px" type="text" name="relname" id="relname" placeholder="手机号码:"/></li>
-							</ul>
-							<div style="margin-bottom: 20px" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 xqwzzz">
-								<input type="submit" value="申请成为会员">
-							</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -154,29 +144,6 @@
 
 	<script type="text/javascript">
 
-		var url = '__MODULE__/Api/create_code';
-		var user_id = '1';
-		var id = '1';
-		var phone = '18408241858';
-		$("#to_reg").click(function(){
-			ajax_reg();
-		})
-		function ajax_reg(){
-			$.ajax({
-				type: "POST",
-				url: url,
-				dataType:'json',
-				data:{
-					user_id:user_id,
-					phone:phone,
-					id:id,
-				},
-				success: function (response) {
-					alert(response.msg);
-//				console.log(response);
-				}
-			});
-		}
 	</script>
 
 
