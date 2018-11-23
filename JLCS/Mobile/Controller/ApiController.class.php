@@ -33,8 +33,9 @@ class ApiController extends Controller {
             send_error_response('您已经是分销商了！');
         }
         $user_reg = $User->reg_dis_user($phone,$user_id);
-        //修改user表
-        $User->update_user($user_id);
+//        //修改user表
+//        echo '<pre>';print_r($user_id);exit;
+//        $User->update_user($user_id);
         if(!$user_reg){
             send_error_response('注册失败！');
         }

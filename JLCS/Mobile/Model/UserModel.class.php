@@ -127,8 +127,12 @@ class UserModel extends Model
         return false;
     }
     public function update_user($id){
-        $data['is_dis'] = 1;
-        $user = $this->User->where(array('id'=>$id))->save($data);
+//        $sql = " UPDATE users SET is_dis = '1' WHERE users.id = '{$id}'";
+//        $user = $this->db()->query($sql);
+        $data['id'] = $id;
+        $data['is_dis'] = '1';
+        $user = $this->User->save($data);
+        echo '<pre>';print_r($user);exit;
        if($user){
            return false;
        }
