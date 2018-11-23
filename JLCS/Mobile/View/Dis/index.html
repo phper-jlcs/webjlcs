@@ -89,12 +89,12 @@
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<ul class="clearfix">
-								<li><input style="width: 80%;height: 40px;margin-top: 10px;border: none;border-radius: 5px" type="text" name="name" id="name" placeholder="邀请人:"/></li>
-								<li><input style="width: 80%;height: 40px;margin: 10px 0 10px 0;border: none;border-radius: 5px" type="text" name="phone" id="phone" placeholder="姓名:"/></li>
-								<li><input style="width: 80%;height: 40px;border: none;border-radius: 5px" type="text" name="relname" id="relname" placeholder="手机号码:"/></li>
+								<li><input style="width: 80%;height: 40px;border: none;border-radius: 5px" type="text" name="name" value = '' id="name" placeholder="用户名:"/></li>
+								<li><input style="width: 80%;height: 40px;border: none;border-radius: 5px" type="text" name="phone" value = '' id="phone" placeholder="手机号码:"/></li>
+								<li><input style="width: 80%;height: 40px;border: none;border-radius: 5px" type="password" name="pwd"  value = '' id="pwd" placeholder="密码:"/></li>
 							</ul>
 							<div style="margin-bottom: 20px" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 xqwzzz">
-								<input type="submit" value="申请成为会员">
+								<input type="button" value="申请成为会员" id="want_tobe_user">
 							</div>
 					</div>
 				</div>
@@ -134,11 +134,6 @@
 							<p class="footera_p">@2017-2027 通则久&nbsp;&nbsp;苏ICP证000000号 苏公网备111012066666611号</p>
 
 						</div>
-						<div class="footera-sg">
-								<div class="renjuan" value="{$productinfo.productid}">
-									<a href="{:U('order',array('id'=>$productinfo['productid']))}" onclick="return confirm('是否删除此节点？');" >立即认捐</a>
-								</div>
-						</div>
 				</div>
 			 </div>
 		  </div>
@@ -149,19 +144,33 @@
 	</body>
 
 	<script type="text/javascript">
-		function confirm(){
-			var url = '__MODULE__/Personal/islogin';
-			var id = $(".renjuan").attr('value');
-			$.post(url,{id:id},function(data){
-				if(data == 'b'){
-					alert('未登录,请前去登录');
-					window.location.href = "__MODULE__/Personal/login?id="+id;
-				}else{
-					window.location.href = "__MODULE__/Index/order?id="+id;
+		$("#want_tobe_user").click(function(){
+			var url = '__MODULE__/Api/make_connection';
+			var url_ = window.location.search;
+			token = url_.substr(7,8);
+			var phone = $("#phone").val();
+			var pwd = $("#pwd").val();
+			var name = $("#name").val();
+			$.ajax({
+				type: "POST",
+				url: url,
+				dataType:'json',
+				data:{
+					phone:phone,
+					pwd:pwd,
+					token:token,
+					name:name
+				},
+				success: function (response) {
+					if(response.code == 300){
+						alert(response.msg);
+					}else if(response.code == 200){
+						alert('注册成功!');
+						window.location.href="http://www.zztns.com";
+					}
 				}
-			})
-			return false;
-		}
+			});
+		})
 	</script>
 
 </html>

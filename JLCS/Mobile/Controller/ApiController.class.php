@@ -67,10 +67,19 @@ class ApiController extends Controller {
         $token = I('post.token');
         $phone = I('post.phone');
         $name = I('post.name');
-        $password = I('post.password');
-        check_is_null($token,'推荐人token不能为空');
-        check_is_null($phone,'手机号不能为空');
-        check_is_null($password,'密码不能为空');
+        $password = I('post.pwd');
+        if(!$token){
+            send_error_response('推荐人token不能为空！');
+        }
+        if(!$phone){
+            send_error_response('手机号不能为空！');
+        }
+        if(!$name){
+            send_error_response('用户名不能为空！');
+        }
+        if(!$password){
+            send_error_response('密码不能为空！');
+        }
         //check token是否有效
         $User = D('User');
         $is_token = $User->check_token($token);
