@@ -20,8 +20,11 @@ class ApiController extends Controller {
     public function reg_dis_user(){
         $phone = I('post.phone');
         $user_id = I('post.user_id');
-        if(!$phone || !$user_id){
-            send_error_response('参数不能为空！');
+        if(!$phone){
+            send_error_response('手机号不能为空！');
+        }
+        if(!$user_id){
+            send_error_response('您还没有登录！');
         }
         $User = new \Mobile\Model\UserModel();
         //检测是否已经是分销商
