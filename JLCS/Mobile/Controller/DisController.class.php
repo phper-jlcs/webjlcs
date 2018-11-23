@@ -16,6 +16,9 @@ class DisController extends Controller {
         $this->show();
     }
 
+    public function center(){
+        $this->show();
+    }
 
 
 }
