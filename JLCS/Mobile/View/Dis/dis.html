@@ -9,7 +9,6 @@
 		<link href="__PUBLIC__/static/css/style.css" rel="stylesheet">
 		<link href="__PUBLIC__/static/css/bootstrap.min.css" rel="stylesheet">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
         <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -77,8 +76,8 @@
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<img src="__PUBLIC__/static/images/dis5.png">
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">						
-							<input type="submit" value="我要认捐" style="float: right;background-color: #da2828;color: white;border: none;width: 90px;height: 25px;border-bottom-left-radius: 5px;border-top-left-radius: 5px;">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<a href="{:U('Dis/dis_regist')}"><input type="button" value="我要分销" style="float: right;background-color: #da2828;color: white;border: none;width: 90px;height: 25px;border-bottom-left-radius: 5px;border-top-left-radius: 5px;" id="to_reg"></a>
 							<img src="__PUBLIC__/static/images/dis6.png">						
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -87,16 +86,6 @@
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<img src="__PUBLIC__/static/images/dis8.jpg">
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<ul class="clearfix">
-								<li><input style="width: 80%;height: 40px;margin-top: 10px;border: none;border-radius: 5px" type="text" name="name" id="name" placeholder="邀请人:"/></li>
-								<li><input style="width: 80%;height: 40px;margin: 10px 0 10px 0;border: none;border-radius: 5px" type="text" name="phone" id="phone" placeholder="姓名:"/></li>
-								<li><input style="width: 80%;height: 40px;border: none;border-radius: 5px" type="text" name="relname" id="relname" placeholder="手机号码:"/></li>
-							</ul>
-							<div style="margin-bottom: 20px" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 xqwzzz">
-								<input type="submit" value="申请成为会员">
-							</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -104,15 +93,10 @@
 		</div>
 
 
-					<div class="news_top">
-						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-							<a href="javascript:void(0);"><img src="__PUBLIC__/static/images/fenxiao.jpg" /></a>
-						</div>
-
-
 
 		<footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<div style="padding-bottom: 50px;" class="container-fluid">
+
 				<div class="row">
 				<div class="footera-article">
 					<div class="footera-sa"><span class="top">＜</span></div>
@@ -159,19 +143,8 @@
 	</body>
 
 	<script type="text/javascript">
-		function confirm(){
-			var url = '__MODULE__/Personal/islogin';
-			var id = $(".renjuan").attr('value');
-			$.post(url,{id:id},function(data){
-				if(data == 'b'){
-					alert('未登录,请前去登录');
-					window.location.href = "__MODULE__/Personal/login?id="+id;
-				}else{
-					window.location.href = "__MODULE__/Index/order?id="+id;
-				}
-			})
-			return false;
-		}
+
 	</script>
+
 
 </html>

@@ -44,7 +44,7 @@ class UserModel extends Model
         if($user_add){
             $id = $this->User->where(array('user_id'=>$user_find['id']))->save(array('is_dis'=>1));
             if($id){
-                return true;
+                return $id;
             }else{
                 return false;
             }
