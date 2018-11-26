@@ -57,8 +57,10 @@ class ApiController extends Controller {
         }
         $token = $is_dis['token'];
         $share_url = self::HOST_SHARE_URL.'?token='.$token;
+        $data['url'] = $share_url;
+        $data['token'] = $token;
 //        $img_qrcode = qrcode($share_url);
-        send_ok_response($share_url);
+        send_ok_response($data);
     }
 
 

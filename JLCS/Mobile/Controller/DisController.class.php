@@ -20,5 +20,9 @@ class DisController extends Controller {
         $this->show();
     }
 
+    public function index(){
+        $this->show();
+    }
+
 
 }
