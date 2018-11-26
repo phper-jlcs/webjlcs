@@ -42,7 +42,7 @@ class UserModel extends Model
         );
         $user_add = $this->Dis_User->add($data);
         if($user_add){
-            $id = $this->User->where(array('user_id'=>$user_find['id']))->save(array('is_dis'=>1));
+            $id = $this->User->where(array('id'=>$user_find['id']))->save(array('is_dis'=>1));
             if($id){
                 return $id;
             }else{

@@ -77,8 +77,9 @@
 								<input type="hidden" class="get_user_id" value="{$user_id}">
 								<input type="button" value="成为分销商" id="to_reg">
 								<input type="hidden" value="" id="dis_user_id">
-								<input type="button" value="点击获取分销url" id="to_get_code" style="display: none;">
-								<input type="text" value="" id="code_get" style="display: none;">
+								<input type="button" value="点击获取分销url" id="to_get_code" style="display: none;"><br><br>
+								<div style="width: 100px;height: 30px;"></div>
+								<a href="" id="code_get" style="color:red;"></a>
 							</div>
 						</div>
 					</div>
@@ -184,7 +185,7 @@
 				if(response.code == 300){
 					alert(response.msg);
 				}else if(response.code == 200){
-					$("#code_get").attr('value',response.result);
+					$("#code_get").text(response.result);
 					$("#code_get").css('display','block');
 				}
 			}
