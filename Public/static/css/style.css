@@ -256,10 +256,10 @@ p {
 
 /*销售系列*/
 
-.series {
+/*.series {
 	padding-bottom: 5%;
-	/*background-color: #f4f4f4;*/
-}
+	background-color: #f4f4f4;
+}*/
 
 .series li {
 	position: relative;
