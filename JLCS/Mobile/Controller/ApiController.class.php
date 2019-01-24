@@ -48,7 +48,6 @@ class ApiController extends Controller {
     public function create_code()
     {
         $id = I('post.id');  //分销商id
-        $id = 1;
         check_is_null($id,'分销商id不能为空');
         $User = D('User');
         $is_dis = $User->check_dis($id);
