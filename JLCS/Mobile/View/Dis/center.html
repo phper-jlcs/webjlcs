@@ -67,7 +67,7 @@
 				<div class="row v111">
 					<div class="page clearfix">
 						<div class="title1">
-							<h2>分享中心</h2>
+							<h2>分销中心</h2>
 							<span>Distribution Center</span>
 						</div>
 
@@ -122,6 +122,14 @@
 								<span>收货地址</span>
 							</a>
 						</li>
+						<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+							<a href="javascript:void(0);" id = 'get_code'>
+								<img src="__PUBLIC__/static/images/dissub.png">
+								<span>我的分销码</span>
+								<input type="hidden" value="" id="token">
+								<a href="javascript:void(0);" id="code_get" style="color:red;"></a>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -148,5 +156,31 @@
 		<script src="__PUBLIC__/static/js/bootstrap.min.js"></script>
 
 	</body>
+	<script>
+		$("#get_code").click(function()
+		{
+			var url = '__MODULE__/Api/get_code';
+			var id = 1;
+			$.ajax({
+				type: "POST",
+				url: url,
+				dataType:'json',
+				data:{
+					id:id,
+				},
+				success: function (response) {
+					if(response.code == 303){
+						$("#code_get").text(response.result.url);
+						$("#token").attr('value',response.result.token);
+						$("#code_get").css('display','block');
+					}
+				}
+			});
+		})
 
+		$("#code_get").click(function(){
+			var token = $("#token").val();
+			window.location.href = "__MODULE__/Dis/index?token="+token;
+		})
+	</script>
 </html>

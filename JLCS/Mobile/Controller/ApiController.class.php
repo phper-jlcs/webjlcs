@@ -47,6 +47,20 @@ class ApiController extends Controller {
         send_ok_response($user_reg);
     }
 
+    public function get_code()
+    {
+        $user_id = $_SESSION['id'];
+        $User = new \Mobile\Model\UserModel();
+        $is_dis = $User->check_dis($user_id);
+        if($is_dis){
+            $token = $is_dis['token'];
+            $share_url = self::HOST_SHARE_URL.'?token='.$token;
+            $code = 303;
+            $data['url'] = $share_url;
+            $data['token'] = $token;
+            send_ok_response($data,$code);
+        }
+    }
     /**
      * 生成推广码
      */
