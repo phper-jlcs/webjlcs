@@ -167,6 +167,12 @@
 					alert('注册成功!');
 					$("#to_get_code").css('display','block');
 					$("#dis_user_id").attr('value',response.result);
+				}else if(response.code == 303)
+				{
+					alert('您已是分销商，快去分销吧!');
+					$("#code_get").text(response.result.url);
+					$("#token").attr('value',response.result.token);
+					$("#code_get").css('display','block');
 				}
 			}
 		});
