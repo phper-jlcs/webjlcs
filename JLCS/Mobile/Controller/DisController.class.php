@@ -8,7 +8,10 @@ class DisController extends Controller {
         $this->display('Dis/share');
     }
 
-
+    public function dis_re()
+    {
+        $this->display('Dis/dis');
+    }
     public function dis_regist()
     {
         $user_id = $_SESSION['id'];
