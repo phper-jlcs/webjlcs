@@ -211,16 +211,17 @@ a{
                                   <span style="display:inline-block;font-size: 18px;color:green;margin-top:10px;">基本信息:</span><br/>
                                   <form action="{:U('edit_info')}" method="post" onsubmit="return checksbmit()">
                                       <input type="hidden" name="id" value="{$users.id}">
-                                      <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 10px;height: 20px;"> 用&nbsp;&nbsp;户&nbsp;&nbsp;名: <input type="text" name="name" value="{$users.name}" style="margin-left:31px;width: 240px;height: 25px;" class="name"></br></div>
-                                      <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 10px;height: 20px;"> 密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码: <input type="password" name="password" value="" style="width:240px;height: 25px;margin-left:30px;" placeholder="不填,默认不修改" class="pssword"></br></div>
+                                      <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 10px;height: 20px;"> 用&nbsp;&nbsp;户&nbsp;&nbsp;名: <input type="text" name="name" value="{$users.name}" style="margin-left:30px;width: 240px;height: 25px;" class="name"></br></div>
+                                      <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 20px;height: 20px;"> 密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码: <input type="password" name="password" value="" style="width:240px;height: 25px;margin-left:32px;" placeholder="不填,默认不修改" class="pssword"></br></div>
                                       <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 20px;height: 20px;"> 注册时间:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$users.regtime}</br></div>
-                                      <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 10px;height: 20px;"> 电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话: <input type="text" name="phone" value="{$users.phone}" style="margin-left:30px;width: 240px;height: 25px;" placeholder="请输入您的电话" class="phone"></br></div>
-                                      <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 10px;height: 20px;"> 代&nbsp;&nbsp;理&nbsp;&nbsp;商: <input type="text" name="agent" value="{$users.agent}" style="margin-left:31px;width: 240px;height: 25px;" placeholder="请输入代理商编号" class="agent"></br></div>
-                                      <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 10px;height: 20px;">
+                                      <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 10px;height: 20px;"> 电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话: <input type="text" name="phone" value="{$users.phone}" style="margin-left:31px;width: 240px;height: 25px;" placeholder="请输入您的电话" class="phone"></br></div>
+                                      <div style="position: relative;left:19px;font-size: 15px;color:black;font-weight: bold;margin-top: 20px;height: 20px;"> 代&nbsp;&nbsp;理&nbsp;&nbsp;商: <input type="text" name="agent" value="{$users.agent}" style="margin-left:30px;width: 240px;height: 25px;" placeholder="请输入代理商编号" class="agent"></br></div>
+                                      <div style="position: relative;left:19px;font-size:15px;color:black;font-weight: bold;margin-top: 20px;height:20px;"> 积&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分: <input type="text" value="5000" disabled style="margin-left:31px;width:240px;height: 25px;border: none;"></br></div>
+                                      <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 20px;height: 20px;">
 							          <span>身份证号:</span>
 							          <input style="margin-left:32px;width: 240px;height: 25px;" value="{$user_infos.cid}" placeholder="请输入您的身份证号" name="cid" class="cid"/>
 						              </div>
-						              <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 10px;height: 20px;">
+						              <div style="position: relative;left:20px;font-size: 15px;color:black;font-weight: bold;margin-top: 20px;height: 20px;">
 							          <span>家庭地址:</span>
 							          <div class="info">
 	                                  <div>
@@ -312,45 +313,6 @@ a{
                      </div>
                      
                  </div>
-                 <!--<div class="aaa" style="display: none;">
-                 <div class="shade">
-		             </div>
-            <div class="shade_content">
-			<div class="col-xs-12 shade_colse">
-				<button onclick="javascript:onclick_close();">x</button>
-			</div>
-			<div class="nav shade_content_div">
-				<div class="col-xs-12 shade_title">
-					填写个人信息
-				</div>
-				<div class="col-xs-12 shade_from">
-					<form action="" method="post" id="saveReportForm" onsubmit="return saveReport()">
-						<div class="col-xs-12">
-							<span class="span_style" id="">身份证号：</span>
-							<input style="width: 310px;" class="input_style" type="" name="address" id="agentname" value="" placeholder="请输入您的身份证号" />
-						</div>
-						<div class="col-xs-12">
-							<span class="span_style" id="">家庭地址：</span>
-							<div class="info">
-	                         <div>
-	                          <select id="s_province" name="s_province"></select>  
-                              <select id="s_city" name="s_city" ></select>  
-                              <select id="s_county" name="s_county"></select>
-                              <script type="text/javascript">_init_area();</script>
-                             </div>
-                              <div id="show"></div>
-                              </div>
-							<input style="width: 310px;margin: 5px;margin-left: 105px;" class="input_style" type="" name="agent_aid" id="agent_aid" value="" placeholder="请输入您的详细地址" />
-						</div>
-						<div class="col-xs-12">
-							<input type="button" class="sub_set" id="sub_setID" value="提交" />
-							<input class="btn_remove" type="button" id="" onclick="javascript:onclick_close();" value="取消" />
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-		</div>-->
 
                  <div id="tab3" class="tab active1" style="margin-top: 30px;">
                      <div class="public_m1">
