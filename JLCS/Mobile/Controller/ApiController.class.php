@@ -34,6 +34,7 @@ class ApiController extends Controller {
             $share_url = self::HOST_SHARE_URL.'?token='.$token;
             $code = 303;
             $data['url'] = $share_url;
+            $data['token'] = $token;
             send_ok_response($data,$code);
         }
         $user_reg = $User->reg_dis_user($phone,$user_id);
