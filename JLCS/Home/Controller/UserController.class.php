@@ -174,24 +174,28 @@ class UserController extends Controller {
                 'name'=> $_POST['name'],
                 'password'=> $password,
                 'phone'=> $_POST['phone'],
+                'agent'=> $_POST['agent'],
             );
             $userinfoData = array(
                 'agent_aid'=> $_POST['agent'],
                 'cid'=>$_POST['cid'],
                 'address'=>$address,
                 'phone'=>$_POST['phone'],
+                'relname'=> $_POST['relname'],
             );
         }else{  //不需要更改密码
             $userData = array(
                 'name'=> $_POST['name'],
                 'password'=> md5($_POST['password']),
                 'phone'=> $_POST['phone'],
+                'agent'=> $_POST['agent'],
             );
             $userinfoData = array(
                 'agent_aid'=> $_POST['agent'],
                 'cid'=>$_POST['cid'],
                 'address'=>$address,
                 'phone'=>$_POST['phone'],
+                'relname'=> $_POST['relname'],
             );
         }
 
