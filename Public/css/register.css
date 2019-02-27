@@ -29,7 +29,7 @@ input:focus{border: 2px solid orange;}
 .login .login_center{width: 360px;margin: 0 auto;}
 .regist{width: 600px;height: 500px;margin:20px auto;background:#E5E5E5;color:#000;border-radius: 6px;}
 /*.regist_center{width: 760px;margin: 10px auto;}*/
-.regist .regist_top .left{height: 40px;line-height: 40px;font-weight: bold;font-size: 20px;}
+.regist .regist_top .left{height: 40px;line-height: 40px;font-size: 20px;}
 .regist .regist_top .right{height: 40px;line-height: 40px;font-size: 13px;}
 .regist .regist_top .right a{color:#ff6700;font-weight: bold;}
 .regist .regist_top .right a:hover{color:orange;}
